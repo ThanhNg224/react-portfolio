@@ -65,11 +65,11 @@ export const Home = () => {
                   </Link>
                 </div>
                 <div className="cv_download_section text-center mt-4">
-                  <a 
-                    href="/HUST_NguyenPhucThanh_CV.pdf" 
-                    download="HUST_NguyenPhucThanh_CV.pdf"
-                    className="cv_download_btn"
-                  >
+                    <a
+                      href={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf`}
+                      download="HUST_NguyenPhucThanh_CV.pdf"
+                      className="cv_download_btn"
+                    >
                     <div id="button_cv" className="ac_btn btn">
                       Download CV
                       <div className="ring one"></div>
