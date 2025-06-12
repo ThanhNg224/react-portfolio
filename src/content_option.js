@@ -92,7 +92,7 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: `${process.env.PUBLIC_URL}/images/Viettel.png`,
     description:
       "Viettel EID/Passport Verification App – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration.",
     link: "https://github.com/ThanhNg224/Viettel",
@@ -116,7 +116,7 @@ const dataportfolio = [
     link: "https://github.com/ThanhNg224/Raincaster",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
+    img: `${process.env.PUBLIC_URL}/images/game.png`,
     description:
       "ChronoLoop Platformer Game – Unity C# 2D platformer with time‐manipulation mechanics, dynamic levels, and smooth player controls.",
     link: "https://github.com/ThanhNg224/ChronoLoop",
