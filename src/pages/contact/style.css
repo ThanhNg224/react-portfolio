@@ -7,6 +7,26 @@
     border: 1px solid var(--secondary-color);
 }
 
+.contact__form .form-control::placeholder {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.contact__form .form-control::-webkit-input-placeholder {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.contact__form .form-control::-moz-placeholder {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.contact__form .form-control:-ms-input-placeholder {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
 .contact__form input.form-control {
     margin-bottom: 2em;
     height: calc(2.5em + .75rem + 2px);
