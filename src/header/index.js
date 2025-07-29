@@ -3,11 +3,14 @@ import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { FaHome, FaBriefcase, FaUser, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import LanguageToggle from "../components/languasetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
+  const { t } = useTranslation();
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -15,10 +18,10 @@ const Headermain = () => {
   };
 
   const menuItems = [
-    { path: "/", label: "Home", icon: FaHome },
-    { path: "/portfolio", label: "Portfolio", icon: FaBriefcase },
-    { path: "/about", label: "About", icon: FaUser },
-    { path: "/contact", label: "Contact", icon: FaEnvelope }
+    { path: "/", label: t('nav.home'), icon: FaHome },
+    { path: "/portfolio", label: t('nav.portfolio'), icon: FaBriefcase },
+    { path: "/about", label: t('nav.about'), icon: FaUser },
+    { path: "/contact", label: t('nav.contact'), icon: FaEnvelope }
   ];
 
   return (
@@ -29,6 +32,7 @@ const Headermain = () => {
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
+          <LanguageToggle />
           <Themetoggle />
           <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
@@ -68,7 +72,7 @@ const Headermain = () => {
             <a href={socialprofils.github}>Github</a>
             <a href={socialprofils.twitter}>Twitter</a>
             </div>
-            <p className="copyright m-0">© 2025 {logotext}</p>
+            <p className="copyright m-0">{t('footer.copyright')} {logotext}</p>
           </div>
         </div>
       </header>

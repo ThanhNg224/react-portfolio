@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "portfolio": "Dự án",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ"
+  },
+  "home": {
+    "title": "Tôi là Thành Nguyễn",
+    "animated": {
+      "first": "Tôi yêu lập trình",
+      "second": "Tôi phát triển ứng dụng di động",
+      "third": "Tôi xây dựng website"
+    },
+    "description": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại ĐHBKHN - Đại học Bách khoa Hà Nội, hiện đang làm việc tại ATIN ở Hà Nội. Đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
+    "buttons": {
+      "portfolio": "Dự án của tôi",
+      "about": "Về tôi",
+      "contact": "Liên hệ",
+      "downloadCV": "Tải CV"
+    }
+  },
+  "about": {
+    "title": "Về tôi",
+    "personalTitle": "Một chút về bản thân",
+    "personalDescription": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại ĐHBKHN - Đại học Bách khoa Hà Nội (tốt nghiệp tháng 8/2025) và là Lập trình viên Full‑Stack tại ATIN từ tháng 2/2025. Từ việc phát triển ứng dụng di động Kotlin và Flutter đến xây dựng giải pháp web React/Node.js, tạo ra các dịch vụ Python/Flask nhẹ nhàng, và thậm chí là tạo mẫu trải nghiệm Unity, tôi phát triển mạnh khi giải quyết các công nghệ mới và biến ý tưởng thành sản phẩm hoàn thiện. Trọng tâm của tôi luôn là code sạch, sẵn sàng cho sản xuất, UX trực quan, và tìm ra con đường đơn giản nhất từ ý tưởng đến tác động. Khao khát những thử thách mới, tôi sẵn sàng mang tư duy thích ứng, hoàn thành công việc của mình đến bất cứ điều gì tiếp theo.",
+    "sections": {
+      "education": "Học vấn",
+      "certifications": "Chứng chỉ",
+      "workTimeline": "Quá trình làm việc",
+      "skills": "Kỹ năng",
+      "services": "Dịch vụ"
+    },
+    "education": [
+      {
+        "institution": "Đại học Bách khoa Hà Nội – ĐHBKHN",
+        "degree": "Cử nhân Kỹ thuật Đa phương tiện (Chương trình tiên tiến)",
+        "period": "Tháng 10/2021 – Tháng 8/2025 (Dự kiến)"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "IELTS Academic - 7.0",
+        "issuer": "IDP Education Co., Ltd",
+        "date": "Tháng 9/2024"
+      }
+    ],
+    "workTimeline": [
+      {
+        "jobtitle": "Lập trình viên Di động (Toàn thời gian)",
+        "where": "ATIN (Hà Nội, Việt Nam)",
+        "date": "Tháng 2/2025 – Hiện tại"
+      },
+      {
+        "jobtitle": "Thực tập sinh C++",
+        "where": "FPT Software (Hà Nội, Việt Nam)",
+        "date": "Tháng 9/2024 – Tháng 1/2025"
+      }
+    ],
+    "skills": [
+      { "name": "Kotlin & Android", "value": 80 },
+      { "name": "Flutter & Dart", "value": 70 },
+      { "name": "React Native", "value": 65 },
+      { "name": "JavaScript (ReactJS/NextJS)", "value": 75 },
+      { "name": "NodeJS & Express", "value": 70 },
+      { "name": "Python (Flask, scikit‐learn, OpenCV)", "value": 65 },
+      { "name": "SQL & MySQL", "value": 50 },
+      { "name": "Unity & C#", "value": 50 }
+    ],
+    "services": [
+      {
+        "title": "Phát triển Ứng dụng Di động",
+        "description": "Xây dựng ứng dụng di động sẵn sàng sản xuất sử dụng Flutter/Dart hoặc Android gốc (Kotlin) với các tích hợp như ML Kit, Firebase và API backend."
+      },
+      {
+        "title": "Phát triển Web Full‐Stack",
+        "description": "Tạo ứng dụng web responsive với ReactJS/NextJS, Tailwind CSS và backend NodeJS/Express (hoặc Flask) với MySQL."
+      },
+      {
+        "title": "Tích hợp Học máy",
+        "description": "Nhúng các mô hình ML (ví dụ: scikit‐learn SVM, xử lý hình ảnh OpenCV) vào ứng dụng cho các tính năng như nhận diện khuôn mặt, OCR và thông tin chi tiết dựa trên dữ liệu."
+      },
+      {
+        "title": "UI/UX & Tạo mẫu",
+        "description": "Thiết kế giao diện sạch, tập trung vào người dùng, wireframe và mẫu để đảm bảo sự tương tác cao và khả năng sử dụng."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Dự án",
+    "viewProject": "xem dự án",
+    "projects": [
+      {
+        "description": "Ứng dụng Xác minh EID/Hộ chiếu Viettel – Giải pháp kiosk Android với phát hiện sống, đọc NFC, OCR (MRZ) và tích hợp thanh toán."
+      },
+      {
+        "description": "Nền tảng full-stack được thiết kế để quản lý và cập nhật các máy Face Terminal dựa trên Android. Hệ thống cho phép giám sát thiết bị thời gian thực, xem nhật ký truy cập và cập nhật APK từ xa."
+      },
+      {
+        "description": "Website và Ứng dụng Android Coffee Shop – Dự án full‐stack (ReactJS/NodeJS/MySQL + React Native) với vai trò người dùng/quản trị, duyệt sản phẩm và hệ thống phản hồi."
+      },
+      {
+        "description": "Raincaster – Nền tảng dự báo thời tiết thời gian thực với mô hình SVM trong backend Flask và frontend ReactJS, tập trung vào dự báo lượng mưa tiên tiến."
+      },
+      {
+        "description": "Game ChronoLoop Platformer – Game platformer 2D Unity C# với cơ chế thao tác thời gian, cấp độ động và điều khiển người chơi mượt mà."
+      },
+      {
+        "description": "Các dự án bổ sung có sẵn trên GitHub của tôi! Hãy thoải mái khám phá thêm."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "description": "Liên hệ với tôi nếu bạn muốn hợp tác trong dự án di động hoặc web, cần tích hợp ML, hoặc chỉ muốn trò chuyện về lập trình. Tôi phản hồi nhanh—không màu mè.",
+    "form": {
+      "name": "Tên của bạn",
+      "email": "Email của bạn",
+      "subject": "Chủ đề",
+      "message": "Tin nhắn",
+      "send": "Gửi",
+      "sending": "Đang gửi...",
+      "success": "Tin nhắn đã được gửi thành công!",
+      "error": "Không thể gửi tin nhắn. Vui lòng thử lại."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Điện thoại"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025"
+  },
+  "meta": {
+    "title": "Nguyễn Phúc Thành - Lập trình viên Di động & Full Stack",
+    "description": "Tôi là Nguyễn Phúc Thành, một lập trình viên di động và full-stack từ Hà Nội. Tôi xây dựng các ứng dụng và giải pháp web sáng tạo."
+  }
+}

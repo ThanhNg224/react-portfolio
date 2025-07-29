@@ -1,0 +1,30 @@
+.language-toggle {
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+  min-width: 80px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.language-toggle:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .language-toggle {
+    padding: 4px 8px;
+    font-size: 10px;
+    margin-right: 10px;
+    min-width: 70px;
+  }
+}

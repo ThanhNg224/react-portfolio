@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
 export const ContactUs = () => {
+  const { t } = useTranslation();
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -40,7 +41,7 @@ export const ContactUs = () => {
           console.log(result.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: t('contact.form.success'),
             variant: "success",
             show: true,
           });
@@ -48,7 +49,7 @@ export const ContactUs = () => {
         (error) => {
           console.log(error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            alertmessage: t('contact.form.error'),
             variant: "danger",
             show: true,
           });
@@ -69,12 +70,12 @@ export const ContactUs = () => {
       <Container>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{meta.title} | Contact</title>
-          <meta name="description" content={meta.description} />
+          <title>{t('contact.title')} | {t('meta.title')}</title>
+          <meta name="description" content={t('meta.description')} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
+            <h1 className="display-4 mb-4">{t('contact.title')}</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -93,9 +94,9 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
+            <h3 className="color_sec py-4">{t('contact.title')}</h3>
             <address>
-              <strong>Email:</strong>{" "}
+              <strong>{t('contact.info.email')}:</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
                 {contactConfig.YOUR_EMAIL}
               </a>
@@ -103,13 +104,13 @@ export const ContactUs = () => {
               <br />
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
                 <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                  <strong>{t('contact.info.phone')}:</strong> {contactConfig.YOUR_FONE}
                 </p>
               ) : (
                 ""
               )}
             </address>
-            <p>{contactConfig.description}</p>
+            <p>{t('contact.description')}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
@@ -119,7 +120,7 @@ export const ContactUs = () => {
                     className="form-control"
                     id="name"
                     name="name"
-                    placeholder="Name"
+                    placeholder={t('contact.form.name')}
                     value={formData.name || ""}
                     type="text"
                     required
@@ -131,7 +132,7 @@ export const ContactUs = () => {
                     className="form-control rounded-0"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder={t('contact.form.email')}
                     type="email"
                     value={formData.email || ""}
                     required
@@ -143,7 +144,7 @@ export const ContactUs = () => {
                 className="form-control rounded-0"
                 id="message"
                 name="message"
-                placeholder="Message"
+                placeholder={t('contact.form.message')}
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
@@ -153,7 +154,7 @@ export const ContactUs = () => {
               <Row>
                 <Col lg="12" className="form-group">
                   <button className="btn ac_btn" type="submit">
-                    {formData.loading ? "Sending..." : "Send"}
+                    {formData.loading ? t('contact.form.sending') : t('contact.form.send')}
                   </button>
                 </Col>
               </Row>
