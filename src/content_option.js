@@ -22,7 +22,7 @@ const introdata = {
 const dataabout = {
   title: "A bit about myself",
   aboutme:
-    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at Hanoi University of Science and Technology (HUST). I’m wrapping up my degree in August 2025 and have been interning/working as a mobile developer at ATIN since February 2025. I’ve built everything from a 10-step EID/passport verification kiosk app (Kotlin/Android with Joyusing SDK, ML Kit, NFC) to a Flutter-based driving school app with AI-driven face detection. On the web side, I’ve done React/Node.js/MySQL projects, integrated ML models in Flask, and even made a Unity game. I thrive on tackling diverse tech stacks—Flutter, ReactJS, Kotlin, Python, NodeJS, and more—always keeping it real and shipping production-ready code.",
+    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at HUST (graduating August 2025) and a Full‑Stack Developer at ATIN since February 2025. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. My focus is always on clean, production‑ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I’m ready to bring my adaptable, get‑things‑done mindset to whatever comes next.",
 };
 
 // Education entries pulled from CV
