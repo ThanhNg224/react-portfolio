@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
+import { FaHome, FaBriefcase, FaUser, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
@@ -12,6 +13,13 @@ const Headermain = () => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
   };
+
+  const menuItems = [
+    { path: "/", label: "Home", icon: FaHome },
+    { path: "/portfolio", label: "Portfolio", icon: FaBriefcase },
+    { path: "/about", label: "About", icon: FaUser },
+    { path: "/contact", label: "Contact", icon: FaEnvelope }
+  ];
 
   return (
     <>
@@ -34,29 +42,33 @@ const Headermain = () => {
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
-                  </li>
+                  {menuItems.map((item, index) => (
+                    <li 
+                      key={index} 
+                      className="menu_item" 
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <Link 
+                        onClick={handleToggle} 
+                        to={item.path} 
+                        className="my-3 d-flex align-items-center"
+                      >
+                        <item.icon className="me-3" />
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
+            <div className="d-flex gap-3">
             <a href={socialprofils.facebook}>Facebook</a>
             <a href={socialprofils.github}>Github</a>
             <a href={socialprofils.twitter}>Twitter</a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">© 2025 {logotext}</p>
           </div>
         </div>
       </header>

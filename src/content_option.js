@@ -15,7 +15,7 @@ const introdata = {
     third: "I build websites",
   },
   description:
-    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at HUST, currently slinging code at ATIN in Hanoi. My passion is creating high-quality mobile and web products, from Flutter apps with ML Kit to React/Node full-stack projects.",
+    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at HUST, currently slinging code at ATIN in Hanoi. My passion is creating high-quality mobile and web products.",
   your_img_url: "https://avatars.githubusercontent.com/ThanhNg224",
 };
 
@@ -98,19 +98,19 @@ const dataportfolio = [
     link: "https://github.com/ThanhNg224/Viettel",
   },
   {
-    img: "https://picsum.photos/400/800/?grayscale",
+    img: `${process.env.PUBLIC_URL}/images/device_management.png`,
     description:
-      "Driving School App – Flutter mobile app featuring video‐based lessons, AI‐driven face detection (ML Kit), and engagement tracking.",
-    link: "https://github.com/ThanhNg224/DrivingSchoolApp",
+      " A full-stack platform designed to manage and update Android-based Face Terminal machines. The system enables real-time device monitoring, access log viewing, and remote APK updates.",
+    link: "https://github.com/ThanhNg224/device_management_full",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: `${process.env.PUBLIC_URL}/images/cofffeeshop.jpg`,
     description:
       "Coffee Shop Website & Android App – Full‐stack project (ReactJS/NodeJS/MySQL + React Native) with user/admin roles, product browsing, and feedback systems.",
     link: "https://github.com/ThanhNg224/CoffeeShopProject",
   },
   {
-    img: "https://picsum.photos/400/600/?grayscale",
+    img: `${process.env.PUBLIC_URL}/images/rain_caster.png`,
     description:
       "Raincaster – Real‐time weather forecasting platform with SVM model in Flask backend and ReactJS front end, focused on advanced rainfall prediction.",
     link: "https://github.com/ThanhNg224/Raincaster",
@@ -122,7 +122,7 @@ const dataportfolio = [
     link: "https://github.com/ThanhNg224/ChronoLoop",
   },
   {
-    img: "https://picsum.photos/400/700/?grayscale",
+    img: `${process.env.PUBLIC_URL}/images/my_image_low_res.png`,
     description:
       "Additional projects available on my GitHub! Feel free to explore more.",
     link: "https://github.com/ThanhNg224",
