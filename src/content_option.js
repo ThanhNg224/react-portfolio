@@ -135,7 +135,7 @@ const contactConfig = {
   description:
     "Hit me up if you want to collab on a mobile or web project, need ML integration, or just want to chat about coding. I respond fast—no sugarcoating.",
   // If you're using EmailJS, replace these with your own IDs:
-  YOUR_SERVICE_ID: "service_id_here",
+  YOUR_SERVICE_ID: "service_fmndwwk",
   YOUR_TEMPLATE_ID: "template_id_here",
   YOUR_USER_ID: "user_id_here",
 };
