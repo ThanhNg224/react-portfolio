@@ -1,20 +1,20 @@
 .po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+    column-width: 20em;
+    -moz-column-width: 20em;
+    -webkit-column-width: 20em;
+    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+    -webkit-column-gap: 3rem;
 }
 
 .po_item {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 0.5rem auto;
+    margin: 0.8rem auto;
     position: relative;
     background: var(--secondary-color);
-    padding: 6px;
+    padding: 8px;
     border: 1px solid var(--secondary-color);
     transition: 0.3s ease;
     font-size: 0;
@@ -66,10 +66,10 @@
 
 .po_item .content p {
     color: white;
-    font-size: 14px;
-    margin-bottom: 1.5rem;
+    font-size: 15px;
+    margin-bottom: 1.8rem;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .project-buttons {
