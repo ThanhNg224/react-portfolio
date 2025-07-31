@@ -89,12 +89,13 @@
   "portfolio": {
     "title": "Dự án",
     "viewProject": "xem dự án",
+    "contactForCode": "liên hệ để xem code riêng tư",
     "projects": [
       {
-        "description": "Ứng dụng Xác minh EID/Hộ chiếu Viettel – Giải pháp kiosk Android với phát hiện sống, đọc NFC, OCR (MRZ) và tích hợp thanh toán. [Dự án riêng tư - Liên hệ với tôi để truy cập mã nguồn]"
+        "description": "Ứng dụng Xác minh EID/Hộ chiếu Viettel – Giải pháp kiosk Android với phát hiện sống, đọc NFC, OCR (MRZ) và tích hợp thanh toán."
       },
       {
-        "description": "Nền tảng full-stack được thiết kế để quản lý và cập nhật các máy Face Terminal dựa trên Android. Hệ thống cho phép giám sát thiết bị thời gian thực, xem nhật ký truy cập và cập nhật APK từ xa. [Dự án riêng tư - Liên hệ với tôi để truy cập mã nguồn]"
+        "description": "Nền tảng full-stack được thiết kế để quản lý và cập nhật các máy Face Terminal dựa trên Android. Hệ thống cho phép giám sát thiết bị thời gian thực, xem nhật ký truy cập và cập nhật APK từ xa."
       },
       {
         "description": "Website và Ứng dụng Android Coffee Shop – Dự án full‐stack (ReactJS/NodeJS/MySQL + React Native) với vai trò người dùng/quản trị, duyệt sản phẩm và hệ thống phản hồi."

@@ -30,9 +30,17 @@ export const Portfolio = () => {
                 <img src={data.img} alt={projects[i]?.description || data.description} loading="lazy" />
                 <div className="content">
                   <p>{projects[i]?.description || data.description}</p>
-                  <a href={data.link} target="_blank" rel="noopener noreferrer">
-                    {t('portfolio.viewProject')}
-                  </a>
+                  <div className="project-buttons">
+                    {data.isPrivate ? (
+                      <a href="/react-portfolio/contact" className="project-btn private-btn">
+                        {t('portfolio.contactForCode')}
+                      </a>
+                    ) : (
+                      <a href={data.link} target="_blank" rel="noopener noreferrer" className="project-btn">
+                        {t('portfolio.viewProject')}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             );

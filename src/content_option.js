@@ -94,14 +94,16 @@ const dataportfolio = [
   {
     img: `${process.env.PUBLIC_URL}/images/Viettel.png`,
     description:
-      "Viettel EID/Passport Verification App – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration. [Private Project - Contact me for source code access]",
+      "Viettel EID/Passport Verification App – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration.",
     link: "https://github.com/ThanhNg224/Viettel",
+    isPrivate: true,
   },
   {
     img: `${process.env.PUBLIC_URL}/images/device_management.png`,
     description:
-      "A full-stack platform designed to manage and update Android-based Face Terminal machines. The system enables real-time device monitoring, access log viewing, and remote APK updates. [Private Project - Contact me for source code access]",
+      "A full-stack platform designed to manage and update Android-based Face Terminal machines. The system enables real-time device monitoring, access log viewing, and remote APK updates.",
     link: "https://github.com/ThanhNg224/device_management_full",
+    isPrivate: true,
   },
   {
     img: `${process.env.PUBLIC_URL}/images/cofffeeshop.jpg`,
