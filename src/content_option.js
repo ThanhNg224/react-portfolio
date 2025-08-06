@@ -135,11 +135,11 @@ const contactConfig = {
   YOUR_EMAIL: "thanhng224@gmail.com",
   YOUR_FONE: "033 281 2606",
   description:
-    "Hit me up if you want to collab on a mobile or web project, need ML integration, or just want to chat about coding. I respond fast—no sugarcoating.",
+    "Hit me up if you want to collab on a mobile or web project, need ML integration, or just want to chat about coding.",
   // If you're using EmailJS, replace these with your own IDs:
   YOUR_SERVICE_ID: "service_fmndwwk",
-  YOUR_TEMPLATE_ID: "template_id_here",
-  YOUR_USER_ID: "user_id_here",
+  YOUR_TEMPLATE_ID: "template_seyshqv",
+  YOUR_USER_ID: "6j2qT7_SbRpSZ46l4",
 };
 
 const socialprofils = {

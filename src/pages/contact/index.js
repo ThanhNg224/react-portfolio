@@ -20,7 +20,7 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata(prev => ({ ...prev, loading: true }));
 
     const templateParams = {
       from_name: formData.email,
