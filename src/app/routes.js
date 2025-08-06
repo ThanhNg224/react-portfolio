@@ -4,6 +4,7 @@ import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
+import { Resume } from "../pages/resume";
 import { Socialicons } from "../components/socialicons";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -78,6 +79,20 @@ const AnimatedRoutes = () => {
               transition={pageTransition}
             >
               <ContactUs />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/resume"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <Resume />
             </motion.div>
           }
         />

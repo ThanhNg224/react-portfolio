@@ -3,6 +3,7 @@
     "home": "Trang chủ",
     "portfolio": "Dự án",
     "about": "Giới thiệu",
+    "resume": "Hồ sơ",
     "contact": "Liên hệ"
   },
   "home": {
@@ -12,10 +13,11 @@
       "second": "Tôi phát triển ứng dụng di động",
       "third": "Tôi xây dựng website"
     },
-    "description": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại ĐHBKHN - Đại học Bách khoa Hà Nội, hiện đang làm việc tại ATIN ở Hà Nội. Đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
+    "description": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại HUST - Đại học Bách khoa Hà Nội, hiện đang làm việc tại ATIN ở Hà Nội. Niềm đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
     "buttons": {
       "portfolio": "Dự án của tôi",
-      "about": "Về tôi",
+      "about": "Giới thiệu",
+      "resume": "Xem hồ sơ",
       "contact": "Liên hệ",
       "downloadCV": "Tải CV"
     }
@@ -128,6 +130,15 @@
       "email": "Email",
       "phone": "Điện thoại"
     }
+  },
+  "resume": {
+    "title": "Hồ sơ",
+    "description": "Xem và tải xuống hồ sơ chuyên nghiệp của tôi, thể hiện kinh nghiệm, kỹ năng và trình độ học vấn trong lĩnh vực phát triển di động và full-stack.",
+    "downloadCV": "Tải CV",
+    "fallbackMessage": "Không thể xem PDF? Nhấp vào đây để",
+    "openInNewTab": "mở trong tab mới",
+    "lastUpdated": "Cập nhật lần cuối",
+    "updateDate": "Tháng 8 năm 2025"
   },
   "footer": {
     "copyright": "© 2025"

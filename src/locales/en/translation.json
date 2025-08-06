@@ -3,6 +3,7 @@
     "home": "Home",
     "portfolio": "Portfolio",
     "about": "About",
+    "resume": "Resume",
     "contact": "Contact"
   },
   "home": {
@@ -16,6 +17,7 @@
     "buttons": {
       "portfolio": "My Portfolio",
       "about": "About Me",
+      "resume": "View Resume",
       "contact": "Contact Me",
       "downloadCV": "Download CV"
     }
@@ -128,6 +130,15 @@
       "email": "Email",
       "phone": "Phone"
     }
+  },
+  "resume": {
+    "title": "Resume",
+    "description": "View and download my professional resume showcasing my experience, skills, and education in mobile and full-stack development.",
+    "downloadCV": "Download CV",
+    "fallbackMessage": "Can't view the PDF? Click here to",
+    "openInNewTab": "open in new tab",
+    "lastUpdated": "Last updated",
+    "updateDate": "August 2025"
   },
   "footer": {
     "copyright": "© 2025"

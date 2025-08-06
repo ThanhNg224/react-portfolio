@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { FaHome, FaBriefcase, FaUser, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaBriefcase, FaUser, FaEnvelope, FaFileAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { logotext ,socialprofils } from "../content_option";
@@ -21,6 +21,7 @@ const Headermain = () => {
     { path: "/", label: t('nav.home'), icon: FaHome },
     { path: "/portfolio", label: t('nav.portfolio'), icon: FaBriefcase },
     { path: "/about", label: t('nav.about'), icon: FaUser },
+    { path: "/resume", label: t('nav.resume'), icon: FaFileAlt },
     { path: "/contact", label: t('nav.contact'), icon: FaEnvelope }
   ];
 
