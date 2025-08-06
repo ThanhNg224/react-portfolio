@@ -13,7 +13,7 @@
       "second": "Tôi phát triển ứng dụng di động",
       "third": "Tôi xây dựng website"
     },
-    "description": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại HUST - Đại học Bách khoa Hà Nội, hiện đang làm việc tại ATIN ở Hà Nội. Niềm đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
+    "description": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại HUST - Đại học Bách Khoa Hà Nội, hiện đang làm việc tại ATIN ở Hà Nội. Niềm đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
     "buttons": {
       "portfolio": "Dự án của tôi",
       "about": "Giới thiệu",
@@ -25,7 +25,7 @@
   "about": {
     "title": "Về tôi",
     "personalTitle": "Một chút về bản thân",
-    "personalDescription": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại ĐHBKHN - Đại học Bách khoa Hà Nội (tốt nghiệp tháng 8/2025) và là Lập trình viên Full‑Stack tại ATIN từ tháng 2/2025. Từ việc phát triển ứng dụng di động Kotlin và Flutter đến xây dựng giải pháp web React/Node.js, tạo ra các dịch vụ Python/Flask nhẹ nhàng, và thậm chí là tạo mẫu trải nghiệm Unity, tôi phát triển mạnh khi giải quyết các công nghệ mới và biến ý tưởng thành sản phẩm hoàn thiện. Trọng tâm của tôi luôn là code sạch, sẵn sàng cho sản xuất, UX trực quan, và tìm ra con đường đơn giản nhất từ ý tưởng đến tác động. Khao khát những thử thách mới, tôi sẵn sàng mang tư duy thích ứng, hoàn thành công việc của mình đến bất cứ điều gì tiếp theo.",
+    "personalDescription": "Tôi là Nguyễn Phúc Thành, sinh viên năm cuối ngành Kỹ thuật Đa phương tiện tại ĐHBKHN - Đại học Bách Khoa Hà Nội (tốt nghiệp tháng 8/2025) và là Lập trình viên Full‑Stack tại ATIN từ tháng 2/2025. Từ việc phát triển ứng dụng di động Kotlin và Flutter đến xây dựng giải pháp web React/Node.js, tạo ra các dịch vụ Python/Flask nhẹ nhàng, và thậm chí là tạo mẫu trải nghiệm Unity, tôi phát triển mạnh khi giải quyết các công nghệ mới và biến ý tưởng thành sản phẩm hoàn thiện. Trọng tâm của tôi luôn là code sạch, sẵn sàng cho sản xuất, UX trực quan, và tìm ra con đường đơn giản nhất từ ý tưởng đến tác động. Khao khát những thử thách mới, tôi sẵn sàng mang tư duy thích ứng, hoàn thành công việc của mình đến bất cứ điều gì tiếp theo.",
     "sections": {
       "education": "Học vấn",
       "certifications": "Chứng chỉ",
@@ -35,7 +35,7 @@
     },
     "education": [
       {
-        "institution": "Đại học Bách khoa Hà Nội – ĐHBKHN",
+        "institution": "Đại học Bách Khoa Hà Nội – ĐHBKHN",
         "degree": "Cử nhân Kỹ thuật Đa phương tiện (Chương trình tiên tiến)",
         "period": "Tháng 10/2021 – Tháng 8/2025 (Dự kiến)"
       }
