@@ -3,8 +3,9 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { FaDownload, FaFileAlt, FaEye } from "react-icons/fa";
+import { FaDownload, FaFileAlt } from "react-icons/fa";
 
+// Set up PDF.js worker
 export const Resume = () => {
   const { t } = useTranslation();
 
@@ -15,10 +16,6 @@ export const Resume = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  };
-
-  const handleViewPDF = () => {
-    window.open(`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf`, '_blank');
   };
 
   return (
@@ -47,48 +44,30 @@ export const Resume = () => {
               <Button 
                 variant="primary" 
                 size="lg" 
-                className="download-cv-btn me-3"
+                className="download-cv-btn"
                 onClick={handleDownload}
               >
                 <FaDownload className="me-2" />
                 <span>{t('resume.downloadCV')}</span>
                 <div className="btn-glow"></div>
               </Button>
-              <Button 
-                variant="outline-primary" 
-                size="lg" 
-                className="view-pdf-btn"
-                onClick={handleViewPDF}
-              >
-                <FaEye className="me-2" />
-                {t('View Full CV')}
-              </Button>
             </div>
           </Col>
         </Row>
 
-        {/* Simple PDF Preview */}
+        {/* Inline PDF Display */}
         <Row>
           <Col lg="12">
-            <div className="simple-pdf-preview">
-              <div className="preview-header">
-                <h5 className="mb-0">
-                  <FaFileAlt className="me-2" />
-                  {t('resume.previewTitle')}
-                </h5>
-              </div>
-              <div className="preview-content">
-                <iframe
-                  src={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf#zoom=85&toolbar=0&navpanes=0&scrollbar=1`}
-                  title="Resume Preview"
-                  className="simple-pdf-iframe"
-                  frameBorder="0"
-                />
-              </div>
-              <div className="preview-footer">
-                <p className="text-muted mb-0">
-                  {t('resume.previewNote')}
-                </p>
+            <div className="pdf-container">
+              <div className="pdf-page-wrapper">
+                <div className="pdf-page">
+                  <iframe
+                    src={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf#zoom=100&toolbar=0&navpanes=0&scrollbar=0`}
+                    title="Resume PDF"
+                    className="pdf-iframe"
+                    frameBorder="0"
+                  />
+                </div>
               </div>
             </div>
           </Col>
