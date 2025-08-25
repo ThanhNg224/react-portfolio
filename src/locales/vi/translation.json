@@ -37,7 +37,7 @@
       {
         "institution": "Đại học Bách Khoa Hà Nội – ĐHBKHN",
         "degree": "Cử nhân Kỹ thuật Đa phương tiện (Chương trình tiên tiến)",
-        "period": "Tháng 10/2021 – Tháng 8/2025 (Dự kiến)"
+        "period": "Tháng 10/2021 – Tháng 8/2025"
       }
     ],
     "certifications": [
@@ -49,14 +49,14 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Lập trình viên Di động (Toàn thời gian)",
+        "jobtitle": "Lập trình viên Full-stack (Toàn thời gian)",
         "where": "ATIN (Hà Nội, Việt Nam)",
-        "date": "Tháng 2/2025 – Hiện tại"
+        "date": "Tháng 10/2024 – Hiện tại"
       },
       {
         "jobtitle": "Thực tập sinh C++",
         "where": "FPT Software (Hà Nội, Việt Nam)",
-        "date": "Tháng 9/2024 – Tháng 1/2025"
+        "date": "Tháng 6/2024 – Tháng 9/2024"
       }
     ],
     "skills": [

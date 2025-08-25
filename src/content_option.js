@@ -22,7 +22,7 @@ const introdata = {
 const dataabout = {
   title: "A bit about myself",
   aboutme:
-    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at HUST (graduating August 2025) and a Full‑Stack Developer at ATIN since February 2025. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. My focus is always on clean, production‑ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I’m ready to bring my adaptable, get‑things‑done mindset to whatever comes next.",
+    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at HUST and a Full‑Stack Developer at ATIN since July 2025. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. My focus is always on clean, production‑ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I’m ready to bring my adaptable, get‑things‑done mindset to whatever comes next.",
 };
 
 // Education entries pulled from CV
@@ -30,7 +30,7 @@ const education = [
   {
     institution: "Hanoi University of Science and Technology – HUST",
     degree: "B.Sc. in Multimedia Engineering (Advanced Program)",
-    period: "Oct 2021 – Aug 2025 (Expected)",
+    period: "2021 – 2025",
   },
 ];
 
@@ -47,12 +47,12 @@ const worktimeline = [
   {
     jobtitle: "Mobile Developer (Full‐Time)",
     where: "ATIN (Hanoi, Vietnam)",
-    date: "Feb 2025 – Present",
+    date: "September 2024 – Present",
   },
   {
     jobtitle: "C++ Trainee / Intern",
     where: "FPT Software (Hanoi, Vietnam)",
-    date: "Sep 2024 – Jan 2025",
+    date: "June 2024 – September 2024",
   },
 ];
 
