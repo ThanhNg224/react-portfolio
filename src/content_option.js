@@ -118,10 +118,10 @@ const dataportfolio = [
     link: "https://github.com/ThanhNg224/Raincaster",
   },
   {
-    img: `${process.env.PUBLIC_URL}/images/game.png`,
+    img: `${process.env.PUBLIC_URL}/images/DSoft.jpg`,
     description:
-      "ChronoLoop Platformer Game – Unity C# 2D platformer with time‐manipulation mechanics, dynamic levels, and smooth player controls.",
-    link: "https://github.com/ThanhNg224/ChronoLoop",
+      "DSoft is a Flutter-based spa & wellness management app that streamlines operations from bookings and staff scheduling to inventory, payments, and business analytics.",
+    link: "https://github.com/ThanhNg224/DSoft",
   },
   {
     img: `${process.env.PUBLIC_URL}/images/my_image_low_res.png`,
