@@ -72,6 +72,24 @@ export const ContactUs = () => {
           <meta charSet="utf-8" />
           <title>{t('contact.title')} | {t('meta.title')}</title>
           <meta name="description" content={t('meta.description')} />
+          
+          {/* Open Graph Meta Tags */}
+          <meta property="og:title" content={`${t('contact.title')} | ${t('meta.title')}`} />
+          <meta property="og:description" content={t('meta.description')} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://thanhng224.github.io/react-portfolio/contact" />
+          <meta property="og:image" content="https://thanhng224.github.io/react-portfolio/images/my_image_low_res.jpg?v=1" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content="Nguyen Phuc Thanh - Contact" />
+          <meta property="og:site_name" content="Nguyen Phuc Thanh Portfolio" />
+          
+          {/* Twitter Card Meta Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={`${t('contact.title')} | ${t('meta.title')}`} />
+          <meta name="twitter:description" content={t('meta.description')} />
+          <meta name="twitter:image" content="https://thanhng224.github.io/react-portfolio/images/my_image_low_res.jpg?v=1" />
+          <meta name="twitter:image:alt" content="Nguyen Phuc Thanh - Contact" />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
