@@ -15,14 +15,14 @@ const introdata = {
     third: "I build websites",
   },
   description:
-    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at HUST, currently slinging code at ATIN in Hanoi. My passion is creating high-quality mobile and web products.",
+    "I’m Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST, currently slinging code at ATIN in Hanoi. My passion is creating high-quality mobile and web products.",
   your_img_url: "https://avatars.githubusercontent.com/ThanhNg224",
 };
 
 const dataabout = {
   title: "A bit about myself",
   aboutme:
-    "I’m Nguyen Phuc Thanh, a Multimedia Engineering senior at HUST and a Full‑Stack Developer at ATIN since July 2025. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. My focus is always on clean, production‑ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I’m ready to bring my adaptable, get‑things‑done mindset to whatever comes next.",
+    "I’m Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST and a Full-Stack Developer at ATIN since July 2025. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. My focus is always on clean, production-ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I’m ready to bring my adaptable, get-things-done mindset to whatever comes next.",
 };
 
 // Education entries pulled from CV
@@ -92,7 +92,7 @@ const services = [
 
 const dataportfolio = [
   {
-    img: `${process.env.PUBLIC_URL}/images/Viettel.png`,
+    img: `${process.env.PUBLIC_URL}/images/Viettel.jpg`,
     description:
       "Viettel EID/Passport Verification App – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration.",
     link: "https://github.com/ThanhNg224/Viettel",
@@ -112,7 +112,7 @@ const dataportfolio = [
     link: "https://github.com/ThanhNg224/CoffeeShopProject",
   },
   {
-    img: `${process.env.PUBLIC_URL}/images/rain_caster.png`,
+    img: `${process.env.PUBLIC_URL}/images/rain_caster.jpg`,
     description:
       "Raincaster – Real‐time weather forecasting platform with SVM model in Flask backend and ReactJS front end, focused on advanced rainfall prediction.",
     link: "https://github.com/ThanhNg224/Raincaster",
@@ -124,7 +124,7 @@ const dataportfolio = [
     link: "https://github.com/ThanhNg224/DSoft",
   },
   {
-    img: `${process.env.PUBLIC_URL}/images/my_image_low_res.png`,
+    img: `${process.env.PUBLIC_URL}/images/my_image_low_res.jpg`,
     description:
       "Additional projects available on my GitHub! Feel free to explore more.",
     link: "https://github.com/ThanhNg224",
@@ -147,6 +147,7 @@ const socialprofils = {
   facebook: "https://www.facebook.com/nguyen.thanh.619149/",
   linkedin: "https://www.linkedin.com/in/nguyễn-thành-a7a8b3355/",
   twitter: "#",
+  instagram: "https://www.instagram.com/thanhng.224",
 };
 
 export {
