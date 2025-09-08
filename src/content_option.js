@@ -37,7 +37,7 @@ const education = [
 // Certifications entries pulled from CV
 const certifications = [
   {
-    name: "IELTS Academic - 7.0",
+    name: "IELTS Academic - 7.5",
     issuer: "IDP Education Co., Ltd",
     date: "Sep 2024",
   },
