@@ -52,10 +52,10 @@ export const About = () => {
 
         {/* About Section */}
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">{t('about.personalTitle')}</h3>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col lg="9" className="d-flex align-items-center">
             <div>
               <p>{t('about.personalDescription')}</p>
             </div>
@@ -64,10 +64,10 @@ export const About = () => {
 
         {/* Education Section */}
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">{t('about.sections.education')}</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="9">
             <table className="table caption-top">
               <tbody>
                 {education.map((edu, idx) => (
@@ -84,10 +84,10 @@ export const About = () => {
 
         {/* Certifications Section */}
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">{t('about.sections.certifications')}</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="9">
             <table className="table caption-top">
               <tbody>
                 {certifications.map((cert, idx) => (
@@ -104,10 +104,10 @@ export const About = () => {
 
         {/* Work Timeline Section */}
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">{t('about.sections.workTimeline')}</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="9">
             <table className="table caption-top">
               <tbody>
                 {worktimeline.map((data, i) => {
@@ -126,10 +126,10 @@ export const About = () => {
 
         {/* Skills Section */}
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">{t('about.sections.skills')}</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="9">
             {skills.map((data, i) => {
               return (
                 <div key={i}>
@@ -151,10 +151,10 @@ export const About = () => {
 
         {/* Services Section */}
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">{t('about.sections.services')}</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="9">
             {services.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>

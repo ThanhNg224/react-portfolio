@@ -13,7 +13,7 @@
       "second": "Tôi phát triển ứng dụng di động",
       "third": "Tôi xây dựng website"
     },
-  "description": "Tôi là Nguyễn Phúc Thành, cử nhân Kỹ thuật Đa phương tiện Đại học Bách Khoa Hà Nội, hiện đang làm việc tại ATIN ở Hà Nội. Niềm đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
+  "description": "Tôi là Nguyễn Phúc Thành, cử nhân Kỹ thuật Đa phương tiện Đại học Bách Khoa Hà Nội. Lập trình viên Full-Stack tập trung vào các giải pháp Android và di động. Sắp gia nhập EUp ở Hà Nội. Niềm đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
     "buttons": {
       "portfolio": "Dự án của tôi",
       "about": "Giới thiệu",
@@ -25,7 +25,7 @@
   "about": {
     "title": "Về tôi",
     "personalTitle": "Một chút về bản thân",
-  "personalDescription": "Tôi là Nguyễn Phúc Thành, cử nhân Kỹ thuật Đa phương tiện Đại học Bách Khoa Hà Nội và Lập trình viên Full-Stack tại ATIN từ tháng 2/2025. Từ việc phát triển ứng dụng di động Kotlin và Flutter đến xây dựng giải pháp web React/Node.js, tạo ra các dịch vụ Python/Flask nhẹ nhàng, và thậm chí là tạo mẫu trải nghiệm Unity, tôi phát triển mạnh khi giải quyết các công nghệ mới và biến ý tưởng thành sản phẩm hoàn thiện. Trọng tâm của tôi luôn là code sạch, sẵn sàng cho sản xuất, UX trực quan, và tìm ra con đường đơn giản nhất từ ý tưởng đến tác động. Khao khát những thử thách mới, tôi sẵn sàng mang tư duy thích ứng, hoàn thành công việc của mình đến bất cứ điều gì tiếp theo.",
+  "personalDescription": "Tôi là Nguyễn Phúc Thành, cử nhân Kỹ thuật Đa phương tiện Đại học Bách Khoa Hà Nội và Lập trình viên Full-Stack. Từ việc phát triển ứng dụng di động Kotlin và Flutter đến xây dựng giải pháp web React/Node.js, tạo ra các dịch vụ Python/Flask nhẹ nhàng, và thậm chí là tạo mẫu trải nghiệm Unity, tôi phát triển mạnh khi giải quyết các công nghệ mới và biến ý tưởng thành sản phẩm hoàn thiện. Tôi hiện đang khám phá các cơ hội tại EUp. Trọng tâm của tôi luôn là code sạch, sẵn sàng cho sản xuất, UX trực quan, và tìm ra con đường đơn giản nhất từ ý tưởng đến tác động. Khao khát những thử thách mới, tôi sẵn sàng mang tư duy thích ứng, hoàn thành công việc của mình đến bất cứ điều gì tiếp theo.",
     "sections": {
       "education": "Học vấn",
       "certifications": "Chứng chỉ",
@@ -49,12 +49,17 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Lập trình viên Full-stack (Toàn thời gian)",
-        "where": "ATIN (Hà Nội, Việt Nam)",
-        "date": "Tháng 10/2024 – Hiện tại"
+        "jobtitle": "Lập trình viên Android",
+        "where": "Negaxy Studio (Hà Nội, Việt Nam)",
+        "date": "Tháng 9/2025 – Tháng 10/2025"
       },
       {
-        "jobtitle": "Thực tập sinh C++",
+        "jobtitle": "Lập trình viên Fullstack",
+        "where": "ATIN (Hà Nội, Việt Nam)",
+        "date": "Tháng 9/2024 – Tháng 9/2025"
+      },
+      {
+        "jobtitle": "Chương trình đào tạo C++",
         "where": "FPT Software (Hà Nội, Việt Nam)",
         "date": "Tháng 6/2024 – Tháng 9/2024"
       }

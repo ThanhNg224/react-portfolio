@@ -8,21 +8,21 @@ const meta = {
 };
 
 const introdata = {
-  title: "I’m Thanh Nguyen",
+  title: "I'm Thanh Nguyen",
   animated: {
     first: "I love coding",
     second: "I develop mobile apps",
     third: "I build websites",
   },
   description:
-    "I’m Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST, currently slinging code at ATIN in Hanoi. My passion is creating high-quality mobile and web products.",
+    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST. Full-stack developer focused on Android and mobile solutions. Joining EUp in Hanoi. My passion is creating high-quality mobile and web products.",
   your_img_url: "https://avatars.githubusercontent.com/ThanhNg224",
 };
 
 const dataabout = {
   title: "A bit about myself",
   aboutme:
-    "I’m Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST and a Full-Stack Developer at ATIN since July 2025. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. My focus is always on clean, production-ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I’m ready to bring my adaptable, get-things-done mindset to whatever comes next.",
+    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST and a Full-Stack Developer. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. I'm currently exploring opportunities at EUp. My focus is always on clean, production-ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I'm ready to bring my adaptable, get-things-done mindset to whatever comes next.",
 };
 
 // Education entries pulled from CV
@@ -45,12 +45,17 @@ const certifications = [
 
 const worktimeline = [
   {
-    jobtitle: "Mobile Developer (Full‐Time)",
-    where: "ATIN (Hanoi, Vietnam)",
-    date: "September 2024 – Present",
+    jobtitle: "Android Developer (App Monetization & UI Focus)",
+    where: "Negaxy Studio (Hanoi, Vietnam)",
+    date: "September 2025 – October 2025",
   },
   {
-    jobtitle: "C++ Trainee / Intern",
+    jobtitle: "Fullstack Developer (Mobile Focus)",
+    where: "ATIN – Advanced Technology Innovations (Hanoi, Vietnam)",
+    date: "September 2024 – September 2025",
+  },
+  {
+    jobtitle: "C++ Training Program",
     where: "FPT Software (Hanoi, Vietnam)",
     date: "June 2024 – September 2024",
   },

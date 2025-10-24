@@ -2,6 +2,19 @@
     margin-bottom: calc(3rem + 5.128vw)
 }
 
+.table {
+    width: 100%;
+    table-layout: auto;
+}
+
+.table th, .table td {
+    white-space: nowrap;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
 .table td,
 .table th {
     color: var(--text-color);

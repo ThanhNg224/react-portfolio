@@ -13,7 +13,7 @@
       "second": "I develop mobile apps",
       "third": "I build websites"
     },
-  "description": "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST - Hanoi University of Science and Technology, currently slinging code at ATIN in Hanoi. My passion is creating high-quality mobile and web products.",
+  "description": "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST - Hanoi University of Science and Technology. Full-stack developer focused on Android and mobile solutions. Joining EUp in Hanoi. My passion is creating high-quality mobile and web products.",
     "buttons": {
       "portfolio": "My Portfolio",
       "about": "About Me",
@@ -25,7 +25,7 @@
   "about": {
     "title": "About me",
     "personalTitle": "A bit about myself",
-  "personalDescription": "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST - Hanoi University of Science and Technology and a Full-Stack Developer at ATIN. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. My focus is always on clean, production-ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I'm ready to bring my adaptable, get-things-done mindset to whatever comes next.",
+  "personalDescription": "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST - Hanoi University of Science and Technology and a Full-Stack Developer. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. I'm currently exploring opportunities at EUp. My focus is always on clean, production-ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I'm ready to bring my adaptable, get-things-done mindset to whatever comes next.",
     "sections": {
       "education": "Education",
       "certifications": "Certifications",
@@ -49,12 +49,17 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Full Stack Developer (Full‐Time)",
-        "where": "ATIN (Hanoi, Vietnam)",
-        "date": "September 2024 – Present"
+        "jobtitle": "Android Developer (App Monetization & UI Focus)",
+        "where": "Negaxy Studio (Hanoi, Vietnam)",
+        "date": "September 2025 – October 2025"
       },
       {
-        "jobtitle": "C++ Trainee / Intern",
+        "jobtitle": "Fullstack Developer (Mobile Focus)",
+        "where": "ATIN – Advanced Technology Innovations (Hanoi, Vietnam)",
+        "date": "September 2024 – September 2025"
+      },
+      {
+        "jobtitle": "C++ Training Program",
         "where": "FPT Software (Hanoi, Vietnam)",
         "date": "June 2024 – September 2024"
       }
