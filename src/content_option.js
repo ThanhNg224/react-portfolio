@@ -15,7 +15,7 @@ const introdata = {
     third: "I build websites",
   },
   description:
-    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST. Full-stack developer focused on Android and mobile solutions. Joining EUp in Hanoi. My passion is creating high-quality mobile and web products.",
+    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST. Full-stack developer focused on Android and mobile solutions. Working at EUp in Hanoi. My passion is creating high-quality mobile and web products.",
   your_img_url: "https://avatars.githubusercontent.com/ThanhNg224",
 };
 
@@ -47,7 +47,7 @@ const worktimeline = [
   {
     jobtitle: "Android Developer (High-Scale App Development & Product Optimization)",
     where: "eUp Technology Joint Stock Company (eUp Group) (Hanoi, Vietnam)",
-    date: "June 2025 – October 2025",
+    date: "June 2025 – Present",
   },
   {
     jobtitle: "Fullstack Developer (Mobile Focus)",

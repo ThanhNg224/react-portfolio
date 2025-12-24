@@ -13,7 +13,7 @@
       "second": "Tôi phát triển ứng dụng di động",
       "third": "Tôi xây dựng website"
     },
-  "description": "Tôi là Nguyễn Phúc Thành, cử nhân Kỹ thuật Đa phương tiện Đại học Bách Khoa Hà Nội. Lập trình viên Full-Stack tập trung vào các giải pháp Android và di động. Sắp gia nhập EUp ở Hà Nội. Niềm đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
+  "description": "Tôi là Nguyễn Phúc Thành, cử nhân Kỹ thuật Đa phương tiện Đại học Bách Khoa Hà Nội. Lập trình viên Full-Stack tập trung vào các giải pháp Android và di động. Đang làm việc tại EUp ở Hà Nội. Niềm đam mê của tôi là tạo ra các sản phẩm di động và web chất lượng cao.",
     "buttons": {
       "portfolio": "Dự án của tôi",
       "about": "Giới thiệu",
@@ -50,17 +50,17 @@
     "workTimeline": [
       {
         "jobtitle": "Lập trình viên Android (Phát triển Ứng dụng Quy mô Lớn & Tối ưu Sản phẩm)",
-        "where": "Công ty Cổ phần Công nghệ eUp (eUp Group) (Hà Nội, Việt Nam)",
-        "date": "Tháng 6/2025 – Tháng 10/2025"
+        "where": "Công ty Cổ phần Công nghệ eUp (eUp Group) (Hà Nội)",
+        "date": "Tháng 6/2025 – Hiện tại"
       },
       {
         "jobtitle": "Lập trình viên Fullstack (Tập trung Mobile)",
-        "where": "ATIN – Advanced Technology Innovations (Hà Nội, Việt Nam)",
+        "where": "ATIN – Advanced Technology Innovations (Hà Nội)",
         "date": "Tháng 7/2024 – Tháng 6/2025"
       },
       {
         "jobtitle": "Chương trình đào tạo C++",
-        "where": "FPT Software (Thực tập đào tạo) (Hà Nội, Việt Nam)",
+        "where": "FPT Software (Thực tập đào tạo) (Hà Nội)",
         "date": "Tháng 5/2024 – Tháng 7/2024"
       }
     ],
