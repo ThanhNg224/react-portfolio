@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "portfolio": "Portfolio",
+    "portfolio": "Projects",
     "about": "About",
     "resume": "Resume",
     "contact": "Contact"
@@ -9,127 +9,127 @@
   "home": {
     "title": "I'm Thanh Nguyen",
     "animated": {
-      "first": "I love coding",
-      "second": "I develop mobile apps",
-      "third": "I build websites"
+      "first": "I enjoy building software",
+      "second": "I develop mobile applications",
+      "third": "I build real-world web products"
     },
-  "description": "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST - Hanoi University of Science and Technology. Full-stack developer focused on Android and mobile solutions. Working at EUp in Hanoi. My passion is creating high-quality mobile and web products.",
+    "description": "I'm Nguyen Phuc Thanh, a Multimedia Engineering graduate from Hanoi University of Science and Technology. I mainly work with Android and also handle full-stack tasks when needed. My goal is simple: build products that run reliably, are easy to maintain, and solve real problems with clear user experience.",
     "buttons": {
-      "portfolio": "My Portfolio",
-      "about": "About Me",
-      "resume": "View Resume",
-      "contact": "Contact Me",
+      "portfolio": "View projects",
+      "about": "About me",
+      "resume": "View resume",
+      "contact": "Contact",
       "downloadCV": "Download CV"
     }
   },
   "about": {
     "title": "About me",
     "personalTitle": "A bit about myself",
-  "personalDescription": "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST - Hanoi University of Science and Technology and a Full-Stack Developer. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. I'm currently exploring opportunities at EUp. My focus is always on clean, production-ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I'm ready to bring my adaptable, get-things-done mindset to whatever comes next.",
+    "personalDescription": "I'm Nguyen Phuc Thanh, an Android / Full-stack developer. I've worked on Android apps using Kotlin, built applications with Flutter, and developed web systems with React and Node.js. I also build lightweight services with Python/Flask when needed. In addition, I have experience with image processing, OCR, and a few Unity prototypes at an experimental level.\n\nIn my work, I care about clean architecture, readable code, and systems that are easy to maintain and extend. When facing new problems, I usually aim for simple and solid solutions that can survive long-term production use. I prefer projects with real constraints—performance, logic, or user flow—rather than projects that only look good as demos.",
     "sections": {
       "education": "Education",
       "certifications": "Certifications",
-      "workTimeline": "Work Timeline",
+      "workTimeline": "Work experience",
       "skills": "Skills",
       "services": "Services"
     },
     "education": [
       {
-        "institution": "Hanoi University of Science and Technology – HUST",
+        "institution": "Hanoi University of Science and Technology (HUST)",
         "degree": "B.Sc. in Multimedia Engineering (Advanced Program)",
         "period": "Oct 2021 – Aug 2025"
       }
     ],
     "certifications": [
       {
-        "name": "IELTS Academic - 7.5",
-        "issuer": "IDP Education Co., Ltd",
+        "name": "IELTS Academic – 7.5",
+        "issuer": "IDP Education",
         "date": "Sep 2024"
       }
     ],
     "workTimeline": [
       {
-        "jobtitle": "Android Developer (High-Scale App Development & Product Optimization)",
-        "where": "eUp Technology Joint Stock Company (eUp Group) (Hanoi)",
-        "date": "June 2025 – Present"
+        "jobtitle": "Android Developer (Large-scale app development & product optimization)",
+        "where": "eUp Technology Joint Stock Company (Hanoi)",
+        "date": "Jun 2025 – Present"
       },
       {
-        "jobtitle": "Fullstack Developer (Mobile Focus)",
+        "jobtitle": "Full-stack Developer (Mobile-focused)",
         "where": "ATIN – Advanced Technology Innovations (Hanoi)",
-        "date": "July 2024 – June 2025"
+        "date": "Jul 2024 – Jun 2025"
       },
       {
         "jobtitle": "C++ Training Program",
         "where": "FPT Software (Training Internship) (Hanoi)",
-        "date": "May 2024 – July 2024"
+        "date": "May 2024 – Jul 2024"
       }
     ],
     "skills": [
       { "name": "Kotlin & Android", "value": 80 },
       { "name": "Flutter & Dart", "value": 70 },
       { "name": "React Native", "value": 65 },
-      { "name": "JavaScript (ReactJS/NextJS)", "value": 75 },
+      { "name": "JavaScript (ReactJS / NextJS)", "value": 75 },
       { "name": "NodeJS & Express", "value": 70 },
-      { "name": "Python (Flask, scikit‐learn, OpenCV)", "value": 65 },
+      { "name": "Python (Flask, scikit-learn, OpenCV)", "value": 65 },
       { "name": "SQL & MySQL", "value": 50 },
       { "name": "Unity & C#", "value": 50 }
     ],
     "services": [
       {
-        "title": "Mobile App Development",
-        "description": "Building production‐ready mobile apps using Flutter/Dart or native Android (Kotlin) with integrations like ML Kit, Firebase, and backend APIs."
+        "title": "Mobile application development",
+        "description": "Building Android (Kotlin) or Flutter applications for real-world use cases, with backend/API integration, Firebase, ML Kit, and third-party SDKs when needed."
       },
       {
-        "title": "Full‐Stack Web Development",
-        "description": "Creating responsive web apps with ReactJS/NextJS, Tailwind CSS, and NodeJS/Express backends (or Flask) with MySQL."
+        "title": "Full-stack web development",
+        "description": "Developing web applications with React / NextJS and NodeJS or Flask backends, focusing on stability, maintainability, and scalability."
       },
       {
-        "title": "Machine Learning Integration",
-        "description": "Embedding ML models (e.g., scikit‐learn SVM, OpenCV image processing) into apps for features like face detection, OCR, and data‐driven insights."
+        "title": "Machine Learning integration",
+        "description": "Integrating ML models and image processing features such as OCR, face detection/recognition, and data analysis into mobile and web applications."
       },
       {
-        "title": "UI/UX & Prototyping",
-        "description": "Designing clean, user‐centric interfaces, wireframes, and prototypes to ensure high engagement and usability."
+        "title": "UI/UX & prototyping",
+        "description": "Designing clear, user-friendly interfaces and building quick prototypes to validate ideas before full implementation."
       }
     ]
   },
   "portfolio": {
-    "title": "Portfolio",
+    "title": "Projects",
     "viewProject": "view project",
     "contactForCode": "contact for private code",
     "projects": [
       {
-        "description": "Viettel EID/Passport Verification App – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration."
+        "description": "Viettel EID/Passport verification app – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration."
       },
       {
-        "description": "A full-stack platform designed to manage and update Android-based Face Terminal machines. The system enables real-time device monitoring, access log viewing, and remote APK updates."
+        "description": "A full-stack platform for managing Android-based Face Terminal devices, including real-time device monitoring, access logs, and remote APK updates."
       },
       {
-        "description": "Coffee Shop Website & Android App – Full‐stack project (ReactJS/NodeJS/MySQL + React Native) with user/admin roles, product browsing, and feedback systems."
+        "description": "Coffee shop website & mobile app – Full-stack project (React/Node/MySQL + React Native) with user/admin roles, product browsing, and feedback features."
       },
       {
-        "description": "Raincaster – Real‐time weather forecasting platform with SVM model in Flask backend and ReactJS front end, focused on advanced rainfall prediction."
+        "description": "Raincaster – Real-time weather forecasting platform using an SVM model with a Flask backend and React frontend, focused on rainfall prediction."
       },
       {
-        "description": "DSoft is a Flutter-based spa & wellness management app that streamlines operations from bookings and staff scheduling to inventory, payments, and business analytics."
+        "description": "DSoft – A Flutter-based spa & wellness management app covering booking, staff scheduling, inventory, payments, and basic analytics."
       },
       {
-        "description": "Additional projects available on my GitHub! Feel free to explore more."
+        "description": "More projects are available on my GitHub — feel free to explore."
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "description": "Hit me up if you want to collab on a mobile or web project, need ML integration, or just want to chat about coding.",
+    "description": "If you want to collaborate on a mobile or web project, need ML integration, or just want to talk about development work, feel free to reach out.",
     "form": {
-      "name": "Your Name",
-      "email": "Your Email",
+      "name": "Your name",
+      "email": "Your email",
       "subject": "Subject",
       "message": "Message",
       "send": "Send",
       "sending": "Sending...",
       "success": "Message sent successfully!",
-      "error": "Failed to send message. Please try again."
+      "error": "Failed to send the message. Please try again."
     },
     "info": {
       "email": "Email",
@@ -138,18 +138,18 @@
   },
   "resume": {
     "title": "Resume",
-    "description": "View and download my professional resume showcasing my experience, skills, and education in mobile and full-stack development.",
+    "description": "View and download my resume, highlighting my experience, skills, and education in mobile and full-stack development.",
     "downloadCV": "Download CV",
     "fallbackMessage": "Can't view the PDF? Click here to",
-    "openInNewTab": "open in new tab",
+    "openInNewTab": "open in a new tab",
     "lastUpdated": "Last updated",
-    "updateDate": "August 2025"
+    "updateDate": "Aug 2025"
   },
   "footer": {
     "copyright": "© 2025"
   },
   "meta": {
-    "title": "Nguyen Phuc Thanh - Mobile & Full Stack Developer",
-    "description": "I'm Nguyen Phuc Thanh, a mobile and full-stack developer from Hanoi. I build innovative apps and web solutions."
+    "title": "Nguyen Phuc Thanh - Mobile & Full-stack Developer",
+    "description": "Portfolio of Nguyen Phuc Thanh, a Hanoi-based Android and full-stack developer focused on clean architecture, stable products, and practical user experience."
   }
 }
