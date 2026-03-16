@@ -5,14 +5,69 @@
 .table {
     width: 100%;
     table-layout: auto;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .table th, .table td {
-    white-space: nowrap;
+    white-space: normal;
     padding: 1rem 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
     vertical-align: middle;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+/* Keep time ranges compact while allowing role/company text to wrap */
+.table td:last-child {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    .table td:last-child {
+        font-size: 0.9rem;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table th,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 0.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 8px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    [data-theme="light"] .table tr {
+        border-color: rgba(0, 0, 0, 0.15);
+        background: rgba(0, 0, 0, 0.02);
+    }
+
+    .table th {
+        font-weight: 700;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    [data-theme="light"] .table th {
+        border-bottom-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .table td:last-child {
+        white-space: normal;
+    }
 }
 
 .table td,

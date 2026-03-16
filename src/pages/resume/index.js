@@ -4,10 +4,14 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { FaDownload, FaFileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { isCvFresh } from "../../utils/cvFreshness";
 
 // Set up PDF.js worker
 export const Resume = () => {
   const { t } = useTranslation();
+  const updateDate = t("resume.updateDate");
+  const isCvUpToDate = isCvFresh(updateDate);
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -59,11 +63,16 @@ export const Resume = () => {
                 size="lg" 
                 className="download-cv-btn"
                 onClick={handleDownload}
+                disabled={!isCvUpToDate}
+                title={!isCvUpToDate ? t("resume.outdatedDownloadHint") : ""}
               >
                 <FaDownload className="me-2" />
                 <span>{t('resume.downloadCV')}</span>
                 <div className="btn-glow"></div>
               </Button>
+              {!isCvUpToDate && (
+                <p className="resume-action-note">{t("resume.outdatedDownloadHint")}</p>
+              )}
             </div>
           </Col>
         </Row>
@@ -71,29 +80,45 @@ export const Resume = () => {
         {/* Inline PDF Display */}
         <Row>
           <Col lg="12">
-            <div className="pdf-container">
-              <div className="pdf-page-wrapper">
-                <div className="pdf-page">
-                  <iframe
-                    src={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf#zoom=100&toolbar=0&navpanes=0&scrollbar=0`}
-                    title="Resume PDF"
-                    className="pdf-iframe"
-                    frameBorder="0"
-                  />
+            {isCvUpToDate ? (
+              <div className="pdf-container">
+                <div className="pdf-page-wrapper">
+                  <div className="pdf-page">
+                    <iframe
+                      src={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf#zoom=100&toolbar=0&navpanes=0&scrollbar=0`}
+                      title="Resume PDF"
+                      className="pdf-iframe"
+                      frameBorder="0"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              <div className="cv-stale-card">
+                <div className="cv-stale-badge">{t("resume.previewStatusLabel")}</div>
+                <h3>{t("resume.outdatedPreviewTitle")}</h3>
+                <p>{t("resume.outdatedPreviewDescription")}</p>
+                <Link to="/contact" className="cv-stale-contact-link">
+                  {t("resume.contactForLatestCv")}
+                </Link>
+                <div className="cv-stale-meta">
+                  {t("resume.lastUpdated")}: {updateDate}
+                </div>
+              </div>
+            )}
           </Col>
         </Row>
 
         {/* Additional Info */}
-        <Row className="mt-4 mb-5 pb-5">
-          <Col lg="12" className="text-center">
-            <p className="resume-info">
-              {t('resume.lastUpdated')}: {t('resume.updateDate')}
-            </p>
-          </Col>
-        </Row>
+        {isCvUpToDate && (
+          <Row className="mt-4 mb-5 pb-5">
+            <Col lg="12" className="text-center">
+              <p className="resume-info">
+                {t("resume.lastUpdated")}: {updateDate}
+              </p>
+            </Col>
+          </Row>
+        )}
       </Container>
     </HelmetProvider>
   );

@@ -61,8 +61,8 @@ section {
 
 /* General intro paragraph styling to prevent word breaking */
 .intro_sec .intro p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-wrap: normal;
+    overflow-wrap: normal;
     hyphens: none;
     word-break: normal;
     text-align: left;
@@ -126,8 +126,8 @@ section {
         line-height: 1.5;
         margin-bottom: 25px;
         padding: 0 10px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        word-wrap: normal;
+        overflow-wrap: normal;
         hyphens: none;
         word-break: normal;
         text-align: justify;
@@ -411,6 +411,12 @@ section {
     display: inline-block;
 }
 
+.cv-status-note {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-color-2);
+}
+
 #button_cv {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: #fff;
@@ -453,6 +459,20 @@ section {
     display: none;
 }
 
+#button_cv.cv-download-disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: grayscale(0.3);
+    transform: none;
+    box-shadow: none;
+}
+
+#button_cv.cv-download-disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
 /* Remove margin from CV button */
 #button_cv {
     margin-right: 0;
@@ -468,15 +488,15 @@ section {
     /* Fix container overflow */
     .intro_sec .intro {
         overflow: hidden;
-        word-wrap: break-word;
+        word-wrap: normal;
     }
     
     /* Improve typewriter text wrapping */
     .intro_sec .intro h1,
     .intro_sec .intro .fluidz-48 {
-        word-break: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
+        word-break: normal;
+        overflow-wrap: normal;
+        hyphens: none;
     }
     
     /* Stack layout vertically on mobile */
@@ -517,8 +537,8 @@ section {
     .intro_sec .intro p {
         font-size: 13px;
         padding: 0 5px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        word-wrap: normal;
+        overflow-wrap: normal;
         hyphens: none;
         word-break: normal;
         text-align: justify;

@@ -3,40 +3,41 @@
     "home": "Trang chủ",
     "portfolio": "Dự án",
     "about": "Giới thiệu",
-    "resume": "Hồ sơ",
+    "resume": "CV",
     "contact": "Liên hệ"
   },
   "home": {
-    "title": "Tôi là Thành Nguyễn",
+    "title": "Mình là Thành",
     "animated": {
-      "first": "Tôi thích lập trình",
-      "second": "Tôi phát triển ứng dụng di động",
-      "third": "Tôi xây dựng sản phẩm web"
+      "first": "Mình thích làm phần mềm",
+      "second": "Mình phát triển ứng dụng di động",
+      "third": "Mình xây dựng các sản phẩm web"
     },
-    "description": "Mình là Nguyễn Phúc Thành, tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách Khoa Hà Nội. Mình làm Android là chính và có làm thêm full-stack khi cần. Mục tiêu của mình đơn giản: làm sản phẩm chạy ổn, code dễ maintain, UX rõ ràng và giải quyết được bài toán thật.",
+    "description": "Mình là Nguyễn Phúc Thành, tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách Khoa Hà Nội. Công việc chính của mình là phát triển ứng dụng Android, nhưng khi cần mình cũng làm thêm cả phần web hoặc backend. Điều mình thích nhất là xây dựng những sản phẩm chạy ổn định, dễ maintain và thực sự có người dùng.",
+    "cvOutdatedHint": "CV đang được cập nhật lại. Nếu bạn cần bản mới nhất, cứ liên hệ trực tiếp với mình nhé.",
     "buttons": {
       "portfolio": "Xem dự án",
-      "about": "Về tôi",
-      "resume": "Xem hồ sơ",
+      "about": "Về mình",
+      "resume": "Xem CV",
       "contact": "Liên hệ",
       "downloadCV": "Tải CV"
     }
   },
   "about": {
-    "title": "Về tôi",
+    "title": "Về mình",
     "personalTitle": "Một chút về mình",
-    "personalDescription": "Mình là Nguyễn Phúc Thành, lập trình viên Android / Full-stack. Mình đã làm các app Android bằng Kotlin, làm Flutter, và build web với React/Node.js; đôi lúc cũng dựng service nhỏ bằng Python/Flask. Ngoài ra mình từng đụng tới xử lý ảnh/OCR và vài prototype Unity ở mức thử nghiệm.\n\nTrong công việc, mình ưu tiên kiến trúc rõ ràng, code sạch, dễ đọc, dễ mở rộng. Mình thích các dự án có yêu cầu thực tế, cần tối ưu luồng, logic hoặc hiệu năng—làm cho “dùng được ngoài đời” chứ không chỉ demo cho đẹp.",
+    "personalDescription": "Mình là Nguyễn Phúc Thành, một lập trình viên Android và full-stack đang làm việc tại Hà Nội. Phần lớn thời gian mình phát triển ứng dụng Android bằng Kotlin, nhưng cũng từng làm app bằng Flutter và xây dựng hệ thống web với React và Node.js. Khi dự án cần backend đơn giản, mình thường dựng service bằng Python và Flask cho nhanh và gọn.\n\nTrong quá trình làm việc, mình cũng từng thử nghiệm với một số mảng như xử lý ảnh, OCR và vài prototype nhỏ bằng Unity. Mình thích khám phá công nghệ mới, nhưng điều mình quan tâm nhất vẫn là xây dựng phần mềm chạy ổn định trong môi trường thực tế.\n\nTrong công việc, mình khá chú trọng vào kiến trúc hệ thống, code dễ đọc và khả năng maintain lâu dài. Khi gặp một bài toán mới, mình thường cố gắng tìm cách giải quyết đơn giản nhưng chắc chắn, để hệ thống có thể chạy ổn định lâu dài trong production. Mình đặc biệt thích những dự án có bài toán thật — ví dụ như tối ưu hiệu năng, xử lý logic phức tạp hoặc thiết kế luồng người dùng — thay vì những dự án chỉ làm để demo.",
     "sections": {
       "education": "Học vấn",
       "certifications": "Chứng chỉ",
-      "workTimeline": "Quá trình làm việc",
+      "workTimeline": "Kinh nghiệm",
       "skills": "Kỹ năng",
-      "services": "Dịch vụ"
+      "services": "Những gì mình có thể làm"
     },
     "education": [
       {
         "institution": "Đại học Bách Khoa Hà Nội (HUST)",
-        "degree": "Cử nhân Kỹ thuật Đa phương tiện (Chương trình tiên tiến)",
+        "degree": "Kỹ thuật Đa phương tiện (Chương trình tiên tiến)",
         "period": "10/2021 – 08/2025"
       }
     ],
@@ -49,18 +50,18 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Lập trình viên Android (Phát triển ứng dụng quy mô lớn & tối ưu sản phẩm)",
-        "where": "Công ty Cổ phần Công nghệ eUp (eUp Group) (Hà Nội)",
+        "jobtitle": "Android Developer",
+        "where": "eUp Technology (Hà Nội)",
         "date": "06/2025 – Hiện tại"
       },
       {
-        "jobtitle": "Lập trình viên Full-stack (tập trung Mobile)",
-        "where": "ATIN – Advanced Technology Innovations (Hà Nội)",
+        "jobtitle": "Full-stack Developer (Mobile-focused)",
+        "where": "ATIN – Advanced Technology Innovations",
         "date": "07/2024 – 06/2025"
       },
       {
-        "jobtitle": "Chương trình đào tạo C++",
-        "where": "FPT Software (Thực tập đào tạo) (Hà Nội)",
+        "jobtitle": "C++ Training Program",
+        "where": "FPT Software",
         "date": "05/2024 – 07/2024"
       }
     ],
@@ -68,7 +69,7 @@
       { "name": "Kotlin & Android", "value": 80 },
       { "name": "Flutter & Dart", "value": 70 },
       { "name": "React Native", "value": 65 },
-      { "name": "JavaScript (ReactJS/NextJS)", "value": 75 },
+      { "name": "JavaScript (ReactJS / NextJS)", "value": 75 },
       { "name": "NodeJS & Express", "value": 70 },
       { "name": "Python (Flask, scikit-learn, OpenCV)", "value": 65 },
       { "name": "SQL & MySQL", "value": 50 },
@@ -77,50 +78,50 @@
     "services": [
       {
         "title": "Phát triển ứng dụng di động",
-        "description": "Xây dựng ứng dụng Android (Kotlin) hoặc Flutter cho nhu cầu thực tế, tích hợp backend/API, Firebase, ML Kit và các SDK liên quan."
+        "description": "Xây dựng ứng dụng Android (Kotlin) hoặc Flutter cho các nhu cầu thực tế, tích hợp API, Firebase hoặc các dịch vụ backend khi cần."
       },
       {
-        "title": "Phát triển web full-stack",
-        "description": "Xây dựng web với ReactJS/NextJS và backend NodeJS/Express (hoặc Flask), ưu tiên ổn định, dễ bảo trì và dễ mở rộng."
+        "title": "Phát triển web",
+        "description": "Xây dựng web với React hoặc Next.js, kết hợp backend Node.js hoặc Flask, tập trung vào sự ổn định và dễ maintain."
       },
       {
-        "title": "Tích hợp Machine Learning",
-        "description": "Tích hợp mô hình ML/xử lý ảnh (OCR, face detection/recognition, phân tích dữ liệu) vào app để tạo ra tính năng có giá trị thật."
+        "title": "Tích hợp AI / xử lý ảnh",
+        "description": "Tích hợp các tính năng như OCR, nhận diện khuôn mặt hoặc xử lý ảnh vào ứng dụng mobile hoặc web."
       },
       {
-        "title": "UI/UX & prototype",
-        "description": "Thiết kế giao diện rõ ràng, dễ dùng và làm prototype nhanh để test ý tưởng trước khi triển khai full."
+        "title": "Prototype & UI",
+        "description": "Thiết kế giao diện rõ ràng, dễ dùng và làm prototype nhanh để kiểm chứng ý tưởng trước khi phát triển đầy đủ."
       }
     ]
   },
   "portfolio": {
     "title": "Dự án",
     "viewProject": "xem dự án",
-    "contactForCode": "liên hệ để xem code riêng tư",
+    "contactForCode": "liên hệ để xem code",
     "projects": [
       {
-        "description": "Ứng dụng xác minh EID/Hộ chiếu Viettel – Kiosk Android có liveness, đọc NFC, OCR (MRZ) và tích hợp thanh toán."
+        "description": "Ứng dụng xác minh EID/Hộ chiếu Viettel – kiosk Android có liveness detection, đọc NFC, OCR (MRZ) và tích hợp thanh toán."
       },
       {
-        "description": "Nền tảng full-stack quản lý máy Face Terminal Android: giám sát trạng thái thiết bị theo thời gian thực, xem log truy cập và cập nhật APK từ xa."
+        "description": "Nền tảng quản lý thiết bị Face Terminal Android: theo dõi trạng thái thiết bị, xem log truy cập và cập nhật APK từ xa."
       },
       {
-        "description": "Coffee Shop Website & Mobile App – Dự án full-stack (React/Node/MySQL + React Native) có phân quyền user/admin, duyệt sản phẩm và feedback."
+        "description": "Website và ứng dụng mobile cho quán cà phê – dự án full-stack (React / Node / MySQL + React Native) với hệ thống quản lý sản phẩm và người dùng."
       },
       {
-        "description": "Raincaster – Nền tảng dự báo thời tiết theo thời gian thực: Flask backend + React frontend, dùng mô hình SVM cho dự báo mưa."
+        "description": "Raincaster – nền tảng dự báo thời tiết sử dụng mô hình SVM với Flask backend và React frontend."
       },
       {
-        "description": "DSoft – Ứng dụng quản lý spa & wellness bằng Flutter: đặt lịch, lịch nhân sự, tồn kho, thanh toán và thống kê cơ bản."
+        "description": "DSoft – ứng dụng quản lý spa viết bằng Flutter: đặt lịch, quản lý nhân sự, tồn kho và thanh toán."
       },
       {
-        "description": "Mình còn một số dự án khác trên GitHub — bạn có thể xem thêm ở đó."
+        "description": "Ngoài ra mình còn một số dự án khác trên GitHub — bạn có thể xem thêm ở đó."
       }
     ]
   },
   "contact": {
     "title": "Liên hệ",
-    "description": "Nếu bạn muốn hợp tác dự án mobile/web, cần tích hợp ML, hoặc chỉ muốn trao đổi về công việc dev thì cứ nhắn mình.",
+    "description": "Nếu bạn muốn trao đổi về một dự án, hợp tác phát triển sản phẩm, hoặc đơn giản là nói chuyện về công nghệ và lập trình, cứ thoải mái liên hệ với mình.",
     "form": {
       "name": "Tên của bạn",
       "email": "Email của bạn",
@@ -128,8 +129,8 @@
       "message": "Nội dung",
       "send": "Gửi",
       "sending": "Đang gửi...",
-      "success": "Gửi tin nhắn thành công!",
-      "error": "Gửi thất bại. Vui lòng thử lại."
+      "success": "Tin nhắn đã được gửi!",
+      "error": "Có lỗi xảy ra. Vui lòng thử lại."
     },
     "info": {
       "email": "Email",
@@ -137,19 +138,24 @@
     }
   },
   "resume": {
-    "title": "Hồ sơ",
-    "description": "Xem và tải CV của mình (kinh nghiệm, kỹ năng và học vấn trong mảng mobile và full-stack).",
+    "title": "CV",
+    "description": "Bạn có thể xem hoặc tải CV của mình để biết thêm chi tiết về kinh nghiệm làm việc và kỹ năng.",
     "downloadCV": "Tải CV",
     "fallbackMessage": "Nếu không xem được PDF, bấm vào đây để",
     "openInNewTab": "mở trong tab mới",
     "lastUpdated": "Cập nhật lần cuối",
-    "updateDate": "08/2025"
+    "updateDate": "08/2025",
+    "outdatedPreviewTitle": "CV này đã cũ",
+    "outdatedPreviewDescription": "Phần xem trước CV đang được ẩn vì CV đã cũ. Nếu bạn cần bản mới nhất, hãy liên hệ trực tiếp với mình.",
+    "previewStatusLabel": "Đang cập nhật",
+    "contactForLatestCv": "Liên hệ để nhận CV mới",
+    "outdatedDownloadHint": "CV này đã cũ nên hiện tại không thể tải xuống."
   },
   "footer": {
     "copyright": "© 2025"
   },
   "meta": {
     "title": "Nguyễn Phúc Thành - Lập trình viên Mobile & Full-stack",
-    "description": "Portfolio của Nguyễn Phúc Thành (Hà Nội) – tập trung Android và full-stack, ưu tiên code sạch, sản phẩm ổn định và UX rõ ràng."
+    "description": "Portfolio của Nguyễn Phúc Thành — lập trình viên Android và full-stack tại Hà Nội."
   }
 }

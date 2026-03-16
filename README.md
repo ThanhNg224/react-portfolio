@@ -1,18 +1,50 @@
-### Description
+# React Portfolio
 
-A simple portfolio template for developer/designers built with React. 
+Simple personal portfolio built with React.
 
-### Features
+## Quick Start
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
+1. Install dependencies
 
-### Social Media Preview
+```bash
+pnpm install
+```
 
-This portfolio includes comprehensive Open Graph and Twitter Card meta tags for rich social media previews. 
+2. Run locally
+
+```bash
+pnpm start
+```
+
+3. Open http://localhost:3000
+
+Note: `pnpm run dev` does not work here because this project has no `dev` script.
+
+## Scripts
+
+- `pnpm start` - start development server
+- `pnpm run build` - create production build
+- `pnpm test` - run tests
+- `pnpm run deploy` - deploy to GitHub Pages
+
+## CV Update (Important)
+
+This project checks `resume.updateDate` to decide if CV is fresh.
+
+- If older than 1 month: resume preview is hidden and home download button is disabled.
+
+When updating CV:
+
+1. Replace `public/HUST_NguyenPhucThanh_CV.pdf`
+2. Update `resume.updateDate` in:
+- `src/locales/en/translation.json`
+- `src/locales/vi/translation.json`
+
+Accepted date formats:
+
+- `MM/YYYY` (example: `03/2026`)
+- `YYYY/MM` (example: `2026/03`)
+- `Mon YYYY` (example: `Mar 2026`)
 
 
 

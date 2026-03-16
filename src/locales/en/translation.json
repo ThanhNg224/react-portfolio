@@ -13,7 +13,8 @@
       "second": "I develop mobile applications",
       "third": "I build real-world web products"
     },
-    "description": "I'm Nguyen Phuc Thanh, a Multimedia Engineering graduate from Hanoi University of Science and Technology. I mainly work with Android and also handle full-stack tasks when needed. My goal is simple: build products that run reliably, are easy to maintain, and solve real problems with clear user experience.",
+    "description": "I'm Nguyen Phuc Thanh, a Multimedia Engineering graduate from Hanoi University of Science and Technology. My main focus is Android development, but I also take on full-stack tasks when needed. I enjoy building products that are reliable, easy to maintain, and genuinely useful to the people who use them.",
+    "cvOutdatedHint": "The CV is currently being refreshed. Please check back soon or contact me if you need the latest version.",
     "buttons": {
       "portfolio": "View projects",
       "about": "About me",
@@ -25,7 +26,7 @@
   "about": {
     "title": "About me",
     "personalTitle": "A bit about myself",
-    "personalDescription": "I'm Nguyen Phuc Thanh, an Android / Full-stack developer. I've worked on Android apps using Kotlin, built applications with Flutter, and developed web systems with React and Node.js. I also build lightweight services with Python/Flask when needed. In addition, I have experience with image processing, OCR, and a few Unity prototypes at an experimental level.\n\nIn my work, I care about clean architecture, readable code, and systems that are easy to maintain and extend. When facing new problems, I usually aim for simple and solid solutions that can survive long-term production use. I prefer projects with real constraints—performance, logic, or user flow—rather than projects that only look good as demos.",
+    "personalDescription": "I'm Nguyen Phuc Thanh, an Android and full-stack developer based in Hanoi. Most of my work focuses on Android development with Kotlin, but I've also built mobile apps with Flutter and developed web systems using React and Node.js. When a project needs it, I also create lightweight backend services with Python and Flask.\n\nAlong the way, I've experimented with image processing, OCR, and even a few Unity prototypes. I enjoy exploring different technologies, but what matters most to me is building software that works reliably in real-world environments.\n\nIn my work, I care a lot about clean architecture, readable code, and systems that can grow over time without becoming messy. When facing new problems, I usually look for simple and practical solutions that can hold up in long-term production. I'm especially interested in projects with real constraints — performance, complex logic, or challenging user flows — rather than projects that only look impressive as demos.",
     "sections": {
       "education": "Education",
       "certifications": "Certifications",
@@ -77,19 +78,19 @@
     "services": [
       {
         "title": "Mobile application development",
-        "description": "Building Android (Kotlin) or Flutter applications for real-world use cases, with backend/API integration, Firebase, ML Kit, and third-party SDKs when needed."
+        "description": "Developing Android (Kotlin) or Flutter applications for real-world use cases, integrating backend APIs, Firebase services, ML Kit, and third-party SDKs when needed."
       },
       {
         "title": "Full-stack web development",
-        "description": "Developing web applications with React / NextJS and NodeJS or Flask backends, focusing on stability, maintainability, and scalability."
+        "description": "Building web applications with React or Next.js and backend systems using Node.js or Flask, focusing on reliability, maintainability, and scalability."
       },
       {
-        "title": "Machine Learning integration",
-        "description": "Integrating ML models and image processing features such as OCR, face detection/recognition, and data analysis into mobile and web applications."
+        "title": "Machine learning integration",
+        "description": "Integrating machine learning models and image-processing features such as OCR, face detection or recognition, and data analysis into mobile and web applications."
       },
       {
-        "title": "UI/UX & prototyping",
-        "description": "Designing clear, user-friendly interfaces and building quick prototypes to validate ideas before full implementation."
+        "title": "UI/UX and prototyping",
+        "description": "Designing clear, user-friendly interfaces and building quick prototypes to validate ideas before moving into full implementation."
       }
     ]
   },
@@ -99,19 +100,19 @@
     "contactForCode": "contact for private code",
     "projects": [
       {
-        "description": "Viettel EID/Passport verification app – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration."
+        "description": "Viettel EID/Passport verification app – an Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and integrated payment processing."
       },
       {
-        "description": "A full-stack platform for managing Android-based Face Terminal devices, including real-time device monitoring, access logs, and remote APK updates."
+        "description": "A full-stack platform designed to manage Android-based Face Terminal devices, including real-time monitoring, access log tracking, and remote APK updates."
       },
       {
-        "description": "Coffee shop website & mobile app – Full-stack project (React/Node/MySQL + React Native) with user/admin roles, product browsing, and feedback features."
+        "description": "Coffee shop website and mobile app – a full-stack project (React / Node / MySQL + React Native) with user and admin roles, product browsing, and feedback features."
       },
       {
-        "description": "Raincaster – Real-time weather forecasting platform using an SVM model with a Flask backend and React frontend, focused on rainfall prediction."
+        "description": "Raincaster – a real-time weather forecasting platform using an SVM model with a Flask backend and React frontend, focused on rainfall prediction."
       },
       {
-        "description": "DSoft – A Flutter-based spa & wellness management app covering booking, staff scheduling, inventory, payments, and basic analytics."
+        "description": "DSoft – a Flutter-based spa and wellness management application covering appointment booking, staff scheduling, inventory management, payments, and basic analytics."
       },
       {
         "description": "More projects are available on my GitHub — feel free to explore."
@@ -120,7 +121,7 @@
   },
   "contact": {
     "title": "Contact",
-    "description": "If you want to collaborate on a mobile or web project, need ML integration, or just want to talk about development work, feel free to reach out.",
+    "description": "If you'd like to collaborate on a project, discuss development ideas, or just have a conversation about software and technology, feel free to reach out.",
     "form": {
       "name": "Your name",
       "email": "Your email",
@@ -138,12 +139,17 @@
   },
   "resume": {
     "title": "Resume",
-    "description": "View and download my resume, highlighting my experience, skills, and education in mobile and full-stack development.",
+    "description": "View and download my resume, which highlights my experience, technical skills, and education in mobile and full-stack development.",
     "downloadCV": "Download CV",
     "fallbackMessage": "Can't view the PDF? Click here to",
     "openInNewTab": "open in a new tab",
     "lastUpdated": "Last updated",
-    "updateDate": "Aug 2025"
+    "updateDate": "Aug 2025",
+    "outdatedPreviewTitle": "This CV is outdated",
+    "outdatedPreviewDescription": "The CV preview is currently hidden because it is outdated. Please contact me if you would like the most recent version.",
+    "previewStatusLabel": "Under refresh",
+    "contactForLatestCv": "Contact me for the latest CV",
+    "outdatedDownloadHint": "This CV is outdated, so downloading is currently disabled. Please contact me to receive the latest version."
   },
   "footer": {
     "copyright": "© 2025"

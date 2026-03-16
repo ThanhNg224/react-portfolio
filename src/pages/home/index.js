@@ -5,9 +5,12 @@ import Typewriter from "typewriter-effect";
 import { useTranslation } from "react-i18next";
 import { introdata } from "../../content_option";
 import { Link } from "react-router-dom";
+import { isCvFresh } from "../../utils/cvFreshness";
 
 export const Home = () => {
   const { t } = useTranslation();
+  const updateDate = t("resume.updateDate");
+  const isCvUpToDate = isCvFresh(updateDate);
   
   return (
     <HelmetProvider>
@@ -99,18 +102,33 @@ export const Home = () => {
                   </Link>
                 </div>
                 <div className="cv_download_section text-center mt-4">
+                  {isCvUpToDate ? (
                     <a
                       href={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf`}
                       download="HUST_NguyenPhucThanh_CV.pdf"
                       className="cv_download_btn"
                     >
-                    <div id="button_cv" className="ac_btn btn">
-                      {t('home.buttons.downloadCV')}
+                      <div id="button_cv" className="ac_btn btn">
+                        {t("home.buttons.downloadCV")}
+                        <div className="ring one"></div>
+                        <div className="ring two"></div>
+                        <div className="ring three"></div>
+                      </div>
+                    </a>
+                  ) : (
+                    <div
+                      id="button_cv"
+                      className="ac_btn btn cv-download-disabled"
+                      aria-disabled="true"
+                      title={t("home.cvOutdatedHint")}
+                    >
+                      {t("home.buttons.downloadCV")}
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
-                  </a>
+                  )}
+                  {!isCvUpToDate && <p className="cv-status-note">{t("home.cvOutdatedHint")}</p>}
                 </div>
               </div>
             </div>

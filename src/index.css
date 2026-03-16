@@ -38,6 +38,14 @@ body {
     border-right: 10px solid var(--primary-color);
 }
 
+@media (max-width: 768px) {
+    body {
+        padding-top: 56px;
+        border-left-width: 6px;
+        border-right-width: 6px;
+    }
+}
+
 ul {
     list-style: none;
 }
@@ -57,8 +65,9 @@ a:hover {
 }
 
 p {
-    word-break: break-word;
-    hyphens: auto;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: manual;
 }
 
 .ovhidden {
