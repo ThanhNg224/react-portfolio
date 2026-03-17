@@ -115,24 +115,28 @@ const dataportfolio = [
     description:
       "Coffee Shop Website & Android App – Full‐stack project (ReactJS/NodeJS/MySQL + React Native) with user/admin roles, product browsing, and feedback systems.",
     link: "https://github.com/ThanhNg224/CoffeeShopProject",
+    isPrivate: true,
   },
   {
     img: `${process.env.PUBLIC_URL}/images/rain_caster.jpg`,
     description:
       "Raincaster – Real‐time weather forecasting platform with SVM model in Flask backend and ReactJS front end, focused on advanced rainfall prediction.",
     link: "https://github.com/ThanhNg224/Raincaster",
+    isPrivate: true,
   },
   {
     img: `${process.env.PUBLIC_URL}/images/DSoft.jpg`,
     description:
       "DSoft is a Flutter-based spa & wellness management app that streamlines operations from bookings and staff scheduling to inventory, payments, and business analytics.",
     link: "https://github.com/ThanhNg224/DSoft",
+    isPrivate: true,
   },
   {
     img: `${process.env.PUBLIC_URL}/images/my_image_low_res.jpg`,
     description:
       "Additional projects available on my GitHub! Feel free to explore more.",
     link: "https://github.com/ThanhNg224",
+    isPrivate: true,
   },
 ];
 
