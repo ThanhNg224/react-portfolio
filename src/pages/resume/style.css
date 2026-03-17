@@ -94,38 +94,39 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 100%;
 }
 
 .pdf-page-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .pdf-page {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
+  box-shadow: none;
+  border-radius: 0;
   overflow: hidden;
-  background: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+  transition: none;
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   position: relative;
 }
 
 .pdf-page:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  transform: none;
+  box-shadow: none;
 }
 
 .pdf-iframe {
   width: 100%;
-  height: 1100px; /* Tall enough to show full 2-page document */
+  height: 78vh;
+  min-height: 760px;
   border: none;
   display: block;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .cv-stale-card {
@@ -217,15 +218,26 @@
   
   .pdf-container {
     max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+  }
+
+  .pdf-page-wrapper {
+    margin-bottom: 1rem;
+    padding: 0;
   }
   
   .pdf-page {
-    width: 95vw;
+    width: 100%;
     max-width: none;
+    border-radius: 0;
   }
   
   .pdf-iframe {
-    height: 800px; /* Shorter on mobile for better scrolling */
+    height: 70vh;
+    min-height: 520px;
   }
   
   .display-4 {
@@ -241,11 +253,12 @@
   }
   
   .pdf-page {
-    width: 98vw;
+    width: 100%;
   }
   
   .pdf-iframe {
-    height: 600px; /* Even shorter on small mobile */
+    height: 66vh;
+    min-height: 460px;
   }
 
   .cv-stale-card {
@@ -255,10 +268,10 @@
 
 /* Dark mode compatibility */
 [data-theme="dark"] .pdf-page {
-  background: white;
-  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.1);
+  background: transparent;
+  box-shadow: none;
 }
 
 [data-theme="dark"] .pdf-page:hover {
-  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.15);
+  box-shadow: none;
 }

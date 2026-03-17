@@ -45,6 +45,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
+    <script>
+        (function () {
+            try {
+                var storedTheme = localStorage.getItem("theme");
+                var resolvedTheme = storedTheme === "dark" || storedTheme === "light"
+                    ? storedTheme
+                    : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+                document.documentElement.setAttribute("data-theme", resolvedTheme);
+                localStorage.setItem("theme", resolvedTheme);
+            } catch (e) {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+    </script>
+
 </head>
 
 <body>

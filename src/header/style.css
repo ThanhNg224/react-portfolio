@@ -187,6 +187,22 @@
     color: var(--text-color-3);
 }
 
+.menu_link {
+    border-left: 3px solid transparent;
+    padding-left: 0.6rem;
+}
+
+.menu_link_active {
+    color: var(--text-color-3) !important;
+    border-left-color: var(--text-color-3);
+}
+
+.menu_link:focus-visible {
+    outline: 2px solid var(--text-color-3);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
 @media (min-width: 768px) {
     .the_menu .menu_item>a {
         font-size: 4.8vw;

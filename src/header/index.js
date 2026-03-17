@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { FaHome, FaBriefcase, FaUser, FaEnvelope, FaFileAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
@@ -53,14 +53,17 @@ const Headermain = () => {
                       className="menu_item" 
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <Link 
-                        onClick={handleToggle} 
-                        to={item.path} 
-                        className="my-3 d-flex align-items-center"
+                      <NavLink
+                        onClick={handleToggle}
+                        to={item.path}
+                        end={item.path === "/"}
+                        className={({ isActive }) =>
+                          `my-3 d-flex align-items-center menu_link${isActive ? " menu_link_active" : ""}`
+                        }
                       >
                         <item.icon className="me-3" />
                         {item.label}
-                      </Link>
+                      </NavLink>
                     </li>
                   ))}
                 </ul>

@@ -44,25 +44,35 @@
     }
 
     .table tr {
-        margin-bottom: 0.9rem;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 8px;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
         overflow: hidden;
-        background: rgba(255, 255, 255, 0.02);
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(2px);
     }
 
     [data-theme="light"] .table tr {
         border-color: rgba(0, 0, 0, 0.15);
-        background: rgba(0, 0, 0, 0.02);
+        background: rgba(0, 0, 0, 0.03);
     }
 
     .table th {
         font-weight: 700;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 0.6rem;
     }
 
     [data-theme="light"] .table th {
         border-bottom-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .table td {
+        border-top: 1px dashed rgba(255, 255, 255, 0.18);
+    }
+
+    [data-theme="light"] .table td {
+        border-top-color: rgba(0, 0, 0, 0.1);
     }
 
     .table td:last-child {

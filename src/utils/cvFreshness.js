@@ -32,6 +32,18 @@ export const parseCvUpdateDate = (rawValue) => {
 
   const value = rawValue.trim();
 
+  // Handles full ISO dates like YYYY-MM-DD or YYYY/MM/DD
+  const fullIsoMatch = value.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})$/);
+  if (fullIsoMatch) {
+    const year = Number(fullIsoMatch[1]);
+    const month = Number(fullIsoMatch[2]);
+    const day = Number(fullIsoMatch[3]);
+
+    if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
+      return new Date(year, month - 1, day);
+    }
+  }
+
   // Handles MM/YYYY or MM-YYYY
   const monthYearMatch = value.match(/^(\d{1,2})[/-](\d{4})$/);
   if (monthYearMatch) {
@@ -69,16 +81,18 @@ export const parseCvUpdateDate = (rawValue) => {
   return null;
 };
 
-export const isCvFresh = (updateDateValue, maxAgeInMonths = 1, now = new Date()) => {
+export const isCvFresh = (updateDateValue, maxAgeInDays = 60, now = new Date()) => {
   const parsedDate = parseCvUpdateDate(updateDateValue);
 
   if (!parsedDate || Number.isNaN(parsedDate.getTime())) {
     return false;
   }
 
-  const monthDiff =
-    (now.getFullYear() - parsedDate.getFullYear()) * 12 +
-    (now.getMonth() - parsedDate.getMonth());
+  const diffMs = now.getTime() - parsedDate.getTime();
+  if (diffMs < 0) {
+    return true;
+  }
 
-  return monthDiff <= maxAgeInMonths;
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+  return diffDays <= maxAgeInDays;
 };

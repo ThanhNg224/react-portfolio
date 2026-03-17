@@ -130,7 +130,14 @@
       "send": "Gửi",
       "sending": "Đang gửi...",
       "success": "Tin nhắn đã được gửi!",
-      "error": "Có lỗi xảy ra. Vui lòng thử lại."
+      "error": "Có lỗi xảy ra. Vui lòng thử lại.",
+      "validation": {
+        "required": "Trường này là bắt buộc.",
+        "nameMin": "Tên phải có ít nhất 2 ký tự.",
+        "emailInvalid": "Vui lòng nhập email hợp lệ.",
+        "messageMin": "Nội dung phải có ít nhất 10 ký tự.",
+        "fixBeforeSubmit": "Vui lòng sửa các trường đang báo lỗi trước khi gửi."
+      }
     },
     "info": {
       "email": "Email",
@@ -144,7 +151,7 @@
     "fallbackMessage": "Nếu không xem được PDF, bấm vào đây để",
     "openInNewTab": "mở trong tab mới",
     "lastUpdated": "Cập nhật lần cuối",
-    "updateDate": "08/2025",
+    "updateDate": "2026-03-17",
     "outdatedPreviewTitle": "CV này đã cũ",
     "outdatedPreviewDescription": "Phần xem trước CV đang được ẩn vì CV đã cũ. Nếu bạn cần bản mới nhất, hãy liên hệ trực tiếp với mình.",
     "previewStatusLabel": "Đang cập nhật",

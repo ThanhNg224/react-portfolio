@@ -15,8 +15,8 @@ export const Resume = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf`;
-    link.download = 'NguyenPhucThanh_CV.pdf';
+    link.href = `${process.env.PUBLIC_URL}/MobileDeveloper_NguyenPhucThanh_CV.pdf`;
+    link.download = 'MobileDeveloper_NguyenPhucThanh_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -78,14 +78,14 @@ export const Resume = () => {
         </Row>
 
         {/* Inline PDF Display */}
-        <Row>
-          <Col lg="12">
+        <Row className="resume-preview-row">
+          <Col lg="12" className="resume-preview-col">
             {isCvUpToDate ? (
               <div className="pdf-container">
                 <div className="pdf-page-wrapper">
                   <div className="pdf-page">
                     <iframe
-                      src={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf#zoom=100&toolbar=0&navpanes=0&scrollbar=0`}
+                      src={`${process.env.PUBLIC_URL}/MobileDeveloper_NguyenPhucThanh_CV.pdf#view=FitH&zoom=page-fit&toolbar=0&navpanes=0&scrollbar=0`}
                       title="Resume PDF"
                       className="pdf-iframe"
                       frameBorder="0"

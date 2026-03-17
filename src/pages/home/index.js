@@ -45,10 +45,10 @@ export const Home = () => {
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
+            className="h_bg-image order-2 order-lg-2 h-100 "
             style={{ backgroundImage: `url(${introdata.your_img_url})` }}
           ></div>
-          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
+          <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{t('home.title')}</h2>
@@ -104,8 +104,8 @@ export const Home = () => {
                 <div className="cv_download_section text-center mt-4">
                   {isCvUpToDate ? (
                     <a
-                      href={`${process.env.PUBLIC_URL}/HUST_NguyenPhucThanh_CV.pdf`}
-                      download="HUST_NguyenPhucThanh_CV.pdf"
+                      href={`${process.env.PUBLIC_URL}/MobileDeveloper_NguyenPhucThanh_CV.pdf`}
+                      download="MobileDeveloper_NguyenPhucThanh_CV.pdf"
                       className="cv_download_btn"
                     >
                       <div id="button_cv" className="ac_btn btn">

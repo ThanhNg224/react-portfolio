@@ -17,9 +17,70 @@ export const ContactUs = () => {
     alertmessage: "",
     variant: "",
   });
+  const [fieldErrors, setFieldErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [touched, setTouched] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
+
+  const validateField = (fieldName, fieldValue) => {
+    const value = (fieldValue || "").trim();
+
+    if (fieldName === "name") {
+      if (!value) return t("contact.form.validation.required");
+      if (value.length < 2) return t("contact.form.validation.nameMin");
+      return "";
+    }
+
+    if (fieldName === "email") {
+      if (!value) return t("contact.form.validation.required");
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(value)) return t("contact.form.validation.emailInvalid");
+      return "";
+    }
+
+    if (fieldName === "message") {
+      if (!value) return t("contact.form.validation.required");
+      if (value.length < 10) return t("contact.form.validation.messageMin");
+      return "";
+    }
+
+    return "";
+  };
+
+  const validateAllFields = () => {
+    const nextErrors = {
+      name: validateField("name", formData.name),
+      email: validateField("email", formData.email),
+      message: validateField("message", formData.message),
+    };
+
+    setFieldErrors(nextErrors);
+    return !Object.values(nextErrors).some(Boolean);
+  };
+
+  const hasValidationErrors = Object.values(fieldErrors).some(Boolean);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setTouched({ name: true, email: true, message: true });
+
+    if (!validateAllFields()) {
+      setFormdata((prev) => ({
+        ...prev,
+        loading: false,
+        show: true,
+        variant: "warning",
+        alertmessage: t("contact.form.validation.fixBeforeSubmit"),
+      }));
+      return;
+    }
+
     setFormdata(prev => ({ ...prev, loading: true }));
 
     const templateParams = {
@@ -40,29 +101,54 @@ export const ContactUs = () => {
         (result) => {
           console.log(result.text);
           setFormdata({
+            email: "",
+            name: "",
+            message: "",
             loading: false,
             alertmessage: t('contact.form.success'),
             variant: "success",
             show: true,
           });
+          setFieldErrors({ name: "", email: "", message: "" });
+          setTouched({ name: false, email: false, message: false });
         },
         (error) => {
           console.log(error.text);
-          setFormdata({
+          setFormdata((prev) => ({
+            ...prev,
+            loading: false,
             alertmessage: t('contact.form.error'),
             variant: "danger",
             show: true,
-          });
+          }));
           document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
       );
   };
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
     setFormdata({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
+
+    if (touched[name]) {
+      setFieldErrors((prev) => ({
+        ...prev,
+        [name]: validateField(name, value),
+      }));
+    }
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    setTouched((prev) => ({ ...prev, [name]: true }));
+    setFieldErrors((prev) => ({
+      ...prev,
+      [name]: validateField(name, value),
+    }));
   };
 
   return (
@@ -105,7 +191,7 @@ export const ContactUs = () => {
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
               }`}
-              onClose={() => setFormdata({ show: false })}
+              onClose={() => setFormdata((prev) => ({ ...prev, show: false }))}
               dismissible
             >
               <p className="my-0">{formData.alertmessage}</p>
@@ -135,7 +221,7 @@ export const ContactUs = () => {
               <Row>
                 <Col lg="6" className="form-group">
                   <input
-                    className="form-control"
+                    className={`form-control ${touched.name && fieldErrors.name ? "is-invalid" : ""}`}
                     id="name"
                     name="name"
                     placeholder={t('contact.form.name')}
@@ -143,11 +229,16 @@ export const ContactUs = () => {
                     type="text"
                     required
                     onChange={handleChange}
+                    onBlur={handleBlur}
+                    aria-invalid={Boolean(touched.name && fieldErrors.name)}
                   />
+                  {touched.name && fieldErrors.name && (
+                    <div className="field-error" role="alert">{fieldErrors.name}</div>
+                  )}
                 </Col>
                 <Col lg="6" className="form-group">
                   <input
-                    className="form-control rounded-0"
+                    className={`form-control rounded-0 ${touched.email && fieldErrors.email ? "is-invalid" : ""}`}
                     id="email"
                     name="email"
                     placeholder={t('contact.form.email')}
@@ -155,23 +246,37 @@ export const ContactUs = () => {
                     value={formData.email || ""}
                     required
                     onChange={handleChange}
+                    onBlur={handleBlur}
+                    aria-invalid={Boolean(touched.email && fieldErrors.email)}
                   />
+                  {touched.email && fieldErrors.email && (
+                    <div className="field-error" role="alert">{fieldErrors.email}</div>
+                  )}
                 </Col>
               </Row>
               <textarea
-                className="form-control rounded-0"
+                className={`form-control rounded-0 ${touched.message && fieldErrors.message ? "is-invalid" : ""}`}
                 id="message"
                 name="message"
                 placeholder={t('contact.form.message')}
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
+                onBlur={handleBlur}
+                aria-invalid={Boolean(touched.message && fieldErrors.message)}
                 required
               ></textarea>
+              {touched.message && fieldErrors.message && (
+                <div className="field-error" role="alert">{fieldErrors.message}</div>
+              )}
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
+                  <button
+                    className="btn ac_btn"
+                    type="submit"
+                    disabled={formData.loading || hasValidationErrors}
+                  >
                     {formData.loading ? t('contact.form.sending') : t('contact.form.send')}
                   </button>
                 </Col>
