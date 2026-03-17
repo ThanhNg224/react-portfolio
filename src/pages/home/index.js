@@ -6,10 +6,11 @@ import { useTranslation } from "react-i18next";
 import { introdata } from "../../content_option";
 import { Link } from "react-router-dom";
 import { isCvFresh } from "../../utils/cvFreshness";
+import { CV_FILE_NAME, CV_UPDATE_DATE, getCvPublicUrl } from "../../config/cv";
 
 export const Home = () => {
   const { t } = useTranslation();
-  const updateDate = t("resume.updateDate");
+  const updateDate = CV_UPDATE_DATE;
   const isCvUpToDate = isCvFresh(updateDate);
   
   return (
@@ -104,8 +105,8 @@ export const Home = () => {
                 <div className="cv_download_section text-center mt-4">
                   {isCvUpToDate ? (
                     <a
-                      href={`${process.env.PUBLIC_URL}/MobileDeveloper_NguyenPhucThanh_CV.pdf`}
-                      download="MobileDeveloper_NguyenPhucThanh_CV.pdf"
+                      href={getCvPublicUrl()}
+                      download={CV_FILE_NAME}
                       className="cv_download_btn"
                     >
                       <div id="button_cv" className="ac_btn btn">

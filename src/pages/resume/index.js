@@ -6,17 +6,19 @@ import { useTranslation } from "react-i18next";
 import { FaDownload, FaFileAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { isCvFresh } from "../../utils/cvFreshness";
+import { CV_FILE_NAME, CV_UPDATE_DATE, getCvPublicUrl } from "../../config/cv";
 
 // Set up PDF.js worker
 export const Resume = () => {
   const { t } = useTranslation();
-  const updateDate = t("resume.updateDate");
+  const updateDate = CV_UPDATE_DATE;
   const isCvUpToDate = isCvFresh(updateDate);
+  const cvUrl = getCvPublicUrl();
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `${process.env.PUBLIC_URL}/MobileDeveloper_NguyenPhucThanh_CV.pdf`;
-    link.download = 'MobileDeveloper_NguyenPhucThanh_CV.pdf';
+    link.href = cvUrl;
+    link.download = CV_FILE_NAME;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -85,7 +87,7 @@ export const Resume = () => {
                 <div className="pdf-page-wrapper">
                   <div className="pdf-page">
                     <iframe
-                      src={`${process.env.PUBLIC_URL}/MobileDeveloper_NguyenPhucThanh_CV.pdf#view=FitH&zoom=page-fit&toolbar=0&navpanes=0&scrollbar=0`}
+                      src={`${cvUrl}#view=FitH&zoom=page-fit&toolbar=0&navpanes=0&scrollbar=0`}
                       title="Resume PDF"
                       className="pdf-iframe"
                       frameBorder="0"
