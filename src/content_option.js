@@ -136,7 +136,8 @@ const dataportfolio = [
     description:
       "Additional projects available on my GitHub! Feel free to explore more.",
     link: "https://github.com/ThanhNg224",
-    isPrivate: true,
+    isPrivate: false,
+    ctaLabel: "View Github",
   },
 ];
 

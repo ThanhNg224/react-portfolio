@@ -55,7 +55,7 @@ export const Portfolio = () => {
                       </a>
                     ) : (
                       <a href={data.link} target="_blank" rel="noopener noreferrer" className="project-btn">
-                        {t('portfolio.viewProject')}
+                        {data.ctaLabel || t('portfolio.viewProject')}
                       </a>
                     )}
                   </div>
