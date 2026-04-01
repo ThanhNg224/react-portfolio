@@ -47,17 +47,17 @@ const worktimeline = [
   {
     jobtitle: "Android Developer (High-Scale App Development & Product Optimization)",
     where: "eUp Technology Joint Stock Company (eUp Group) (Hanoi, Vietnam)",
-    date: "June 2025 – Present",
+    date: "April 2025 – Present",
   },
   {
     jobtitle: "Fullstack Developer (Mobile Focus)",
     where: "ATIN – Advanced Technology Innovations (Hanoi, Vietnam)",
-    date: "July 2024 – June 2025",
+    date: "March 2024 – April 2025",
   },
   {
     jobtitle: "C++ Training Program",
     where: "FPT Software (Training Internship) (Hanoi, Vietnam)",
-    date: "May 2024 – July 2024",
+    date: "October 2023 – March 2024",
   },
 ];
 
