@@ -26,7 +26,7 @@
   "about": {
     "title": "Về mình",
     "personalTitle": "Một chút về mình",
-    "personalDescription": "Mình là Nguyễn Phúc Thành, Android developer tại Hà Nội.\n\nHiện mình đang chịu trách nhiệm phát triển ứng dụng Android cho HeyJapan — một ứng dụng học tiếng Nhật với hơn 7 triệu người dùng. Công việc của mình tập trung vào xây dựng và cải thiện ứng dụng Android bằng Kotlin, đảm bảo hệ thống ổn định, dễ mở rộng và có thể phục vụ lượng người dùng lớn.\n\nNgoài Android, mình cũng có kinh nghiệm làm việc với web và backend khi cần, nhưng mobile vẫn là lĩnh vực mình tập trung nhiều nhất. Mình đặc biệt quan tâm đến clean architecture, code dễ maintain và những hệ thống có thể phát triển lâu dài.",
+    "personalDescription": "Mình là Nguyễn Phúc Thành, Android developer tại Hà Nội.\n\nHiện mình đang làm việc tại Kalapa JSC, phát triển các sản phẩm SDK Android cho lĩnh vực fintech, hợp tác với các ngân hàng đối tác. Trước đó, mình từng phát triển ứng dụng Android cho HeyJapan — một ứng dụng học tiếng Nhật với hơn 7 triệu người dùng.\n\nNgoài Android, mình cũng có kinh nghiệm làm việc với web và backend khi cần, nhưng mobile vẫn là lĩnh vực mình tập trung nhiều nhất. Mình đặc biệt quan tâm đến clean architecture, code dễ maintain và những hệ thống có thể phát triển lâu dài.",
     "sections": {
       "education": "Học vấn",
       "certifications": "Chứng chỉ",
@@ -50,9 +50,14 @@
     ],
     "workTimeline": [
       {
+        "jobtitle": "Android Developer – Fintech SDK (eKYC)",
+        "where": "Kalapa JSC (Hà Nội)",
+        "date": "06/2025 – Hiện tại"
+      },
+      {
         "jobtitle": "Android Developer",
         "where": "eUp Technology (Hà Nội)",
-        "date": "04/2025 – Hiện tại"
+        "date": "04/2025 – 05/2025"
       },
       {
         "jobtitle": "Full-stack Developer (Mobile-focused)",

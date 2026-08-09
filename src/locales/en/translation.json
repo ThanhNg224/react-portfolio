@@ -26,7 +26,7 @@
   "about": {
     "title": "About me",
     "personalTitle": "A bit about myself",
-    "personalDescription": "I'm Nguyen Phuc Thanh, an Android developer based in Hanoi.\n\nI currently work on the Android development of HeyJapan — a Japanese learning app trusted by more than 7 million users. My work focuses on building and improving the Android application using Kotlin, helping ensure the system remains stable, scalable, and capable of supporting a large user base.\n\nBeyond Android, I also have experience working on web and backend components when needed, although mobile development remains my main focus. I care a lot about clean architecture, maintainable code, and building systems that can grow over time without becoming difficult to manage.",
+    "personalDescription": "I'm Nguyen Phuc Thanh, an Android developer based in Hanoi.\n\nI currently work at Kalapa JSC, building Android SDK products for the fintech sector in partnership with major banks. Before that, I worked on the Android development of HeyJapan — a Japanese learning app trusted by more than 7 million users.\n\nBeyond Android, I also have experience working on web and backend components when needed, although mobile development remains my main focus. I care a lot about clean architecture, maintainable code, and building systems that can grow over time without becoming difficult to manage.",
     "sections": {
       "education": "Education",
       "certifications": "Certifications",
@@ -50,9 +50,14 @@
     ],
     "workTimeline": [
       {
+        "jobtitle": "Android Developer – Fintech SDK (eKYC)",
+        "where": "Kalapa JSC (Hanoi)",
+        "date": "Jun 2025 – Present"
+      },
+      {
         "jobtitle": "Android Developer (Large-scale app development & product optimization)",
         "where": "eUp Technology Joint Stock Company (Hanoi)",
-        "date": "Apr 2025 – Present"
+        "date": "Apr 2025 – May 2025"
       },
       {
         "jobtitle": "Full-stack Developer (Mobile-focused)",
