@@ -9,11 +9,20 @@ import { useTranslation } from "react-i18next";
 export const About = () => {
   const { t } = useTranslation();
   
-  const education = t('about.education', { returnObjects: true });
-  const certifications = t('about.certifications', { returnObjects: true });
-  const worktimeline = t('about.workTimeline', { returnObjects: true });
-  const skills = t('about.skills', { returnObjects: true });
-  const services = t('about.services', { returnObjects: true });
+  const rawEducation = t('about.education', { returnObjects: true });
+  const education = Array.isArray(rawEducation) ? rawEducation : [];
+
+  const rawCertifications = t('about.certifications', { returnObjects: true });
+  const certifications = Array.isArray(rawCertifications) ? rawCertifications : [];
+
+  const rawWorktimeline = t('about.workTimeline', { returnObjects: true });
+  const worktimeline = Array.isArray(rawWorktimeline) ? rawWorktimeline : [];
+
+  const rawSkills = t('about.skills', { returnObjects: true });
+  const skills = Array.isArray(rawSkills) ? rawSkills : [];
+
+  const rawServices = t('about.services', { returnObjects: true });
+  const services = Array.isArray(rawServices) ? rawServices : [];
 
   return (
     <HelmetProvider>

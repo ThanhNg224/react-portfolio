@@ -61,7 +61,7 @@ function useEventListener(eventName, handler, element = document) {
   
       const eventListener = (event) => savedHandler.current(event)
   
-      element.addEventListener(eventName, eventListener)
+      element.addEventListener(eventName, eventListener, { passive: true })
   
       return () => {
         element.removeEventListener(eventName, eventListener)
@@ -115,7 +115,7 @@ function CursorCore({
     const cursorInnerRef = useRef()
     const requestRef = useRef()
     const previousTimeRef = useRef()
-    const [coords, setCoords] = useState({ x: 0, y: 0 })
+    const coords = useRef({ x: 0, y: 0 })
     const [isVisible, setIsVisible] = useState(false)
     const [isActive, setIsActive] = useState(false)
     const [isActiveClickable, setIsActiveClickable] = useState(false)
@@ -128,9 +128,10 @@ function CursorCore({
      * @param {number} clientY - MouseEvent.clienty
      */
     const onMouseMove = useCallback(({ clientX, clientY }) => {
-      setCoords({ x: clientX, y: clientY })
-      cursorInnerRef.current.style.top = `${clientY}px`
-      cursorInnerRef.current.style.left = `${clientX}px`
+      if (cursorInnerRef.current) {
+        cursorInnerRef.current.style.top = `${clientY}px`
+        cursorInnerRef.current.style.left = `${clientX}px`
+      }
       endX.current = clientX
       endY.current = clientY
     }, [])
@@ -138,16 +139,16 @@ function CursorCore({
     // Outer Cursor Animation Delay
     const animateOuterCursor = useCallback(
       (time) => {
-        if (previousTimeRef.current !== undefined) {
-          coords.x += (endX.current - coords.x) / trailingSpeed
-          coords.y += (endY.current - coords.y) / trailingSpeed
-          cursorOuterRef.current.style.top = `${coords.y}px`
-          cursorOuterRef.current.style.left = `${coords.x}px`
+        if (previousTimeRef.current !== undefined && cursorOuterRef.current) {
+          coords.current.x += (endX.current - coords.current.x) / trailingSpeed
+          coords.current.y += (endY.current - coords.current.y) / trailingSpeed
+          cursorOuterRef.current.style.top = `${coords.current.y}px`
+          cursorOuterRef.current.style.left = `${coords.current.x}px`
         }
         previousTimeRef.current = time
         requestRef.current = requestAnimationFrame(animateOuterCursor)
       },
-      [requestRef] // eslint-disable-line
+      [trailingSpeed]
     )
   
     // RAF for animateOuterCursor
@@ -203,53 +204,46 @@ function CursorCore({
     }, [isVisible])
   
     useEffect(() => {
+      document.body.style.cursor = 'none';
+      return () => {
+        document.body.style.cursor = 'auto';
+      };
+    }, []);
+
+    useEffect(() => {
       const clickableEls = document.querySelectorAll(clickables.join(','))
+      const onMouseOver = () => setIsActive(true)
+      const onClick = () => {
+        setIsActive(true)
+        setIsActiveClickable(false)
+      }
+      const onMouseDown = () => setIsActiveClickable(true)
+      const onMouseUp = () => setIsActive(true)
+      const onMouseOut = () => {
+        setIsActive(false)
+        setIsActiveClickable(false)
+      }
   
       clickableEls.forEach((el) => {
         el.style.cursor = 'none'
-  
-        el.addEventListener('mouseover', () => {
-          setIsActive(true)
-        })
-        el.addEventListener('click', () => {
-          setIsActive(true)
-          setIsActiveClickable(false)
-        })
-        el.addEventListener('mousedown', () => {
-          setIsActiveClickable(true)
-        })
-        el.addEventListener('mouseup', () => {
-          setIsActive(true)
-        })
-        el.addEventListener('mouseout', () => {
-          setIsActive(false)
-          setIsActiveClickable(false)
-        })
+        el.addEventListener('mouseover', onMouseOver)
+        el.addEventListener('click', onClick)
+        el.addEventListener('mousedown', onMouseDown)
+        el.addEventListener('mouseup', onMouseUp)
+        el.addEventListener('mouseout', onMouseOut)
       })
   
       return () => {
         clickableEls.forEach((el) => {
-          el.removeEventListener('mouseover', () => {
-            setIsActive(true)
-          })
-          el.removeEventListener('click', () => {
-            setIsActive(true)
-            setIsActiveClickable(false)
-          })
-          el.removeEventListener('mousedown', () => {
-            setIsActiveClickable(true)
-          })
-          el.removeEventListener('mouseup', () => {
-            setIsActive(true)
-          })
-          el.removeEventListener('mouseout', () => {
-            setIsActive(false)
-            setIsActiveClickable(false)
-          })
+          el.removeEventListener('mouseover', onMouseOver)
+          el.removeEventListener('click', onClick)
+          el.removeEventListener('mousedown', onMouseDown)
+          el.removeEventListener('mouseup', onMouseUp)
+          el.removeEventListener('mouseout', onMouseOut)
         })
       }
-    }, [isActive, clickables])
-  
+    }, [clickables])
+
     // Cursor Styles
     const styles = {
       cursorInner: {
@@ -278,9 +272,6 @@ function CursorCore({
         ...(outerStyle && outerStyle)
       }
     }
-  
-    // Hide / Show global cursor
-    document.body.style.cursor = 'none'
   
     return (
       <React.Fragment>

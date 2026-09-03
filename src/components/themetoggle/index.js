@@ -26,7 +26,19 @@ const Themetoggle = () => {
   }, [theme]);
 
   return (
-    <div className="nav_ac" onClick={themetoggle}>
+    <div
+      className="nav_ac"
+      onClick={themetoggle}
+      role="button"
+      tabIndex={0}
+      aria-label="Toggle dark/light theme"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          themetoggle();
+        }
+      }}
+    >
       <WiMoonAltWaningCrescent4 />
     </div>
   );

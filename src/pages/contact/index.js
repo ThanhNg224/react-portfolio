@@ -121,7 +121,7 @@ export const ContactUs = () => {
             variant: "danger",
             show: true,
           }));
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
+          document.getElementsByClassName("co_alert")[0]?.scrollIntoView({ behavior: "smooth" });
         }
       );
   };
@@ -206,13 +206,11 @@ export const ContactUs = () => {
               </a>
               <br />
               <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+              {contactConfig.YOUR_FONE ? (
                 <p>
                   <strong>{t('contact.info.phone')}:</strong> {contactConfig.YOUR_FONE}
                 </p>
-              ) : (
-                ""
-              )}
+              ) : null}
             </address>
             <p>{t('contact.description')}</p>
           </Col>

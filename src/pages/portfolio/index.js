@@ -8,7 +8,8 @@ import { dataportfolio } from "../../content_option";
 
 export const Portfolio = () => {
   const { t } = useTranslation();
-  const projects = t('portfolio.projects', { returnObjects: true });
+  const rawProjects = t('portfolio.projects', { returnObjects: true });
+  const projects = Array.isArray(rawProjects) ? rawProjects : [];
 
   return (
     <HelmetProvider>
@@ -46,7 +47,7 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt={projects[i]?.description || data.description} loading="lazy" />
+                <img src={data.img} alt={projects[i]?.description || data.description} loading="lazy" decoding="async" />
                 <div className="content">
                   <p>{projects[i]?.description || data.description}</p>
                   <div className="project-buttons">

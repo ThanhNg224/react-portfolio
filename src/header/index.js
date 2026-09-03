@@ -9,11 +9,11 @@ import Themetoggle from "../components/themetoggle";
 import LanguageToggle from "../components/languasetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
   const handleToggle = () => {
-    setActive(!isActive);
+    setIsOpen((prev) => !prev);
     document.body.classList.toggle("ovhidden");
   };
 
@@ -35,14 +35,18 @@ const Headermain = () => {
           <div className="d-flex align-items-center">
           <LanguageToggle />
           <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
+          <button
+            className="menu__button nav_ac"
+            onClick={handleToggle}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+          >
+            {isOpen ? <VscClose /> : <VscGrabber />}
           </button>
           
           </div>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div className={`site__navigation ${isOpen ? "menu__opend" : ""}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
@@ -54,7 +58,9 @@ const Headermain = () => {
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       <NavLink
-                        onClick={handleToggle}
+                        onClick={() => {
+                          if (isOpen) handleToggle();
+                        }}
                         to={item.path}
                         end={item.path === "/"}
                         className={({ isActive }) =>
