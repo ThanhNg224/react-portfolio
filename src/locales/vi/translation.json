@@ -6,38 +6,41 @@
     "resume": "CV",
     "contact": "Liên hệ"
   },
+  "social": {
+    "followMe": "Theo dõi"
+  },
   "home": {
-    "title": "Mình là Thành",
+    "title": "Mình là Phúc Thành",
     "animated": {
-      "first": "Mình thích làm phần mềm",
-      "second": "Mình phát triển ứng dụng di động",
-      "third": "Mình xây dựng các sản phẩm web"
+      "first": "Đam mê kiến tạo phần mềm chất lượng",
+      "second": "Chuyên sâu phát triển ứng dụng di động",
+      "third": "Xây dựng các sản phẩm web thực tế"
     },
-    "description": "Mình là Nguyễn Phúc Thành, tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách Khoa Hà Nội. Công việc chính của mình là phát triển ứng dụng Android, nhưng khi cần mình cũng làm thêm cả phần web hoặc backend. Điều mình thích nhất là xây dựng những sản phẩm chạy ổn định, dễ maintain và thực sự có người dùng.",
-    "cvOutdatedHint": "CV đang được cập nhật lại. Nếu bạn cần bản mới nhất, cứ liên hệ trực tiếp với mình nhé.",
+    "description": "Mình là Nguyễn Phúc Thành, tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách Khoa Hà Nội. Định hướng trọng tâm của mình là phát triển ứng dụng Android, đồng thời linh hoạt đảm nhiệm các tác vụ full-stack khi cần thiết. Mình luôn hướng tới việc tạo ra những sản phẩm vận hành ổn định, dễ bảo trì và mang lại giá trị thiết thực cho người dùng.",
+    "cvOutdatedHint": "Hồ sơ CV đang trong quá trình cập nhật. Nếu bạn cần bản mới nhất, đừng ngần ngại liên hệ trực tiếp với mình nhé.",
     "buttons": {
       "portfolio": "Xem dự án",
-      "about": "Về mình",
+      "about": "Về bản thân",
       "resume": "Xem CV",
       "contact": "Liên hệ",
       "downloadCV": "Tải CV"
     }
   },
   "about": {
-    "title": "Về mình",
-    "personalTitle": "Một chút về mình",
-    "personalDescription": "Mình là Nguyễn Phúc Thành, Android developer tại Hà Nội.\n\nHiện mình đang làm việc tại Kalapa JSC, phát triển các sản phẩm SDK Android cho lĩnh vực fintech, hợp tác với các ngân hàng đối tác. Trước đó, mình từng phát triển ứng dụng Android cho HeyJapan — một ứng dụng học tiếng Nhật với hơn 7 triệu người dùng.\n\nNgoài Android, mình cũng có kinh nghiệm làm việc với web và backend khi cần, nhưng mobile vẫn là lĩnh vực mình tập trung nhiều nhất. Mình đặc biệt quan tâm đến clean architecture, code dễ maintain và những hệ thống có thể phát triển lâu dài.",
+    "title": "Giới thiệu",
+    "personalTitle": "Đôi nét về bản thân",
+    "personalDescription": "Mình là Nguyễn Phúc Thành, kỹ sư phát triển Android hiện đang làm việc tại Hà Nội.\n\nHiện tại, mình đang công tác tại Kalapa JSC, chuyên phát triển các sản phẩm Android SDK trong lĩnh vực fintech kết nối với các đối tác ngân hàng lớn. Trước đó, mình tham gia phát triển ứng dụng HeyJapan — nền tảng học tiếng Nhật được tin dùng bởi hơn 7 triệu người học.\n\nBên cạnh mảng Android, mình cũng tích lũy nhiều kinh nghiệm thực chiến với web và backend khi dự án yêu cầu, dù mobile vẫn luôn là định hướng mũi nhọn. Mình đặc biệt quan tâm đến kiến trúc sạch (clean architecture), mã nguồn tinh gọn, dễ bảo trì và khả năng mở rộng bền vững của hệ thống theo thời gian.",
     "sections": {
-      "education": "Học vấn",
-      "certifications": "Chứng chỉ",
-      "workTimeline": "Kinh nghiệm",
-      "skills": "Kỹ năng",
-      "services": "Những gì mình có thể làm"
+      "education": "Học vấn & Đào tạo",
+      "certifications": "Chứng chỉ chuyên môn",
+      "workTimeline": "Kinh nghiệm làm việc",
+      "skills": "Kỹ năng chuyên môn",
+      "services": "Lĩnh vực chuyên môn"
     },
     "education": [
       {
         "institution": "Đại học Bách Khoa Hà Nội (HUST)",
-        "degree": "Kỹ thuật Đa phương tiện (Chương trình tiên tiến)",
+        "degree": "Cử nhân Kỹ thuật Đa phương tiện (Chương trình Tiên tiến)",
         "period": "10/2021 – 08/2025"
       }
     ],
@@ -50,23 +53,23 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Android Developer – Fintech SDK (eKYC)",
+        "jobtitle": "Lập trình viên Android – SDK Fintech (eKYC)",
         "where": "Kalapa JSC (Hà Nội)",
         "date": "06/2026 – Hiện tại"
       },
       {
-        "jobtitle": "Android Developer",
-        "where": "eUp Technology (Hà Nội)",
+        "jobtitle": "Lập trình viên Android (Phát triển ứng dụng quy mô lớn & Tối ưu sản phẩm)",
+        "where": "Công ty Cổ phần Công nghệ eUp (Hà Nội)",
         "date": "04/2025 – 05/2026"
       },
       {
-        "jobtitle": "Full-stack Developer (Mobile-focused)",
-        "where": "ATIN – Advanced Technology Innovations",
+        "jobtitle": "Lập trình viên Full-stack (Trọng tâm Mobile)",
+        "where": "ATIN – Advanced Technology Innovations (Hà Nội)",
         "date": "03/2024 – 04/2025"
       },
       {
-        "jobtitle": "C++ Training Program",
-        "where": "FPT Software",
+        "jobtitle": "Chương trình đào tạo C++",
+        "where": "FPT Software (Thực tập sinh đào tạo) (Hà Nội)",
         "date": "10/2023 – 03/2024"
       }
     ],
@@ -83,90 +86,92 @@
     "services": [
       {
         "title": "Phát triển ứng dụng di động",
-        "description": "Xây dựng ứng dụng Android (Kotlin) hoặc Flutter cho các nhu cầu thực tế, tích hợp API, Firebase hoặc các dịch vụ backend khi cần."
+        "description": "Xây dựng các ứng dụng Android (Kotlin) và Flutter hiệu năng cao đáp ứng trọn vẹn bài toán thực tế; tích hợp liền mạch hệ thống backend API, Firebase, ML Kit cùng các SDK bên thứ ba."
       },
       {
-        "title": "Phát triển web",
-        "description": "Xây dựng web với React hoặc Next.js, kết hợp backend Node.js hoặc Flask, tập trung vào sự ổn định và dễ maintain."
+        "title": "Phát triển web Full-stack",
+        "description": "Phát triển các ứng dụng web hiện đại với React hoặc Next.js cùng hệ thống backend vững chắc trên Node.js hoặc Flask; chú trọng tính ổn định, khả năng mở rộng và dễ dàng bảo trì."
       },
       {
-        "title": "Tích hợp AI / xử lý ảnh",
-        "description": "Tích hợp các tính năng như OCR, nhận diện khuôn mặt hoặc xử lý ảnh vào ứng dụng mobile hoặc web."
+        "title": "Tích hợp Trí tuệ nhân tạo (AI / ML)",
+        "description": "Tích hợp các mô hình Machine Learning và thuật toán thị giác máy tính như OCR, nhận diện khuôn mặt cùng các tính năng phân tích dữ liệu thông minh vào sản phẩm di động và web."
       },
       {
-        "title": "Prototype & UI",
-        "description": "Thiết kế giao diện rõ ràng, dễ dùng và làm prototype nhanh để kiểm chứng ý tưởng trước khi phát triển đầy đủ."
+        "title": "Thiết kế UI/UX & Làm mẫu thử (Prototyping)",
+        "description": "Thiết kế giao diện trực quan, tối ưu trải nghiệm người dùng và xây dựng bản mẫu thử nghiệm (prototype) nhanh chóng nhằm kiểm chứng ý tưởng trước khi triển khai thực tế."
       }
     ]
   },
   "portfolio": {
     "title": "Dự án",
-    "viewProject": "xem dự án",
-    "contactForCode": "liên hệ để xem code",
+    "viewProject": "Xem dự án",
+    "contactForCode": "Liên hệ nhận mã nguồn",
     "projects": [
       {
-        "description": "Ứng dụng xác minh EID/Hộ chiếu Viettel – kiosk Android có liveness detection, đọc NFC, OCR (MRZ) và tích hợp thanh toán."
+        "description": "Giải pháp Kiosk xác thực EID/Hộ chiếu Viettel trên Android – tích hợp nhận diện thực thể sống (liveness detection), quét thẻ NFC, OCR (MRZ) và cổng thanh toán tự động."
       },
       {
-        "description": "Nền tảng quản lý thiết bị Face Terminal Android: theo dõi trạng thái thiết bị, xem log truy cập và cập nhật APK từ xa."
+        "description": "Nền tảng Full-stack quản lý thiết bị điểm danh Face Terminal (Android) – giám sát trạng thái thời gian thực, quản lý nhật ký ra vào và cập nhật gói cài đặt APK từ xa."
       },
       {
-        "description": "Website và ứng dụng mobile cho quán cà phê – dự án full-stack (React / Node / MySQL + React Native) với hệ thống quản lý sản phẩm và người dùng."
+        "description": "Hệ thống Website & Ứng dụng di động quản lý quán cà phê – giải pháp full-stack (React / Node.js / MySQL + React Native) với tính năng phân quyền, danh mục sản phẩm và phản hồi khách hàng."
       },
       {
-        "description": "Raincaster – nền tảng dự báo thời tiết sử dụng mô hình SVM với Flask backend và React frontend."
+        "description": "Raincaster – nền tảng dự báo thời tiết thời gian thực ứng dụng mô hình học máy SVM, kết hợp backend Flask và frontend React, tập trung dự đoán lượng mưa."
       },
       {
-        "description": "DSoft – ứng dụng quản lý spa viết bằng Flutter: đặt lịch, quản lý nhân sự, tồn kho và thanh toán."
+        "description": "DSoft – ứng dụng quản lý spa & chăm sóc sức khỏe phát triển bằng Flutter: hỗ trợ đặt lịch hẹn, phân ca nhân sự, quản trị kho hàng, thanh toán và báo cáo doanh thu."
       },
       {
-        "description": "Ngoài ra mình còn một số dự án khác trên GitHub — bạn có thể xem thêm ở đó."
+        "description": "Khám phá thêm nhiều dự án mã nguồn mở và sản phẩm thú vị khác trên trang GitHub cá nhân của mình.",
+        "ctaLabel": "Xem GitHub"
       }
     ]
   },
   "contact": {
     "title": "Liên hệ",
-    "description": "Nếu bạn muốn trao đổi về một dự án, hợp tác phát triển sản phẩm, hoặc đơn giản là nói chuyện về công nghệ và lập trình, cứ thoải mái liên hệ với mình.",
+    "description": "Nếu bạn có ý tưởng dự án cần hợp tác, muốn trao đổi về giải pháp công nghệ hoặc đơn giản là trò chuyện về lập trình và phát triển phần mềm, đừng ngần ngại kết nối với mình nhé.",
     "form": {
-      "name": "Tên của bạn",
-      "email": "Email của bạn",
-      "subject": "Chủ đề",
-      "message": "Nội dung",
-      "send": "Gửi",
+      "name": "Họ và tên",
+      "email": "Địa chỉ email",
+      "subject": "Tiêu đề",
+      "message": "Nội dung tin nhắn",
+      "send": "Gửi tin nhắn",
       "sending": "Đang gửi...",
-      "success": "Tin nhắn đã được gửi!",
-      "error": "Có lỗi xảy ra. Vui lòng thử lại.",
+      "success": "Tin nhắn của bạn đã được gửi thành công!",
+      "error": "Không thể gửi tin nhắn lúc này. Vui lòng thử lại sau.",
       "validation": {
-        "required": "Trường này là bắt buộc.",
-        "nameMin": "Tên phải có ít nhất 2 ký tự.",
-        "emailInvalid": "Vui lòng nhập email hợp lệ.",
-        "messageMin": "Nội dung phải có ít nhất 10 ký tự.",
-        "fixBeforeSubmit": "Vui lòng sửa các trường đang báo lỗi trước khi gửi."
+        "required": "Vui lòng không để trống trường này.",
+        "nameMin": "Họ và tên cần có ít nhất 2 ký tự.",
+        "emailInvalid": "Vui lòng nhập một địa chỉ email hợp lệ.",
+        "messageMin": "Nội dung tin nhắn cần có ít nhất 10 ký tự.",
+        "fixBeforeSubmit": "Vui lòng kiểm tra và hoàn thiện các trường thông tin hợp lệ trước khi gửi."
       }
     },
     "info": {
       "email": "Email",
-      "phone": "Điện thoại"
+      "phone": "Số điện thoại"
     }
   },
   "resume": {
-    "title": "CV",
-    "description": "Bạn có thể xem hoặc tải CV của mình để biết thêm chi tiết về kinh nghiệm làm việc và kỹ năng.",
-    "downloadCV": "Tải CV",
-    "fallbackMessage": "Nếu không xem được PDF, bấm vào đây để",
+    "title": "Hồ sơ CV",
+    "description": "Xem trực tuyến hoặc tải về hồ sơ CV chi tiết, tóm lược quá trình học vấn, kỹ năng chuyên môn và kinh nghiệm thực chiến trong phát triển mobile & full-stack.",
+    "downloadCV": "Tải xuống CV",
+    "fallbackMessage": "Nếu trình duyệt không thể hiển thị PDF, bấm vào đây để",
     "openInNewTab": "mở trong tab mới",
-    "lastUpdated": "Cập nhật lần cuối",
-    "outdatedPreviewTitle": "CV này đã cũ",
-    "outdatedPreviewDescription": "Phần xem trước CV đang được ẩn vì CV đã cũ. Nếu bạn cần bản mới nhất, hãy liên hệ trực tiếp với mình.",
+    "lastUpdated": "Cập nhật gần nhất",
+    "outdatedPreviewTitle": "Bản CV đang chờ làm mới",
+    "outdatedPreviewDescription": "Bản xem trước trực tuyến tạm thời được ẩn để cập nhật các thông tin và kinh nghiệm mới nhất. Nếu bạn quan tâm và muốn nhận bản CV mới, vui lòng liên hệ trực tiếp với mình.",
     "previewStatusLabel": "Đang cập nhật",
-    "contactForLatestCv": "Liên hệ để nhận CV mới",
-    "outdatedDownloadHint": "CV này đã cũ nên hiện tại không thể tải xuống."
+    "contactForLatestCv": "Liên hệ nhận bản CV mới nhất",
+    "outdatedDownloadHint": "Hồ sơ CV đang trong quá trình cập nhật lại nên tính năng tải xuống tạm thời bị vô hiệu hóa. Vui lòng liên hệ trực tiếp để nhận bản mới nhất.",
+    "pdfTitle": "Bản xem trước CV (PDF)"
   },
   "footer": {
     "copyright": "© 2026"
   },
   "meta": {
-    "title": "Nguyễn Phúc Thành - Lập trình viên Mobile & Full-stack",
-    "description": "Portfolio của Nguyễn Phúc Thành — lập trình viên Android và full-stack tại Hà Nội."
+    "title": "Nguyễn Phúc Thành - Kỹ sư phát triển Mobile & Full-stack",
+    "description": "Portfolio cá nhân của Nguyễn Phúc Thành — kỹ sư Android và Full-stack tại Hà Nội, chuyên sâu về kiến trúc sạch, độ ổn định của sản phẩm và trải nghiệm người dùng thực tế."
   }
 }

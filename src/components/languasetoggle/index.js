@@ -5,14 +5,21 @@ import './style.css';
 const LanguageToggle = () => {
   const { i18n } = useTranslation();
 
+  const currentLang = i18n.resolvedLanguage || i18n.language || 'en';
+  const isVi = currentLang.startsWith('vi');
+
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'vi' : 'en';
+    const newLang = isVi ? 'en' : 'vi';
     i18n.changeLanguage(newLang);
   };
 
   return (
-    <button className="language-toggle" onClick={toggleLanguage}>
-      {i18n.language === 'en' ? 'Tiếng Việt' : 'English'}
+    <button
+      className="language-toggle"
+      onClick={toggleLanguage}
+      aria-label={isVi ? "Switch to English" : "Chuyển sang Tiếng Việt"}
+    >
+      {isVi ? 'English' : 'Tiếng Việt'}
     </button>
   );
 };

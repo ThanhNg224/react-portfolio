@@ -9,7 +9,7 @@ import { isCvFresh } from "../../utils/cvFreshness";
 import { CV_FILE_NAME, CV_UPDATE_DATE, getCvPublicUrl } from "../../config/cv";
 
 export const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const updateDate = CV_UPDATE_DATE;
   const isCvUpToDate = isCvFresh(updateDate);
   
@@ -55,6 +55,7 @@ export const Home = () => {
                 <h2 className="mb-1x">{t('home.title')}</h2>
                 <h1 className="fluidz-48 mb-1x">
                   <Typewriter
+                    key={i18n.language}
                     options={{
                       strings: [
                         t('home.animated.first'),

@@ -6,6 +6,9 @@
     "resume": "Resume",
     "contact": "Contact"
   },
+  "social": {
+    "followMe": "Follow Me"
+  },
   "home": {
     "title": "I'm Thanh Nguyen",
     "animated": {
@@ -31,8 +34,8 @@
       "education": "Education",
       "certifications": "Certifications",
       "workTimeline": "Work experience",
-      "skills": "Skills",
-      "services": "Services"
+      "skills": "Technical skills",
+      "services": "Areas of expertise"
     },
     "education": [
       {
@@ -82,60 +85,61 @@
     ],
     "services": [
       {
-        "title": "Mobile application development",
-        "description": "Developing Android (Kotlin) or Flutter applications for real-world use cases, integrating backend APIs, Firebase services, ML Kit, and third-party SDKs when needed."
+        "title": "Mobile Application Development",
+        "description": "Building high-performance Android (Kotlin) and Flutter applications tailored to real-world use cases, with seamless integration of backend APIs, Firebase services, ML Kit, and third-party SDKs."
       },
       {
-        "title": "Full-stack web development",
-        "description": "Building web applications with React or Next.js and backend systems using Node.js or Flask, focusing on reliability, maintainability, and scalability."
+        "title": "Full-stack Web Development",
+        "description": "Crafting responsive web applications with React or Next.js and robust backend services using Node.js or Flask, with an emphasis on reliability, scalability, and maintainability."
       },
       {
-        "title": "Machine learning integration",
-        "description": "Integrating machine learning models and image-processing features such as OCR, face detection or recognition, and data analysis into mobile and web applications."
+        "title": "Machine Learning Integration",
+        "description": "Embedding machine learning models and computer vision capabilities — including OCR, face detection/recognition, and intelligent data analysis — into mobile and web products."
       },
       {
-        "title": "UI/UX and prototyping",
-        "description": "Designing clear, user-friendly interfaces and building quick prototypes to validate ideas before moving into full implementation."
+        "title": "UI/UX Design & Prototyping",
+        "description": "Designing intuitive, user-centric interfaces and developing rapid prototypes to test and validate ideas before transitioning into full-scale production."
       }
     ]
   },
   "portfolio": {
     "title": "Projects",
-    "viewProject": "view project",
-    "contactForCode": "contact for private code",
+    "viewProject": "View project",
+    "contactForCode": "Contact for private code",
     "projects": [
       {
-        "description": "Viettel EID/Passport verification app – an Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and integrated payment processing."
+        "description": "Viettel EID/Passport verification app – an Android kiosk solution featuring liveness detection, NFC reading, OCR (MRZ), and integrated payment processing."
       },
       {
-        "description": "A full-stack platform designed to manage Android-based Face Terminal devices, including real-time monitoring, access log tracking, and remote APK updates."
+        "description": "A full-stack platform designed to manage Android-based Face Terminal devices, featuring real-time device monitoring, access log tracking, and remote APK updates."
       },
       {
-        "description": "Coffee shop website and mobile app – a full-stack project (React / Node / MySQL + React Native) with user and admin roles, product browsing, and feedback features."
+        "description": "Coffee shop website and mobile app – a full-stack system (React / Node.js / MySQL + React Native) with role-based access, product browsing, and feedback management."
       },
       {
-        "description": "Raincaster – a real-time weather forecasting platform using an SVM model with a Flask backend and React frontend, focused on rainfall prediction."
+        "description": "Raincaster – a real-time weather forecasting platform leveraging an SVM model with a Flask backend and React frontend, focused on rainfall prediction."
       },
       {
-        "description": "DSoft – a Flutter-based spa and wellness management application covering appointment booking, staff scheduling, inventory management, payments, and basic analytics."
+        "description": "DSoft – a Flutter-based spa and wellness management application supporting appointment bookings, staff scheduling, inventory tracking, payments, and business analytics."
       },
       {
-        "description": "More projects are available on my GitHub — feel free to explore."
+        "description": "More open-source projects and experiments are available on my GitHub — feel free to explore.",
+        "ctaLabel": "View GitHub"
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "description": "If you'd like to collaborate on a project, discuss development ideas, or just have a conversation about software and technology, feel free to reach out.",
+    "description": "If you'd like to collaborate on a project, discuss development ideas, or simply chat about software and technology, feel free to reach out.",
     "form": {
       "name": "Your name",
       "email": "Your email",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send",
+      "send": "Send message",
       "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Failed to send the message. Please try again.",
+      "success": "Your message has been sent successfully!",
+      "error": "Failed to send the message. Please try again later.",
       "validation": {
         "required": "This field is required.",
         "nameMin": "Name must be at least 2 characters.",
@@ -151,16 +155,17 @@
   },
   "resume": {
     "title": "Resume",
-    "description": "View and download my resume, which highlights my experience, technical skills, and education in mobile and full-stack development.",
+    "description": "View and download my resume, highlighting my experience, technical skills, and educational background in mobile and full-stack development.",
     "downloadCV": "Download CV",
     "fallbackMessage": "Can't view the PDF? Click here to",
     "openInNewTab": "open in a new tab",
     "lastUpdated": "Last updated",
-    "outdatedPreviewTitle": "This CV is outdated",
-    "outdatedPreviewDescription": "The CV preview is currently hidden because it is outdated. Please contact me if you would like the most recent version.",
+    "outdatedPreviewTitle": "CV is being updated",
+    "outdatedPreviewDescription": "The CV preview is temporarily hidden while being refreshed with recent experience. Please reach out directly if you need the latest version.",
     "previewStatusLabel": "Under refresh",
     "contactForLatestCv": "Contact me for the latest CV",
-    "outdatedDownloadHint": "This CV is outdated, so downloading is currently disabled. Please contact me to receive the latest version."
+    "outdatedDownloadHint": "This CV is currently being refreshed, so downloading is temporarily disabled. Please contact me to receive the latest version.",
+    "pdfTitle": "Resume PDF Preview"
   },
   "footer": {
     "copyright": "© 2026"

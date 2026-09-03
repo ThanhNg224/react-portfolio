@@ -88,7 +88,7 @@ export const Resume = () => {
                   <div className="pdf-page">
                     <iframe
                       src={`${cvUrl}#view=FitH&zoom=page-fit&toolbar=0&navpanes=0&scrollbar=0`}
-                      title="Resume PDF"
+                      title={t("resume.pdfTitle", { defaultValue: "Resume PDF" })}
                       className="pdf-iframe"
                       frameBorder="0"
                     />

@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { dataportfolio } from "../../content_option";
 
@@ -50,12 +51,12 @@ export const Portfolio = () => {
                   <p>{projects[i]?.description || data.description}</p>
                   <div className="project-buttons">
                     {data.isPrivate ? (
-                      <a href="/react-portfolio/contact" className="project-btn private-btn">
+                      <Link to="/contact" className="project-btn private-btn">
                         {t('portfolio.contactForCode')}
-                      </a>
+                      </Link>
                     ) : (
                       <a href={data.link} target="_blank" rel="noopener noreferrer" className="project-btn">
-                        {data.ctaLabel || t('portfolio.viewProject')}
+                        {projects[i]?.ctaLabel || data.ctaLabel || t('portfolio.viewProject')}
                       </a>
                     )}
                   </div>
