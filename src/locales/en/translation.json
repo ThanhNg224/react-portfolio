@@ -16,7 +16,7 @@
       "second": "I develop mobile applications",
       "third": "I build real-world web products"
     },
-    "description": "I'm Nguyen Phuc Thanh, a Multimedia Engineering graduate from Hanoi University of Science and Technology. My main focus is Android development, but I also take on full-stack tasks when needed. I enjoy building products that are reliable, easy to maintain, and genuinely useful to the people who use them.",
+    "description": "I'm Nguyen Phuc Thanh, a Multimedia Engineering graduate from Hanoi University of Science and Technology. As a versatile Mobile Developer, I specialize in crafting polished, production-ready applications across Flutter, Android, and iOS, alongside full-stack capabilities when needed. I focus on high performance, clean architecture, and delivering tangible value to end-users.",
     "cvOutdatedHint": "The CV is currently being refreshed. Please check back soon or contact me if you need the latest version.",
     "buttons": {
       "portfolio": "View projects",
@@ -29,7 +29,7 @@
   "about": {
     "title": "About me",
     "personalTitle": "A bit about myself",
-    "personalDescription": "I'm Nguyen Phuc Thanh, an Android developer based in Hanoi.\n\nI currently work at Kalapa JSC, building Android SDK products for the fintech sector in partnership with major banks. Before that, I worked on the Android development of HeyJapan — a Japanese learning app trusted by more than 7 million users.\n\nBeyond Android, I also have experience working on web and backend components when needed, although mobile development remains my main focus. I care a lot about clean architecture, maintainable code, and building systems that can grow over time without becoming difficult to manage.",
+    "personalDescription": "I'm Nguyen Phuc Thanh, a Mobile Developer based in Hanoi.\n\nI currently work at Kalapa JSC, developing fintech SDKs and mobile solutions in partnership with leading financial institutions and banks. My day-to-day work centers around engineering robust, production-grade applications across Flutter, Android, and iOS — from architecting smooth UI and complex state flows to crafting native bridge modules, hardware integrations, and high-security SDKs.\n\nPrior to that, I contributed to Android development for HeyJapan — a Japanese learning platform trusted by over 7 million users worldwide.\n\nWith a strong command of both cross-platform (Flutter) and native ecosystems (Android & iOS), paired with hands-on full-stack web and backend capabilities, I bring an adaptable, product-driven mindset to every project. I care deeply about clean architecture, system stability, and building software that scales sustainably over time.",
     "sections": {
       "education": "Education",
       "certifications": "Certifications",
@@ -53,7 +53,7 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Android Developer – Fintech SDK (eKYC)",
+        "jobtitle": "Mobile Developer – Fintech SDK (eKYC) & Cross-Platform Solutions",
         "where": "Kalapa JSC (Hanoi)",
         "date": "Jun 2026 – Present"
       },
@@ -74,8 +74,9 @@
       }
     ],
     "skills": [
-      { "name": "Kotlin & Android", "value": 80 },
-      { "name": "Flutter & Dart", "value": 70 },
+      { "name": "Flutter & Dart", "value": 85 },
+      { "name": "Kotlin & Android", "value": 85 },
+      { "name": "Swift & iOS", "value": 75 },
       { "name": "React Native", "value": 65 },
       { "name": "JavaScript (ReactJS / NextJS)", "value": 75 },
       { "name": "NodeJS & Express", "value": 70 },
@@ -86,7 +87,7 @@
     "services": [
       {
         "title": "Mobile Application Development",
-        "description": "Building high-performance Android (Kotlin) and Flutter applications tailored to real-world use cases, with seamless integration of backend APIs, Firebase services, ML Kit, and third-party SDKs."
+        "description": "Building and optimizing production-ready mobile apps across Flutter, Android (Kotlin), and iOS (Swift). Proficient in scalable state management, fluid animations, native bridge channels, Firebase, ML Kit, and secure banking/fintech SDK integrations."
       },
       {
         "title": "Full-stack Web Development",
@@ -155,7 +156,7 @@
   },
   "resume": {
     "title": "Resume",
-    "description": "View and download my resume, highlighting my experience, technical skills, and educational background in mobile and full-stack development.",
+    "description": "View and download my resume, highlighting my experience, technical skills, and educational background in mobile (Flutter, Android, iOS) and full-stack development.",
     "downloadCV": "Download CV",
     "fallbackMessage": "Can't view the PDF? Click here to",
     "openInNewTab": "open in a new tab",
@@ -172,6 +173,6 @@
   },
   "meta": {
     "title": "Nguyen Phuc Thanh - Mobile & Full-stack Developer",
-    "description": "Portfolio of Nguyen Phuc Thanh, a Hanoi-based Android and full-stack developer focused on clean architecture, stable products, and practical user experience."
+    "description": "Portfolio of Nguyen Phuc Thanh, a Hanoi-based Mobile Developer (Flutter, Android, iOS) and full-stack engineer focused on clean architecture, stable products, and practical user experience."
   }
 }

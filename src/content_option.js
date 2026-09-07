@@ -4,25 +4,25 @@ const logotext = "ThanhNg224";
 const meta = {
   title: "Nguyen Phuc Thanh - Mobile & Full Stack Developer",
   description:
-    "I’m Nguyen Phuc Thanh, a mobile and full-stack developer from Hanoi. I build innovative apps and web solutions.",
+    "I’m Nguyen Phuc Thanh, a Mobile Developer (Flutter, Android, iOS) and full-stack engineer from Hanoi. I build high-performance mobile apps and digital solutions.",
 };
 
 const introdata = {
   title: "I'm Thanh Nguyen",
   animated: {
-    first: "I love coding",
+    first: "I enjoy building software",
     second: "I develop mobile apps",
-    third: "I build websites",
+    third: "I build real-world web products",
   },
   description:
-    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST. Full-stack developer focused on Android and mobile solutions. Working at EUp in Hanoi. My passion is creating high-quality mobile and web products.",
+    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST. As a versatile Mobile Developer, I specialize in crafting polished, production-ready applications across Flutter, Android, and iOS, alongside full-stack capabilities when needed.",
   your_img_url: "https://avatars.githubusercontent.com/ThanhNg224",
 };
 
 const dataabout = {
   title: "A bit about myself",
   aboutme:
-    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST and a Full-Stack Developer. From shipping Kotlin and Flutter mobile apps to crafting React/Node.js web solutions, building lightweight Python/Flask services, and even prototyping Unity experiences, I thrive on tackling new stacks and turning ideas into polished products. I'm currently exploring opportunities at EUp. My focus is always on clean, production-ready code, intuitive UX, and finding the simplest path from concept to impact. Hungry for fresh challenges, I'm ready to bring my adaptable, get-things-done mindset to whatever comes next.",
+    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST and a passionate Mobile Developer. Experienced in shipping production-grade Flutter, Android, and iOS applications as well as crafting full-stack web solutions (React/Node.js/Python). I thrive on turning ideas into polished, high-performance products with clean architecture and intuitive UX. Always eager for fresh challenges and driving impact through solid engineering.",
 };
 
 // Education entries pulled from CV
@@ -45,9 +45,14 @@ const certifications = [
 
 const worktimeline = [
   {
+    jobtitle: "Mobile Developer – Fintech SDK (eKYC) & Cross-Platform Solutions",
+    where: "Kalapa JSC (Hanoi, Vietnam)",
+    date: "June 2026 – Present",
+  },
+  {
     jobtitle: "Android Developer (High-Scale App Development & Product Optimization)",
     where: "eUp Technology Joint Stock Company (eUp Group) (Hanoi, Vietnam)",
-    date: "April 2025 – Present",
+    date: "April 2025 – May 2026",
   },
   {
     jobtitle: "Fullstack Developer (Mobile Focus)",
@@ -62,8 +67,9 @@ const worktimeline = [
 ];
 
 const skills = [
-    { name: "Kotlin & Android", value: 80 },
-    { name: "Flutter & Dart", value: 70 },
+    { name: "Flutter & Dart", value: 85 },
+    { name: "Kotlin & Android", value: 85 },
+    { name: "Swift & iOS", value: 75 },
     { name: "React Native", value: 65 },
     { name: "JavaScript (ReactJS/NextJS)", value: 75 },
     { name: "NodeJS & Express", value: 70 },
@@ -76,7 +82,7 @@ const services = [
   {
     title: "Mobile App Development",
     description:
-      "Building production‐ready mobile apps using Flutter/Dart or native Android (Kotlin) with integrations like ML Kit, Firebase, and backend APIs.",
+      "Building and optimizing production-ready mobile apps across Flutter, Android (Kotlin), and iOS (Swift) with integrations like native platform channels, Firebase, ML Kit, and secure fintech SDKs.",
   },
   {
     title: "Full‐Stack Web Development",

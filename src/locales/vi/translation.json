@@ -16,7 +16,7 @@
       "second": "Chuyên sâu phát triển ứng dụng di động",
       "third": "Xây dựng các sản phẩm web thực tế"
     },
-    "description": "Mình là Nguyễn Phúc Thành, tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách Khoa Hà Nội. Định hướng trọng tâm của mình là phát triển ứng dụng Android, đồng thời linh hoạt đảm nhiệm các tác vụ full-stack khi cần thiết. Mình luôn hướng tới việc tạo ra những sản phẩm vận hành ổn định, dễ bảo trì và mang lại giá trị thiết thực cho người dùng.",
+    "description": "Mình là Nguyễn Phúc Thành, tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách Khoa Hà Nội. Với định hướng Kỹ sư Mobile toàn diện, mình chuyên sâu phát triển và làm chủ các ứng dụng thực chiến mượt mà trên cả Flutter, Android và iOS, đồng thời linh hoạt đảm nhiệm các tác vụ full-stack khi dự án yêu cầu. Mình luôn hướng tới việc tạo ra những sản phẩm vận hành ổn định, kiến trúc sạch và mang lại giá trị thiết thực cho người dùng.",
     "cvOutdatedHint": "Hồ sơ CV đang trong quá trình cập nhật. Nếu bạn cần bản mới nhất, đừng ngần ngại liên hệ trực tiếp với mình nhé.",
     "buttons": {
       "portfolio": "Xem dự án",
@@ -29,7 +29,7 @@
   "about": {
     "title": "Giới thiệu",
     "personalTitle": "Đôi nét về bản thân",
-    "personalDescription": "Mình là Nguyễn Phúc Thành, kỹ sư phát triển Android hiện đang làm việc tại Hà Nội.\n\nHiện tại, mình đang công tác tại Kalapa JSC, chuyên phát triển các sản phẩm Android SDK trong lĩnh vực fintech kết nối với các đối tác ngân hàng lớn. Trước đó, mình tham gia phát triển ứng dụng HeyJapan — nền tảng học tiếng Nhật được tin dùng bởi hơn 7 triệu người học.\n\nBên cạnh mảng Android, mình cũng tích lũy nhiều kinh nghiệm thực chiến với web và backend khi dự án yêu cầu, dù mobile vẫn luôn là định hướng mũi nhọn. Mình đặc biệt quan tâm đến kiến trúc sạch (clean architecture), mã nguồn tinh gọn, dễ bảo trì và khả năng mở rộng bền vững của hệ thống theo thời gian.",
+    "personalDescription": "Mình là Nguyễn Phúc Thành, kỹ sư phát triển ứng dụng di động (Mobile Developer) làm việc tại Hà Nội.\n\nHiện tại, mình đang công tác tại Kalapa JSC, phụ trách phát triển các bộ SDK fintech và giải pháp mobile chất lượng cao kết nối với các đối tác ngân hàng lớn. Trọng tâm thực chiến hàng ngày của mình là làm chủ và triển khai trơn tru các ứng dụng trên cả Flutter, Android và iOS — từ xây dựng kiến trúc giao diện mượt mà, quản lý luồng dữ liệu & trạng thái phức tạp cho đến viết native module kết nối phần cứng và bảo mật SDK.\n\nTrước đó, mình tham gia phát triển mảng Android cho HeyJapan — ứng dụng học tiếng Nhật đã phục vụ hơn 7 triệu người dùng trên toàn thế giới.\n\nKhông dừng lại ở một nền tảng đơn lẻ, mình làm chủ cả giải pháp Cross-platform (Flutter) lẫn Native (Android, iOS), kết hợp năng lực full-stack web & backend khi cần thiết. Mình đặc biệt quan tâm đến kiến trúc sạch (clean architecture), khả năng mở rộng bền vững và trải nghiệm người dùng tinh tế trong từng dòng code.",
     "sections": {
       "education": "Học vấn & Đào tạo",
       "certifications": "Chứng chỉ chuyên môn",
@@ -53,7 +53,7 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Lập trình viên Android – SDK Fintech (eKYC)",
+        "jobtitle": "Kỹ sư phát triển Mobile – SDK Fintech (eKYC) & Giải pháp Đa nền tảng",
         "where": "Kalapa JSC (Hà Nội)",
         "date": "06/2026 – Hiện tại"
       },
@@ -74,8 +74,9 @@
       }
     ],
     "skills": [
-      { "name": "Kotlin & Android", "value": 80 },
-      { "name": "Flutter & Dart", "value": 70 },
+      { "name": "Flutter & Dart", "value": 85 },
+      { "name": "Kotlin & Android", "value": 85 },
+      { "name": "Swift & iOS", "value": 75 },
       { "name": "React Native", "value": 65 },
       { "name": "JavaScript (ReactJS / NextJS)", "value": 75 },
       { "name": "NodeJS & Express", "value": 70 },
@@ -85,8 +86,8 @@
     ],
     "services": [
       {
-        "title": "Phát triển ứng dụng di động",
-        "description": "Xây dựng các ứng dụng Android (Kotlin) và Flutter hiệu năng cao đáp ứng trọn vẹn bài toán thực tế; tích hợp liền mạch hệ thống backend API, Firebase, ML Kit cùng các SDK bên thứ ba."
+        "title": "Phát triển ứng dụng di động (Mobile)",
+        "description": "Xây dựng và tối ưu các ứng dụng thực chiến mượt mà trên cả Flutter, Android (Kotlin) và iOS (Swift). Thành thạo quản lý trạng thái, animation, viết native platform channels, tích hợp Firebase, ML Kit và các SDK fintech/ngân hàng đòi hỏi tính bảo mật cao."
       },
       {
         "title": "Phát triển web Full-stack",
@@ -155,7 +156,7 @@
   },
   "resume": {
     "title": "Hồ sơ CV",
-    "description": "Xem trực tuyến hoặc tải về hồ sơ CV chi tiết, tóm lược quá trình học vấn, kỹ năng chuyên môn và kinh nghiệm thực chiến trong phát triển mobile & full-stack.",
+    "description": "Xem trực tuyến hoặc tải về hồ sơ CV chi tiết, tóm lược quá trình học vấn, kỹ năng chuyên môn và kinh nghiệm thực chiến trong phát triển mobile (Flutter, Android, iOS) & full-stack.",
     "downloadCV": "Tải xuống CV",
     "fallbackMessage": "Nếu trình duyệt không thể hiển thị PDF, bấm vào đây để",
     "openInNewTab": "mở trong tab mới",
@@ -172,6 +173,6 @@
   },
   "meta": {
     "title": "Nguyễn Phúc Thành - Kỹ sư phát triển Mobile & Full-stack",
-    "description": "Portfolio cá nhân của Nguyễn Phúc Thành — kỹ sư Android và Full-stack tại Hà Nội, chuyên sâu về kiến trúc sạch, độ ổn định của sản phẩm và trải nghiệm người dùng thực tế."
+    "description": "Portfolio cá nhân của Nguyễn Phúc Thành — kỹ sư Mobile (Flutter, Android, iOS) và Full-stack tại Hà Nội, chuyên sâu về kiến trúc sạch, độ ổn định của sản phẩm và trải nghiệm người dùng thực tế."
   }
 }
