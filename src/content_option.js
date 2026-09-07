@@ -155,7 +155,7 @@ const contactConfig = {
 const socialprofils = {
   github: "https://github.com/ThanhNg224",
   facebook: "https://www.facebook.com/nguyen.thanh.619149/",
-  linkedin: "https://www.linkedin.com/in/nguyễn-thành-a7a8b3355/",
+  linkedin: "https://www.linkedin.com/in/nguyễn-phúc-thành-a7a8b3355/",
   twitter: "#",
   instagram: "https://www.instagram.com/thanhng.224",
 };
