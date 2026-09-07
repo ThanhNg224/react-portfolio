@@ -51,7 +51,7 @@ const worktimeline = [
   },
   {
     jobtitle: "Android Developer (High-Scale App Development & Product Optimization)",
-    where: "eUp Technology Joint Stock Company (eUp Group) (Hanoi, Vietnam)",
+    where: "eUp JSC (Hanoi, Vietnam)",
     date: "April 2025 – May 2026",
   },
   {

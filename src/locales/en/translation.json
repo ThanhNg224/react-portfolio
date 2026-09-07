@@ -29,7 +29,7 @@
   "about": {
     "title": "About me",
     "personalTitle": "A bit about myself",
-    "personalDescription": "I'm Nguyen Phuc Thanh, a Mobile Developer based in Hanoi.\n\nI currently work at Kalapa JSC, developing fintech SDKs and mobile solutions in partnership with leading financial institutions and banks. My day-to-day work centers around engineering robust, production-grade applications across Flutter, Android, and iOS — from architecting smooth UI and complex state flows to crafting native bridge modules, hardware integrations, and high-security SDKs.\n\nPrior to that, I contributed to Android development for HeyJapan — a Japanese learning platform trusted by over 7 million users worldwide.\n\nWith a strong command of both cross-platform (Flutter) and native ecosystems (Android & iOS), paired with hands-on full-stack web and backend capabilities, I bring an adaptable, product-driven mindset to every project. I care deeply about clean architecture, system stability, and building software that scales sustainably over time.",
+    "personalDescription": "I'm Nguyen Phuc Thanh, a Mobile Developer based in Hanoi.\n\nI currently work at Kalapa JSC, developing fintech SDKs and mobile solutions in partnership with leading financial institutions and banks. My day-to-day work centers around engineering robust, production-grade applications across Flutter, Android, and iOS — from architecting smooth UI and complex state flows to crafting native bridge modules, hardware integrations, and high-security SDKs.\n\nPrior to that, at eUp JSC, I contributed to Android development for HeyJapan — a Japanese learning platform trusted by over 7 million users worldwide.\n\nWith a strong command of both cross-platform (Flutter) and native ecosystems (Android & iOS), paired with hands-on full-stack web and backend capabilities, I bring an adaptable, product-driven mindset to every project. I care deeply about clean architecture, system stability, and building software that scales sustainably over time.",
     "sections": {
       "education": "Education",
       "certifications": "Certifications",
@@ -59,7 +59,7 @@
       },
       {
         "jobtitle": "Android Developer (Large-scale app development & product optimization)",
-        "where": "eUp Technology Joint Stock Company (Hanoi)",
+        "where": "eUp JSC (Hanoi)",
         "date": "Apr 2025 – May 2026"
       },
       {

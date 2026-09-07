@@ -29,7 +29,7 @@
   "about": {
     "title": "Giới thiệu",
     "personalTitle": "Đôi nét về bản thân",
-    "personalDescription": "Mình là Nguyễn Phúc Thành, kỹ sư phát triển ứng dụng di động (Mobile Developer) làm việc tại Hà Nội.\n\nHiện tại, mình đang công tác tại Kalapa JSC, phụ trách phát triển các bộ SDK fintech và giải pháp mobile chất lượng cao kết nối với các đối tác ngân hàng lớn. Trọng tâm thực chiến hàng ngày của mình là làm chủ và triển khai trơn tru các ứng dụng trên cả Flutter, Android và iOS — từ xây dựng kiến trúc giao diện mượt mà, quản lý luồng dữ liệu & trạng thái phức tạp cho đến viết native module kết nối phần cứng và bảo mật SDK.\n\nTrước đó, mình tham gia phát triển mảng Android cho HeyJapan — ứng dụng học tiếng Nhật đã phục vụ hơn 7 triệu người dùng trên toàn thế giới.\n\nKhông dừng lại ở một nền tảng đơn lẻ, mình làm chủ cả giải pháp Cross-platform (Flutter) lẫn Native (Android, iOS), kết hợp năng lực full-stack web & backend khi cần thiết. Mình đặc biệt quan tâm đến kiến trúc sạch (clean architecture), khả năng mở rộng bền vững và trải nghiệm người dùng tinh tế trong từng dòng code.",
+    "personalDescription": "Mình là Nguyễn Phúc Thành, kỹ sư phát triển ứng dụng di động (Mobile Developer) làm việc tại Hà Nội.\n\nHiện tại, mình đang công tác tại Kalapa JSC, phụ trách phát triển các bộ SDK fintech và giải pháp mobile chất lượng cao kết nối với các đối tác ngân hàng lớn. Trọng tâm thực chiến hàng ngày của mình là làm chủ và triển khai trơn tru các ứng dụng trên cả Flutter, Android và iOS — từ xây dựng kiến trúc giao diện mượt mà, quản lý luồng dữ liệu & trạng thái phức tạp cho đến viết native module kết nối phần cứng và bảo mật SDK.\n\nTrước đó, mình công tác tại eUp JSC và tham gia phát triển mảng Android cho HeyJapan — ứng dụng học tiếng Nhật đã phục vụ hơn 7 triệu người dùng trên toàn thế giới.\n\nKhông dừng lại ở một nền tảng đơn lẻ, mình làm chủ cả giải pháp Cross-platform (Flutter) lẫn Native (Android, iOS), kết hợp năng lực full-stack web & backend khi cần thiết. Mình đặc biệt quan tâm đến kiến trúc sạch (clean architecture), khả năng mở rộng bền vững và trải nghiệm người dùng tinh tế trong từng dòng code.",
     "sections": {
       "education": "Học vấn & Đào tạo",
       "certifications": "Chứng chỉ chuyên môn",
@@ -59,7 +59,7 @@
       },
       {
         "jobtitle": "Lập trình viên Android (Phát triển ứng dụng quy mô lớn & Tối ưu sản phẩm)",
-        "where": "Công ty Cổ phần Công nghệ eUp (Hà Nội)",
+        "where": "eUp JSC (Hà Nội)",
         "date": "04/2025 – 05/2026"
       },
       {
