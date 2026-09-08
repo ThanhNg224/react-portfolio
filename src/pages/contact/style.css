@@ -7,20 +7,68 @@
     border: 1px solid var(--secondary-color);
 }
 
+address a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    touch-action: manipulation;
+}
+
 .contact__form .form-control:focus {
     border-color: var(--text-color-3);
     box-shadow: 0 0 0 0.15rem rgba(204, 0, 0, 0.2);
 }
 
 .contact__form .form-control.is-invalid {
-    border-color: #cc0000;
+    border-color: var(--error-color);
 }
 
 .field-error {
     margin-top: 0.35rem;
     margin-bottom: 1rem;
     font-size: 0.88rem;
-    color: #cc0000;
+    color: var(--error-color);
+}
+
+.contact__form .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.form-error-summary {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid var(--error-color);
+    background: rgba(255, 138, 138, 0.12);
+}
+
+[data-theme="light"] .form-error-summary {
+    background: rgba(180, 35, 24, 0.08);
+}
+
+.form-error-summary:focus-visible {
+    outline: 2px solid var(--text-color-3);
+    outline-offset: 4px;
+}
+
+.form-error-summary__title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.form-error-summary ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style: disc;
+}
+
+.form-error-summary a {
+    color: var(--text-color);
+    text-decoration: underline;
 }
 
 .contact__form .form-control::placeholder {

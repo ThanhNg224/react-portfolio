@@ -1,5 +1,52 @@
 import React, {useEffect,useRef,useState,useCallback} from "react"
 
+const DEFAULT_CLICKABLES = [
+  'a',
+  'input[type="text"]',
+  'input[type="email"]',
+  'input[type="number"]',
+  'input[type="submit"]',
+  'input[type="image"]',
+  'label[for]',
+  'select',
+  'textarea',
+  'button',
+  '.link'
+]
+
+function useCustomCursorEnabled() {
+  const [isEnabled, setIsEnabled] = useState(false)
+
+  useEffect(() => {
+    const finePointer = window.matchMedia('(pointer: fine)')
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const forcedColors = window.matchMedia('(forced-colors: active)')
+    const update = () => setIsEnabled(finePointer.matches && !reducedMotion.matches && !forcedColors.matches)
+    const mediaQueries = [finePointer, reducedMotion, forcedColors]
+
+    update()
+    mediaQueries.forEach((mediaQuery) => {
+      if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener('change', update)
+      } else {
+        mediaQuery.addListener(update)
+      }
+    })
+
+    return () => {
+      mediaQueries.forEach((mediaQuery) => {
+        if (mediaQuery.removeEventListener) {
+          mediaQuery.removeEventListener('change', update)
+        } else {
+          mediaQuery.removeListener(update)
+        }
+      })
+    }
+  }, [])
+
+  return isEnabled
+}
+
 const IsDevice = (() => {
     if (typeof navigator == 'undefined') return
   
@@ -97,19 +144,7 @@ function CursorCore({
     outerScale = 6,
     innerScale = 0.6,
     trailingSpeed = 8,
-    clickables = [
-      'a',
-      'input[type="text"]',
-      'input[type="email"]',
-      'input[type="number"]',
-      'input[type="submit"]',
-      'input[type="image"]',
-      'label[for]',
-      'select',
-      'textarea',
-      'button',
-      '.link'
-    ]
+    clickables = DEFAULT_CLICKABLES
   }) {
     const cursorOuterRef = useRef()
     const cursorInnerRef = useRef()
@@ -204,9 +239,10 @@ function CursorCore({
     }, [isVisible])
   
     useEffect(() => {
+      const previousCursor = document.body.style.cursor
       document.body.style.cursor = 'none';
       return () => {
-        document.body.style.cursor = 'auto';
+        document.body.style.cursor = previousCursor;
       };
     }, []);
 
@@ -224,7 +260,10 @@ function CursorCore({
         setIsActiveClickable(false)
       }
   
+      const previousCursors = new Map()
+
       clickableEls.forEach((el) => {
+        previousCursors.set(el, el.style.cursor)
         el.style.cursor = 'none'
         el.addEventListener('mouseover', onMouseOver)
         el.addEventListener('click', onClick)
@@ -240,6 +279,7 @@ function CursorCore({
           el.removeEventListener('mousedown', onMouseDown)
           el.removeEventListener('mouseup', onMouseUp)
           el.removeEventListener('mouseout', onMouseOut)
+          el.style.cursor = previousCursors.get(el)
         })
       }
     }, [clickables])
@@ -297,7 +337,9 @@ function CursorCore({
     trailingSpeed,
     clickables
   }) {
-    if (typeof navigator !== 'undefined' && IsDevice.any()) {
+    const isCursorEnabled = useCustomCursorEnabled()
+
+    if (!isCursorEnabled || (typeof navigator !== 'undefined' && IsDevice.any())) {
       return <React.Fragment></React.Fragment>
     }
     return (

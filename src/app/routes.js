@@ -6,7 +6,7 @@ import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Resume } from "../pages/resume";
 import { Socialicons } from "../components/socialicons";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const pageVariants = {
   initial: { opacity: 0, x: 100 },
@@ -20,8 +20,17 @@ const pageTransition = {
   duration: 0.4,
 };
 
+const reducedPageVariants = {
+  initial: { opacity: 1, x: 0 },
+  in: { opacity: 1, x: 0 },
+  out: { opacity: 1, x: 0 },
+};
+
 const AnimatedRoutes = () => {
   const location = useLocation();
+  const prefersReducedMotion = useReducedMotion();
+  const variants = prefersReducedMotion ? reducedPageVariants : pageVariants;
+  const transition = prefersReducedMotion ? { duration: 0 } : pageTransition;
 
   return (
     <AnimatePresence mode="wait">
@@ -33,8 +42,8 @@ const AnimatedRoutes = () => {
               initial="initial"
               animate="in"
               exit="out"
-              variants={pageVariants}
-              transition={pageTransition}
+              variants={variants}
+              transition={transition}
             >
               <Home />
             </motion.div>
@@ -47,8 +56,8 @@ const AnimatedRoutes = () => {
               initial="initial"
               animate="in"
               exit="out"
-              variants={pageVariants}
-              transition={pageTransition}
+              variants={variants}
+              transition={transition}
             >
               <About />
             </motion.div>
@@ -61,8 +70,8 @@ const AnimatedRoutes = () => {
               initial="initial"
               animate="in"
               exit="out"
-              variants={pageVariants}
-              transition={pageTransition}
+              variants={variants}
+              transition={transition}
             >
               <Portfolio />
             </motion.div>
@@ -75,8 +84,8 @@ const AnimatedRoutes = () => {
               initial="initial"
               animate="in"
               exit="out"
-              variants={pageVariants}
-              transition={pageTransition}
+              variants={variants}
+              transition={transition}
             >
               <ContactUs />
             </motion.div>
@@ -89,8 +98,8 @@ const AnimatedRoutes = () => {
               initial="initial"
               animate="in"
               exit="out"
-              variants={pageVariants}
-              transition={pageTransition}
+              variants={variants}
+              transition={transition}
             >
               <Resume />
             </motion.div>
@@ -103,8 +112,8 @@ const AnimatedRoutes = () => {
               initial="initial"
               animate="in"
               exit="out"
-              variants={pageVariants}
-              transition={pageTransition}
+              variants={variants}
+              transition={transition}
             >
               <Home />
             </motion.div>
@@ -117,10 +126,10 @@ const AnimatedRoutes = () => {
 
 function AppRoutes() {
   return (
-    <div className="s_c">
+    <main className="s_c" id="main-content" tabIndex="-1">
       <AnimatedRoutes />
       <Socialicons />
-    </div>
+    </main>
   );
 }
 

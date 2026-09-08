@@ -6,6 +6,9 @@
 
 .menu__button {
     color: var(--text-color);
+    min-width: 44px;
+    min-height: 44px;
+    touch-action: manipulation;
 }
 
 .menu__button:focus,
@@ -37,6 +40,14 @@
 
 .nav_ac:hover {
     color: var(--text-color-2);
+}
+
+/* The header sits above the drawer, so everything but the toggle is hidden
+   while the menu is open - matching the inert state applied in JS. */
+.site__header.menu-is-open .navbar-brand,
+.site__header.menu-is-open .language-toggle,
+.site__header.menu-is-open .theme-toggle {
+    visibility: hidden;
 }
 
 .br-top,
@@ -222,6 +233,21 @@
     text-decoration: none;
 }
 
+@media (max-width: 991.98px) {
+    .the_menu .menu_item > a {
+        min-height: 48px;
+        touch-action: manipulation;
+    }
+
+    .menu_footer a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 4px;
+        touch-action: manipulation;
+    }
+}
+
 @media (max-width: 768px) {
     .site__header {
         top: 0;
@@ -231,6 +257,8 @@
 
     .nav_ac {
         height: 44px;
+        min-width: 44px;
+        min-height: 44px;
         line-height: 1.2;
         font-size: 1rem;
         padding: 5px 10px;
@@ -251,12 +279,32 @@
         line-height: 1.2;
         word-break: normal;
         overflow-wrap: normal;
+        width: 100%;
+        min-height: 48px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        touch-action: manipulation;
     }
 
     .menu_footer {
-        position: static !important;
+        position: absolute !important;
+        left: 0;
+        bottom: max(6px, env(safe-area-inset-bottom));
+        z-index: 3;
         gap: 0.6rem;
         text-align: center;
+    }
+
+    .menu_footer a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 4px;
+    }
+
+    .the_menu {
+        padding-top: max(64px, 12vh);
+        padding-bottom: calc(7rem + env(safe-area-inset-bottom));
     }
 
     .menu_footer .d-flex {
@@ -272,6 +320,27 @@
     .br-left,
     .br-right {
         width: 6px;
+    }
+}
+
+@media (max-width: 991.98px) and (max-height: 500px) {
+    .the_menu {
+        padding-top: 32px;
+        padding-bottom: 96px;
+    }
+
+    .the_menu .menu_item > a {
+        min-height: 44px;
+        margin-top: 4px !important;
+        margin-bottom: 4px !important;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 1.75rem;
+    }
+
+    .menu_footer {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
     }
 }
 

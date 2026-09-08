@@ -4,6 +4,11 @@
     }
 }
 
+/* Route-change focus target only; it is never in the tab order, so no ring is owed */
+.s_c[tabindex="-1"]:focus {
+    outline: none;
+}
+
 
 @media (min-width: 1400px) {
     .container,

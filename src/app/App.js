@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -12,8 +12,21 @@ import "./App.css";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
+  const isInitialRender = useRef(true);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    if (isInitialRender.current) {
+      isInitialRender.current = false;
+      return;
+    }
+
+    const focusFrame = window.requestAnimationFrame(() => {
+      document.getElementById("main-content")?.focus({ preventScroll: true });
+    });
+
+    return () => window.cancelAnimationFrame(focusFrame);
   }, [pathname]);
   return props.children;
 }

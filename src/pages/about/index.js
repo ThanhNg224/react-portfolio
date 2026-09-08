@@ -62,7 +62,7 @@ export const About = () => {
         {/* About Section */}
         <Row className="sec_sp">
           <Col lg="3">
-            <h3 className="color_sec py-4">{t('about.personalTitle')}</h3>
+            <h2 className="color_sec py-4">{t('about.personalTitle')}</h2>
           </Col>
           <Col lg="9" className="d-flex align-items-center">
             <div>
@@ -74,7 +74,7 @@ export const About = () => {
         {/* Education Section */}
         <Row className="sec_sp">
           <Col lg="3">
-            <h3 className="color_sec py-4">{t('about.sections.education')}</h3>
+            <h2 className="color_sec py-4">{t('about.sections.education')}</h2>
           </Col>
           <Col lg="9">
             <table className="table caption-top">
@@ -94,7 +94,7 @@ export const About = () => {
         {/* Certifications Section */}
         <Row className="sec_sp">
           <Col lg="3">
-            <h3 className="color_sec py-4">{t('about.sections.certifications')}</h3>
+            <h2 className="color_sec py-4">{t('about.sections.certifications')}</h2>
           </Col>
           <Col lg="9">
             <table className="table caption-top">
@@ -114,7 +114,7 @@ export const About = () => {
         {/* Work Timeline Section */}
         <Row className="sec_sp">
           <Col lg="3">
-            <h3 className="color_sec py-4">{t('about.sections.workTimeline')}</h3>
+            <h2 className="color_sec py-4">{t('about.sections.workTimeline')}</h2>
           </Col>
           <Col lg="9">
             <table className="table caption-top">
@@ -136,7 +136,7 @@ export const About = () => {
         {/* Skills Section */}
         <Row className="sec_sp">
           <Col lg="3">
-            <h3 className="color_sec py-4">{t('about.sections.skills')}</h3>
+            <h2 className="color_sec py-4">{t('about.sections.skills')}</h2>
           </Col>
           <Col lg="9">
             {skills.map((data, i) => {
@@ -161,13 +161,13 @@ export const About = () => {
         {/* Services Section */}
         <Row className="sec_sp">
           <Col lg="3">
-            <h3 className="color_sec py-4">{t('about.sections.services')}</h3>
+            <h2 className="color_sec py-4">{t('about.sections.services')}</h2>
           </Col>
           <Col lg="9">
             {services.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
+                  <h3 className="service__title">{data.title}</h3>
                   <p className="service_desc">{data.description}</p>
                 </div>
               );

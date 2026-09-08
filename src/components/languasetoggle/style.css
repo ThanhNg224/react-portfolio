@@ -12,6 +12,8 @@
   min-width: 80px;
   text-align: center;
   white-space: nowrap;
+  min-height: 44px;
+  touch-action: manipulation;
 }
 
 .language-toggle:hover {
@@ -22,9 +24,10 @@
 
 @media (max-width: 768px) {
   .language-toggle {
-    padding: 4px 8px;
-    font-size: 10px;
+    padding: 6px 8px;
+    font-size: 12px;
     margin-right: 10px;
     min-width: 70px;
+    min-height: 44px;
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
@@ -7,9 +7,37 @@ import { introdata } from "../../content_option";
 import { Link } from "react-router-dom";
 import { isCvFresh } from "../../utils/cvFreshness";
 import { CV_FILE_NAME, CV_UPDATE_DATE, getCvPublicUrl } from "../../config/cv";
+import { FaDownload } from "react-icons/fa";
+
+const usePrefersReducedMotion = () => {
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updatePreference = () => setPrefersReducedMotion(mediaQuery.matches);
+
+    updatePreference();
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener("change", updatePreference);
+    } else {
+      mediaQuery.addListener(updatePreference);
+    }
+
+    return () => {
+      if (mediaQuery.removeEventListener) {
+        mediaQuery.removeEventListener("change", updatePreference);
+      } else {
+        mediaQuery.removeListener(updatePreference);
+      }
+    };
+  }, []);
+
+  return prefersReducedMotion;
+};
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
+  const prefersReducedMotion = usePrefersReducedMotion();
   const updateDate = CV_UPDATE_DATE;
   const isCvUpToDate = isCvFresh(updateDate);
   
@@ -52,24 +80,31 @@ export const Home = () => {
           <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">{t('home.title')}</h2>
-                <h1 className="fluidz-48 mb-1x">
-                  <Typewriter
-                    key={i18n.language}
-                    options={{
-                      strings: [
-                        t('home.animated.first'),
-                        t('home.animated.second'),
-                        t('home.animated.third'),
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      delay: 40,
-                      deleteSpeed: 20,
-                      pauseFor: 1800,
-                    }}
-                  />
-                </h1>
+                <h1 className="mb-1x">{t('home.title')}</h1>
+                <h2 className="fluidz-48 mb-1x">
+                  {prefersReducedMotion ? t('home.animated.first') : (
+                    <>
+                      <span aria-hidden="true">
+                        <Typewriter
+                          key={i18n.language}
+                          options={{
+                            strings: [
+                              t('home.animated.first'),
+                              t('home.animated.second'),
+                              t('home.animated.third'),
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            delay: 40,
+                            deleteSpeed: 20,
+                            pauseFor: 1800,
+                          }}
+                        />
+                      </span>
+                      <span className="visually-hidden">{t('home.animated.first')}</span>
+                    </>
+                  )}
+                </h2>
                 <p className="mb-1x">{t('home.description')}</p>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
@@ -113,7 +148,8 @@ export const Home = () => {
                       className="cv_download_btn"
                     >
                       <div id="button_cv" className="ac_btn btn">
-                        {t("home.buttons.downloadCV")}
+                        <FaDownload className="cv-download-icon" aria-hidden="true" />
+                        <span>{t("home.buttons.downloadCV")}</span>
                         <div className="ring one"></div>
                         <div className="ring two"></div>
                         <div className="ring three"></div>
@@ -126,7 +162,8 @@ export const Home = () => {
                       aria-disabled="true"
                       title={t("home.cvOutdatedHint")}
                     >
-                      {t("home.buttons.downloadCV")}
+                      <FaDownload className="cv-download-icon" aria-hidden="true" />
+                      <span>{t("home.buttons.downloadCV")}</span>
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>

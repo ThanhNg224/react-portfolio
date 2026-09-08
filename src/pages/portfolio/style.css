@@ -13,7 +13,7 @@
     text-align: center;
     margin: 0.8rem auto;
     position: relative;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     padding: 8px;
     border: 1px solid var(--secondary-color);
     transition: 0.3s ease;
@@ -64,6 +64,18 @@
     opacity: 1;
 }
 
+.po_item:focus-within {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.po_item:focus-within img {
+    transform: scale(1.05);
+}
+
+.po_item:focus-within .content {
+    opacity: 1;
+}
+
 .po_item .content p {
     color: white;
     font-size: 15px;
@@ -82,7 +94,7 @@
 .project-btn {
     background: rgba(255, 255, 255, 0.9);
     color: #333;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
     padding: 8px 16px;
     text-align: center;
     font-size: 0.9rem;
@@ -93,9 +105,15 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     min-width: 140px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
 }
 
-.project-btn:hover {
+.project-btn:hover,
+.project-btn:focus-visible {
     background: white;
     color: #000;
     transform: translateY(-1px);
@@ -103,14 +121,17 @@
     text-decoration: none;
 }
 
+/* Private repos read as an outline variant so the state survives without relying on hue */
 .private-btn {
-    background: rgba(255, 193, 7, 0.9);
-    color: #333;
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.9);
 }
 
-.private-btn:hover {
-    background: #ffc107;
-    color: #000;
+.private-btn:hover,
+.private-btn:focus-visible {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
 }
 
 @media (max-width: 768px) {
@@ -127,11 +148,14 @@
         margin: 0 0 1rem;
         padding: 10px;
     }
+}
 
+/* Card content sits inline (no hover overlay) on small screens and on touch pointers */
+@media (max-width: 768px), (hover: none), (pointer: coarse) {
     .po_item .content {
         position: static;
         opacity: 1;
-        background: transparent;
+        background: var(--primary-color);
         backdrop-filter: none;
         color: var(--text-color);
         align-items: flex-start;
@@ -151,13 +175,38 @@
         align-items: stretch;
     }
 
+    /* The overlay is gone here, so buttons need a surface drawn from theme tokens */
     .project-btn {
         width: 100%;
         min-width: 0;
+        min-height: 48px;
+        background: var(--secondary-color);
+        color: var(--primary-color);
+        border-color: var(--secondary-color);
+    }
+
+    .project-btn:hover,
+    .project-btn:focus-visible {
+        background: transparent;
+        color: var(--secondary-color);
+        box-shadow: none;
+    }
+
+    .private-btn {
+        background: transparent;
+        color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+
+    .private-btn:hover,
+    .private-btn:focus-visible {
+        background: var(--secondary-color);
+        color: var(--primary-color);
     }
 
     .po_item:hover,
-    .po_item:hover img {
+    .po_item:hover img,
+    .po_item:focus-within img {
         transform: none;
     }
 }

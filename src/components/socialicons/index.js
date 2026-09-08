@@ -3,7 +3,6 @@ import "./style.css";
 import { useTranslation } from "react-i18next";
 import {
   FaGithub,
-  FaTwitter,
   FaFacebookF,
   FaLinkedin,
   FaYoutube,
@@ -23,7 +22,6 @@ const ICON_MAPPING = {
   linkedin: FaLinkedin,
   snapchat: FaSnapchatGhost,
   tiktok: FaTiktok,
-  twitter: FaTwitter,
   twitch: FaTwitch,
   youtube: FaYoutube
 };
@@ -38,8 +36,8 @@ export const Socialicons = (params) => {
           const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
           return (
             <li key={platform}>
-              <a href={url}>
-                <IconComponent />
+              <a href={url} aria-label={platform.charAt(0).toUpperCase() + platform.slice(1)}>
+                <IconComponent aria-hidden="true" />
               </a>
             </li>
           );

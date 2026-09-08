@@ -98,7 +98,7 @@ export const Resume = () => {
             ) : (
               <div className="cv-stale-card">
                 <div className="cv-stale-badge">{t("resume.previewStatusLabel")}</div>
-                <h3>{t("resume.outdatedPreviewTitle")}</h3>
+                <h2>{t("resume.outdatedPreviewTitle")}</h2>
                 <p>{t("resume.outdatedPreviewDescription")}</p>
                 <Link to="/contact" className="cv-stale-contact-link">
                   {t("resume.contactForLatestCv")}

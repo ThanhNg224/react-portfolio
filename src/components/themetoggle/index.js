@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
+import "./style.css";
 
 const resolveInitialTheme = () => {
   const storedTheme = localStorage.getItem("theme");
@@ -26,21 +27,15 @@ const Themetoggle = () => {
   }, [theme]);
 
   return (
-    <div
-      className="nav_ac"
+    <button
+      type="button"
+      className="theme-toggle nav_ac"
       onClick={themetoggle}
-      role="button"
-      tabIndex={0}
       aria-label="Toggle dark/light theme"
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          themetoggle();
-        }
-      }}
+      aria-pressed={theme === "dark"}
     >
-      <WiMoonAltWaningCrescent4 />
-    </div>
+      <WiMoonAltWaningCrescent4 aria-hidden="true" />
+    </button>
   );
 };
 

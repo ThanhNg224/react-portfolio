@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -8,6 +8,8 @@ import { contactConfig } from "../../content_option";
 
 export const ContactUs = () => {
   const { t } = useTranslation();
+  const errorSummaryRef = useRef(null);
+  const shouldFocusErrorSummaryRef = useRef(false);
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -64,13 +66,21 @@ export const ContactUs = () => {
     return !Object.values(nextErrors).some(Boolean);
   };
 
-  const hasValidationErrors = Object.values(fieldErrors).some(Boolean);
+  const validationErrors = Object.entries(fieldErrors).filter(([, error]) => Boolean(error));
+
+  useEffect(() => {
+    if (shouldFocusErrorSummaryRef.current && validationErrors.length > 0) {
+      errorSummaryRef.current?.focus();
+      shouldFocusErrorSummaryRef.current = false;
+    }
+  }, [validationErrors.length]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setTouched({ name: true, email: true, message: true });
 
     if (!validateAllFields()) {
+      shouldFocusErrorSummaryRef.current = true;
       setFormdata((prev) => ({
         ...prev,
         loading: false,
@@ -189,7 +199,7 @@ export const ContactUs = () => {
               //show={formData.show}
               variant={formData.variant}
               className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
+                formData.show && formData.variant !== "warning" ? "d-block" : "d-none"
               }`}
               onClose={() => setFormdata((prev) => ({ ...prev, show: false }))}
               dismissible
@@ -198,7 +208,7 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">{t('contact.title')}</h3>
+            <h2 className="color_sec py-4">{t('contact.title')}</h2>
             <address>
               <strong>{t('contact.info.email')}:</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
@@ -215,57 +225,90 @@ export const ContactUs = () => {
             <p>{t('contact.description')}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact__form w-100">
+            <form onSubmit={handleSubmit} className="contact__form w-100" noValidate aria-busy={formData.loading}>
+              {formData.show && formData.variant === "warning" && validationErrors.length > 0 && (
+                <div
+                  className="form-error-summary"
+                  role="alert"
+                  tabIndex="-1"
+                  ref={errorSummaryRef}
+                  aria-labelledby="form-error-summary-title"
+                >
+                  <h2 id="form-error-summary-title" className="form-error-summary__title">
+                    {formData.alertmessage}
+                  </h2>
+                  <ul>
+                    {validationErrors.map(([field, error]) => (
+                      <li key={field}>
+                        <a
+                          href={`#${field}`}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            document.getElementById(field)?.focus();
+                          }}
+                        >
+                          {error}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               <Row>
                 <Col lg="6" className="form-group">
+                  <label className="form-label" htmlFor="name">{t('contact.form.name')}</label>
                   <input
                     className={`form-control ${touched.name && fieldErrors.name ? "is-invalid" : ""}`}
                     id="name"
                     name="name"
-                    placeholder={t('contact.form.name')}
                     value={formData.name || ""}
                     type="text"
+                    autoComplete="name"
                     required
                     onChange={handleChange}
                     onBlur={handleBlur}
                     aria-invalid={Boolean(touched.name && fieldErrors.name)}
+                    aria-describedby={touched.name && fieldErrors.name ? "name-error" : undefined}
                   />
                   {touched.name && fieldErrors.name && (
-                    <div className="field-error" role="alert">{fieldErrors.name}</div>
+                    <div id="name-error" className="field-error">{fieldErrors.name}</div>
                   )}
                 </Col>
                 <Col lg="6" className="form-group">
+                  <label className="form-label" htmlFor="email">{t('contact.form.email')}</label>
                   <input
                     className={`form-control rounded-0 ${touched.email && fieldErrors.email ? "is-invalid" : ""}`}
                     id="email"
                     name="email"
-                    placeholder={t('contact.form.email')}
                     type="email"
                     value={formData.email || ""}
+                    autoComplete="email"
                     required
                     onChange={handleChange}
                     onBlur={handleBlur}
                     aria-invalid={Boolean(touched.email && fieldErrors.email)}
+                    aria-describedby={touched.email && fieldErrors.email ? "email-error" : undefined}
                   />
                   {touched.email && fieldErrors.email && (
-                    <div className="field-error" role="alert">{fieldErrors.email}</div>
+                    <div id="email-error" className="field-error">{fieldErrors.email}</div>
                   )}
                 </Col>
               </Row>
+              <label className="form-label" htmlFor="message">{t('contact.form.message')}</label>
               <textarea
                 className={`form-control rounded-0 ${touched.message && fieldErrors.message ? "is-invalid" : ""}`}
                 id="message"
                 name="message"
-                placeholder={t('contact.form.message')}
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 aria-invalid={Boolean(touched.message && fieldErrors.message)}
+                aria-describedby={touched.message && fieldErrors.message ? "message-error" : undefined}
                 required
               ></textarea>
               {touched.message && fieldErrors.message && (
-                <div className="field-error" role="alert">{fieldErrors.message}</div>
+                <div id="message-error" className="field-error">{fieldErrors.message}</div>
               )}
               <br />
               <Row>
@@ -273,7 +316,7 @@ export const ContactUs = () => {
                   <button
                     className="btn ac_btn"
                     type="submit"
-                    disabled={formData.loading || hasValidationErrors}
+                    disabled={formData.loading}
                   >
                     {formData.loading ? t('contact.form.sending') : t('contact.form.send')}
                   </button>

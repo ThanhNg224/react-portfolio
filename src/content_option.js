@@ -104,6 +104,8 @@ const services = [
 const dataportfolio = [
   {
     img: `${process.env.PUBLIC_URL}/images/Viettel.jpg`,
+    width: 1551,
+    height: 964,
     description:
       "Viettel EID/Passport Verification App – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration.",
     link: "https://github.com/ThanhNg224/Viettel",
@@ -111,6 +113,8 @@ const dataportfolio = [
   },
   {
     img: `${process.env.PUBLIC_URL}/images/device_management.png`,
+    width: 2462,
+    height: 1340,
     description:
       "A full-stack platform designed to manage and update Android-based Face Terminal machines. The system enables real-time device monitoring, access log viewing, and remote APK updates.",
     link: "https://github.com/ThanhNg224/device_management_full",
@@ -118,6 +122,8 @@ const dataportfolio = [
   },
   {
     img: `${process.env.PUBLIC_URL}/images/cofffeeshop.jpg`,
+    width: 800,
+    height: 450,
     description:
       "Coffee Shop Website & Android App – Full‐stack project (ReactJS/NodeJS/MySQL + React Native) with user/admin roles, product browsing, and feedback systems.",
     link: "https://github.com/ThanhNg224/CoffeeShopProject",
@@ -125,6 +131,8 @@ const dataportfolio = [
   },
   {
     img: `${process.env.PUBLIC_URL}/images/rain_caster.jpg`,
+    width: 2492,
+    height: 1350,
     description:
       "Raincaster – Real‐time weather forecasting platform with SVM model in Flask backend and ReactJS front end, focused on advanced rainfall prediction.",
     link: "https://github.com/ThanhNg224/Raincaster",
@@ -132,6 +140,8 @@ const dataportfolio = [
   },
   {
     img: `${process.env.PUBLIC_URL}/images/DSoft.jpg`,
+    width: 1800,
+    height: 2880,
     description:
       "DSoft is a Flutter-based spa & wellness management app that streamlines operations from bookings and staff scheduling to inventory, payments, and business analytics.",
     link: "https://github.com/ThanhNg224/DSoft",
@@ -139,6 +149,8 @@ const dataportfolio = [
   },
   {
     img: `${process.env.PUBLIC_URL}/images/my_image_low_res.jpg`,
+    width: 1024,
+    height: 1536,
     description:
       "Additional projects available on my GitHub! Feel free to explore more.",
     link: "https://github.com/ThanhNg224",
@@ -162,7 +174,6 @@ const socialprofils = {
   github: "https://github.com/ThanhNg224",
   facebook: "https://www.facebook.com/nguyen.thanh.619149/",
   linkedin: "https://www.linkedin.com/in/nguyễn-phúc-thành-a7a8b3355/",
-  twitter: "#",
   instagram: "https://www.instagram.com/thanhng.224",
 };
 
