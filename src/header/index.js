@@ -26,6 +26,16 @@ const Headermain = () => {
     setIsOpen(false);
   };
 
+  const handleBackdropClick = (e) => {
+    if (
+      e.target === navigationRef.current ||
+      (!e.target.closest(".bg__menu") && !e.target.closest(".menu_footer"))
+    ) {
+      shouldRestoreFocusRef.current = true;
+      setIsOpen(false);
+    }
+  };
+
   useEffect(() => {
     if (!isOpen) {
       if (wasOpenRef.current && shouldRestoreFocusRef.current) {
@@ -111,7 +121,7 @@ const Headermain = () => {
   return (
     <>
       <header className={`fixed-top site__header ${isOpen ? "menu-is-open" : ""}`}>
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="header__nav-bar d-flex align-items-center justify-content-between w-100">
           <Link  className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
@@ -140,6 +150,7 @@ const Headermain = () => {
           role="dialog"
           aria-label="Primary navigation"
           aria-hidden={!isOpen}
+          onClick={handleBackdropClick}
         >
           <div className="bg__menu h-100">
             <div className="menu__wrapper">

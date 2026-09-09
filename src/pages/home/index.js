@@ -72,13 +72,15 @@ export const Home = () => {
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://thanhng224.github.io/react-portfolio/" />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
+        <div className="intro_sec d-flex flex-column d-lg-flex flex-lg-row align-items-center">
           <div
-            className="h_bg-image order-2 order-lg-2 h-100 "
+            className="h_bg-image order-1 order-lg-2"
             style={{ backgroundImage: `url(${introdata.your_img_url})` }}
+            role="img"
+            aria-label="Nguyen Phuc Thanh profile photo"
           ></div>
-          <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
-            <div className="align-self-center ">
+          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
+            <div className="align-self-center">
               <div className="intro mx-auto">
                 <h1 className="mb-1x">{t('home.title')}</h1>
                 <h2 className="fluidz-48 mb-1x">
