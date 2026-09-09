@@ -21,7 +21,7 @@ print("📄 Found \(pageCount) pages in \(pdfPath)")
 for i in 0..<pageCount {
     guard let page = document.page(at: i) else { continue }
     let pageRect = page.bounds(for: .mediaBox)
-    let scale: CGFloat = 2.5 // Retina high resolution
+    let scale: CGFloat = 3.5 // Ultra Retina high-resolution (2142 x 2772)
     let targetSize = CGSize(width: pageRect.width * scale, height: pageRect.height * scale)
     
     let colorSpace = CGColorSpaceCreateDeviceRGB()
@@ -36,6 +36,13 @@ for i in 0..<pageCount {
         print("❌ Error: Failed to create CGContext for page \(i + 1)")
         continue
     }
+    
+    // High-quality text and font smoothing
+    context.setAllowsAntialiasing(true)
+    context.setShouldAntialias(true)
+    context.setAllowsFontSmoothing(true)
+    context.setShouldSmoothFonts(true)
+    context.interpolationQuality = .high
     
     context.setFillColor(CGColor(red: 1, green: 1, blue: 1, alpha: 1))
     context.fill(CGRect(origin: .zero, size: targetSize))
