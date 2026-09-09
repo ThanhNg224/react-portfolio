@@ -31,7 +31,7 @@ section {
 }
 
 .intro_sec {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 64px);
     min-height: 700px;
     margin-top: 0;
 }
@@ -416,7 +416,7 @@ section {
         align-items: center;
         justify-content: center;
         height: auto !important;
-        min-height: calc(100vh - 60px);
+        min-height: calc(100vh - 64px);
         min-height: calc(100dvh - 56px);
         margin-top: 0 !important;
         padding: 24px 16px 36px 16px !important;

@@ -181,8 +181,8 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex gap-3">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
+              <a href={socialprofils.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href={socialprofils.github} target="_blank" rel="noopener noreferrer">Github</a>
             </div>
             <p className="copyright m-0">{t('footer.copyright')} {logotext}</p>
           </div>

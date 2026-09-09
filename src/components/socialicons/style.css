@@ -76,6 +76,9 @@
         font-size: 17px;
         margin: 0;
     }
+    .stick_follow_icon p:after {
+        display: none;
+    }
     .stick_follow_icon ul {
         display: flex;
         flex-wrap: wrap;

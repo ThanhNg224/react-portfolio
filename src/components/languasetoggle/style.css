@@ -12,7 +12,11 @@
   min-width: 80px;
   text-align: center;
   white-space: nowrap;
+  height: 44px;
   min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   touch-action: manipulation;
 }
 
@@ -24,10 +28,11 @@
 
 @media (max-width: 768px) {
   .language-toggle {
-    padding: 6px 8px;
+    padding: 4px 8px;
     font-size: 12px;
     margin-right: 10px;
     min-width: 70px;
-    min-height: 44px;
+    height: 40px;
+    min-height: 40px;
   }
 }

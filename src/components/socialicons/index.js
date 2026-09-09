@@ -36,7 +36,12 @@ export const Socialicons = (params) => {
           const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
           return (
             <li key={platform}>
-              <a href={url} aria-label={platform.charAt(0).toUpperCase() + platform.slice(1)}>
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={platform.charAt(0).toUpperCase() + platform.slice(1)}
+              >
                 <IconComponent aria-hidden="true" />
               </a>
             </li>
