@@ -1,5 +1,7 @@
 # React Portfolio
 
+🌐 **Live Demo:** [https://thanhng224.github.io/react-portfolio](https://thanhng224.github.io/react-portfolio)
+
 Simple personal portfolio built with React.
 
 ## Quick Start
