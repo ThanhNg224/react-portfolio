@@ -74,11 +74,11 @@
       }
     ],
     "skills": [
-      { "name": "Mobile development", "description": "Flutter (Dart, BLoC), React Native (Expo), native Android (Kotlin, Java), and Expo native modules (Kotlin, Swift)" },
-      { "name": "Architecture and libraries", "description": "MVVM, Clean Architecture, Kotlin Coroutines and Flow, Hilt, Jetpack Compose, Material 3, ViewModel, Navigation, Room, DataStore, WorkManager" },
-      { "name": "Networking and data", "description": "Retrofit, OkHttp, REST APIs, JSON" },
-      { "name": "Web and backend", "description": "React, Next.js, Node.js, Flask" },
-      { "name": "Tools", "description": "Git, Firebase (Analytics, Crashlytics, Remote Config), Gradle, Android Studio" }
+      { "name": "Mobile development", "description": "Android (Kotlin, Java, Jetpack Compose), Flutter (Dart), React Native (TypeScript, Expo)" },
+      { "name": "Mobile SDK development", "description": "Public API design, API compatibility, partner integration, native modules" },
+      { "name": "Application architecture", "description": "Modular architecture, Clean Architecture, MVVM, Coroutines and Flow" },
+      { "name": "Mobile performance and reliability", "description": "Runtime performance, device compatibility, crash monitoring" },
+      { "name": "App delivery and monetization", "description": "Automated integration checks, analytics, controlled rollouts, in-app purchases, ads" }
     ],
     "services": [
       {

@@ -74,11 +74,11 @@
       }
     ],
     "skills": [
-      { "name": "Mobile", "description": "Flutter (Dart, BLoC), React Native (Expo), Android (Kotlin, Java), module native cho Expo (Kotlin, Swift)" },
-      { "name": "Kiến trúc và thư viện", "description": "MVVM, Clean Architecture, Kotlin Coroutines và Flow, Hilt, Jetpack Compose, Material 3, ViewModel, Navigation, Room, DataStore, WorkManager" },
-      { "name": "Mạng và dữ liệu", "description": "Retrofit, OkHttp, REST API, JSON" },
-      { "name": "Web và backend", "description": "React, Next.js, Node.js, Flask" },
-      { "name": "Công cụ", "description": "Git, Firebase (Analytics, Crashlytics, Remote Config), Gradle, Android Studio" }
+      { "name": "Ứng dụng mobile", "description": "Android (Kotlin, Java, Jetpack Compose), Flutter (Dart), React Native (TypeScript, Expo)" },
+      { "name": "Phát triển SDK", "description": "Thiết kế API công khai, giữ API tương thích qua các phiên bản, hỗ trợ đối tác tích hợp và viết module native" },
+      { "name": "Kiến trúc ứng dụng", "description": "Tổ chức app theo module, Clean Architecture, MVVM, Coroutines và Flow" },
+      { "name": "Hiệu năng và độ ổn định", "description": "Tối ưu hiệu năng khi chạy, xử lý vấn đề tương thích thiết bị và theo dõi crash" },
+      { "name": "Phát hành và kiếm tiền từ app", "description": "Kiểm tra tích hợp tự động, theo dõi số liệu, phát hành tính năng theo từng đợt, mua hàng trong app và quảng cáo" }
     ],
     "services": [
       {
