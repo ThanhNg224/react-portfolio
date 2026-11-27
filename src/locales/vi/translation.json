@@ -12,15 +12,15 @@
   "home": {
     "title": "Mình là Phúc Thành",
     "animated": {
-      "first": "Lập trình viên di động",
-      "second": "Mình phát triển ứng dụng và SDK",
-      "third": "Mình kết nối ứng dụng, thiết bị và dịch vụ"
+      "first": "Lập trình viên mobile",
+      "second": "Ứng dụng đa nền tảng và SDK",
+      "third": "Phần mềm cho thiết bị"
     },
-    "description": "Mình là lập trình viên di động tại Hà Nội. Mình phát triển ứng dụng đa nền tảng, SDK tái sử dụng và các hệ thống hỗ trợ, từ tích hợp thiết bị đến công cụ web để giám sát và cập nhật từ xa.",
-    "cvOutdatedHint": "Hồ sơ CV đang trong quá trình cập nhật. Nếu bạn cần bản mới nhất, đừng ngần ngại liên hệ trực tiếp với mình nhé.",
+    "description": "Mình làm mobile ở Hà Nội. Ngoài viết ứng dụng đa nền tảng và SDK, mình còn làm phần mềm cho kiosk và công cụ web để theo dõi, cập nhật thiết bị từ xa.",
+    "cvOutdatedHint": "Mình đang cập nhật CV. Bạn có thể nhắn mình để xin bản mới nhất.",
     "buttons": {
       "portfolio": "Xem dự án",
-      "about": "Về bản thân",
+      "about": "Về mình",
       "resume": "Xem CV",
       "contact": "Liên hệ",
       "downloadCV": "Tải CV"
@@ -28,14 +28,14 @@
   },
   "about": {
     "title": "Giới thiệu",
-    "personalTitle": "Đôi nét về bản thân",
-    "personalDescription": "Mình là Nguyễn Phúc Thành, lập trình viên di động tại Hà Nội và tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách khoa Hà Nội. Mình làm việc với Flutter, React Native và Android native, đồng thời từng viết module native cho Expo bằng Kotlin và Swift.\n\nTại Kalapa JSC, mình phát triển SDK eKYC cho ứng dụng ngân hàng, trong đó có các dự án tích hợp cho Shinhan Bank và VPBank. Mình xây dựng ứng dụng mẫu để hỗ trợ đối tác tích hợp và kiểm thử nội bộ, đồng thời phối hợp với đội kỹ thuật của ngân hàng để xử lý các vấn đề về tương thích thiết bị và hiệu năng.\n\nTrước đó tại eUp Group, mình phát triển các tính năng trên phiên bản Android của HeyJapan, ứng dụng học tiếng Nhật có hơn 10 triệu người học trên toàn thế giới. Công việc của mình bao gồm luồng học, quảng cáo, mua hàng trong ứng dụng, phân tích và triển khai tính năng.\n\nNgoài ứng dụng điện thoại, mình từng xây dựng phần mềm cho kiosk và thiết bị nhận diện khuôn mặt dùng để xác minh danh tính, chấm công và kiểm soát ra vào. Mình cũng tham gia xây dựng bảng điều khiển web để giám sát và cập nhật các thiết bị này từ xa.",
+    "personalTitle": "Về mình",
+    "personalDescription": "Mình từng làm ứng dụng với Flutter, React Native và Android. Trong bộ mẫu SDK cho Expo, mình viết phần native bằng Kotlin cho Android và Swift cho iOS. Mình tốt nghiệp ngành Kỹ thuật Đa phương tiện ở Đại học Bách khoa Hà Nội.\n\nHiện mình làm SDK eKYC cho ứng dụng ngân hàng tại Kalapa, trong đó có các dự án tích hợp với Shinhan Bank và VPBank. Mình viết app mẫu để đối tác chạy thử SDK và đội QA kiểm tra nội bộ. Khi phát sinh vấn đề về tương thích thiết bị hay hiệu năng, mình làm việc trực tiếp với đội kỹ thuật của đối tác.\n\nTrước đó, ở eUp Group, mình làm phiên bản Android của HeyJapan, ứng dụng học tiếng Nhật có hơn 10 triệu người học trên thế giới. Mình phát triển phần bài học và bài tập, tích hợp quảng cáo, mua hàng trong app và theo dõi số liệu khi ra mắt tính năng mới.\n\nMình từng làm phần mềm cho kiosk xác minh danh tính và thiết bị nhận diện khuôn mặt dùng để chấm công, kiểm soát ra vào. Mình cũng tham gia làm bảng điều khiển trên web để theo dõi và cập nhật các thiết bị này từ xa.",
     "sections": {
-      "education": "Học vấn & Đào tạo",
-      "certifications": "Chứng chỉ chuyên môn",
+      "education": "Học vấn",
+      "certifications": "Chứng chỉ",
       "workTimeline": "Kinh nghiệm làm việc",
-      "skills": "Kỹ năng chuyên môn",
-      "services": "Lĩnh vực chuyên môn"
+      "skills": "Kỹ năng",
+      "services": "Mình làm gì"
     },
     "education": [
       {
@@ -53,28 +53,28 @@
     ],
     "workTimeline": [
       {
-        "jobtitle": "Lập trình viên di động – SDK Fintech (eKYC)",
+        "jobtitle": "Lập trình viên mobile – SDK eKYC",
         "where": "Kalapa JSC (Hà Nội)",
         "date": "06/2026 – Hiện tại"
       },
       {
-        "jobtitle": "Lập trình viên di động – Ứng dụng học tiếng Nhật HeyJapan",
+        "jobtitle": "Lập trình viên mobile – HeyJapan",
         "where": "Công ty Cổ phần Công nghệ eUp (eUp Group), Hà Nội",
         "date": "04/2025 – 05/2026"
       },
       {
-        "jobtitle": "Lập trình viên Full-stack (Trọng tâm Mobile)",
+        "jobtitle": "Lập trình viên full-stack, chủ yếu làm mobile",
         "where": "ATIN – Advanced Technology Innovations (Hà Nội)",
         "date": "03/2024 – 04/2025"
       },
       {
-        "jobtitle": "Thực tập đào tạo C++",
+        "jobtitle": "Thực tập C++",
         "where": "FPT Software (Hà Nội)",
         "date": "10/2023 – 03/2024"
       }
     ],
     "skills": [
-      { "name": "Phát triển ứng dụng di động", "description": "Flutter (Dart, BLoC), React Native (Expo), Android native (Kotlin, Java) và module native cho Expo (Kotlin, Swift)" },
+      { "name": "Mobile", "description": "Flutter (Dart, BLoC), React Native (Expo), Android (Kotlin, Java), module native cho Expo (Kotlin, Swift)" },
       { "name": "Kiến trúc và thư viện", "description": "MVVM, Clean Architecture, Kotlin Coroutines và Flow, Hilt, Jetpack Compose, Material 3, ViewModel, Navigation, Room, DataStore, WorkManager" },
       { "name": "Mạng và dữ liệu", "description": "Retrofit, OkHttp, REST API, JSON" },
       { "name": "Web và backend", "description": "React, Next.js, Node.js, Flask" },
@@ -82,73 +82,73 @@
     ],
     "services": [
       {
-        "title": "Ứng dụng đa nền tảng và native",
-        "description": "Phát triển ứng dụng với Flutter, React Native và Android native. Mình từng làm luồng học, mua hàng trong ứng dụng, quảng cáo, phân tích và triển khai tính năng."
+        "title": "Ứng dụng mobile",
+        "description": "Mình làm app đa nền tảng với Flutter và React Native, hoặc viết riêng cho Android bằng Kotlin. Mình từng tích hợp quảng cáo, mua hàng trong app và theo dõi số liệu khi phát hành tính năng mới."
       },
       {
-        "title": "SDK di động và tích hợp native",
-        "description": "Phát triển SDK cho eKYC ngân hàng, chấm điểm tín dụng và quảng cáo di động. Mình xây dựng ứng dụng mẫu để hỗ trợ tích hợp và viết module native cho Expo bằng Kotlin và Swift."
+        "title": "SDK và tích hợp",
+        "description": "Mình từng viết SDK cho eKYC ngân hàng, chấm điểm tín dụng và quảng cáo trong app. Mình cũng làm ứng dụng mẫu để đội tích hợp có thể chạy thử SDK."
       },
       {
-        "title": "Thiết bị kết nối và công cụ web",
-        "description": "Tích hợp camera, đầu đọc NFC và SDK sinh trắc học cho kiosk và thiết bị nhận diện khuôn mặt. Xây dựng bảng điều khiển web và dịch vụ backend để giám sát và cập nhật thiết bị từ xa."
+        "title": "Thiết bị và công cụ quản lý",
+        "description": "Mình tích hợp camera, đầu đọc NFC và SDK sinh trắc học vào kiosk và thiết bị nhận diện khuôn mặt. Phần web và backend giúp đội vận hành theo dõi và cập nhật thiết bị từ xa."
       }
     ]
   },
   "portfolio": {
     "title": "Dự án",
     "viewProject": "Xem dự án",
-    "contactForCode": "Liên hệ nhận mã nguồn",
+    "contactForCode": "Hỏi về mã nguồn",
     "projects": {
       "mobileStarterKits": {
-        "description": "Bốn bộ khung ứng dụng và ba bộ khung SDK cho Android, Flutter và React Native. Bộ khung ứng dụng Android có hai lựa chọn Jetpack Compose và XML/ViewBinding. Các SDK có kiểu lỗi rõ ràng và ứng dụng mẫu để thử tích hợp."
+        "description": "4 mẫu ứng dụng và 3 mẫu SDK cho Android, Flutter và React Native. App Android có hai bản dùng Jetpack Compose hoặc XML/ViewBinding. Các mẫu SDK có định nghĩa kiểu lỗi và app mẫu để thử tích hợp."
       },
       "deskBridge": {
-        "description": "Chia sẻ chuột và bàn phím từ Mac sang Android bằng cách di chuột qua mép màn hình. DeskBridge truyền thao tác qua USB hoặc Wi-Fi, đồng bộ văn bản trong bộ nhớ tạm hai chiều và phát hành qua GitHub, Homebrew."
+        "description": "Đưa con trỏ qua mép màn hình Mac để dùng chung chuột và bàn phím với thiết bị Android. DeskBridge kết nối qua USB hoặc Wi-Fi, đồng bộ văn bản đã sao chép theo cả hai chiều. Có thể tải từ GitHub hoặc cài qua Homebrew."
       },
       "viettel": {
-        "description": "Kiosk Android cho Viettel, xác minh giấy tờ tùy thân và hộ chiếu bằng OCR vùng MRZ, đọc chip NFC và đối chiếu khuôn mặt. Tích hợp ký số và thanh toán QR qua môi trường thử nghiệm VNPAY."
+        "description": "Mình làm ứng dụng kiosk Android cho Viettel để kiểm tra giấy tờ tùy thân và hộ chiếu. Kiosk đọc vùng MRZ và chip NFC, đối chiếu khuôn mặt, hỗ trợ ký số và thanh toán QR trên môi trường thử nghiệm VNPAY."
       },
       "fileRecovery": {
-        "description": "Ứng dụng Android native để quét, xem trước và khôi phục tệp đa phương tiện đã xóa mà không cần root. Xây dựng bằng Kotlin, Hilt, Coroutines và Scoped Storage, có tích hợp SDK quảng cáo trong ứng dụng.",
+        "description": "Ứng dụng Android để tìm, xem trước và khôi phục ảnh, video, âm thanh và tài liệu đã xóa mà không cần root máy. App viết bằng Kotlin, dùng Hilt, Coroutines và Scoped Storage, có tích hợp SDK quảng cáo.",
         "ctaLabel": "Liên hệ về dự án"
       },
       "deviceManagement": {
-        "description": "Agent cập nhật OTA và bảng điều khiển giám sát thiết bị nhận diện khuôn mặt Android cho SunWorld của SunGroup. Hệ thống thu thập số liệu thiết bị, theo dõi trạng thái theo thời gian thực và cập nhật APK từ xa."
+        "description": "Hệ thống quản lý thiết bị nhận diện khuôn mặt chạy Android tại SunWorld của SunGroup. Bảng điều khiển hiển thị trạng thái và số liệu thiết bị theo thời gian thực, đồng thời cho phép cập nhật APK từ xa."
       },
       "coffeeShop": {
-        "description": "Hệ thống Website & Ứng dụng di động quản lý quán cà phê – giải pháp full-stack (React / Node.js / MySQL + React Native) với tính năng phân quyền, danh mục sản phẩm và phản hồi khách hàng."
+        "description": "Website và app cho quán cà phê. Khách có thể xem danh mục và gửi phản hồi, còn quản trị viên có quyền riêng. Dự án dùng React, React Native, Node.js và MySQL."
       },
       "raincaster": {
-        "description": "Raincaster – nền tảng dự báo thời tiết thời gian thực ứng dụng mô hình học máy SVM, kết hợp backend Flask và frontend React, tập trung dự đoán lượng mưa."
+        "description": "Raincaster dùng mô hình SVM để dự đoán lượng mưa theo thời gian thực. Giao diện viết bằng React và backend dùng Flask."
       },
       "dsoft": {
-        "description": "DSoft – ứng dụng quản lý spa & chăm sóc sức khỏe phát triển bằng Flutter: hỗ trợ đặt lịch hẹn, phân ca nhân sự, quản trị kho hàng, thanh toán và báo cáo doanh thu."
+        "description": "Ứng dụng Flutter giúp spa quản lý lịch hẹn, ca làm, hàng trong kho và thanh toán. DSoft cũng có báo cáo doanh thu."
       },
       "github": {
-        "description": "Khám phá thêm nhiều dự án mã nguồn mở và sản phẩm thú vị khác trên trang GitHub cá nhân của mình.",
+        "description": "Trên GitHub, mình chia sẻ thêm các dự án mã nguồn mở và những ý tưởng đang thử nghiệm.",
         "ctaLabel": "Xem GitHub"
       }
     }
   },
   "contact": {
     "title": "Liên hệ",
-    "description": "Nếu bạn có ý tưởng dự án cần hợp tác, muốn trao đổi về giải pháp công nghệ hoặc đơn giản là trò chuyện về lập trình và phát triển phần mềm, đừng ngần ngại kết nối với mình nhé.",
+    "description": "Nếu bạn muốn hợp tác làm dự án hoặc trao đổi thêm về công việc, cứ nhắn mình nhé.",
     "form": {
       "name": "Họ và tên",
       "email": "Địa chỉ email",
       "subject": "Tiêu đề",
-      "message": "Nội dung tin nhắn",
+      "message": "Tin nhắn",
       "send": "Gửi tin nhắn",
       "sending": "Đang gửi...",
-      "success": "Tin nhắn của bạn đã được gửi thành công!",
-      "error": "Không thể gửi tin nhắn lúc này. Vui lòng thử lại sau.",
+      "success": "Đã gửi tin nhắn. Cảm ơn bạn!",
+      "error": "Chưa gửi được tin nhắn. Bạn thử lại sau nhé.",
       "validation": {
-        "required": "Vui lòng không để trống trường này.",
+        "required": "Bạn điền mục này nhé.",
         "nameMin": "Họ và tên cần có ít nhất 2 ký tự.",
-        "emailInvalid": "Vui lòng nhập một địa chỉ email hợp lệ.",
-        "messageMin": "Nội dung tin nhắn cần có ít nhất 10 ký tự.",
-        "fixBeforeSubmit": "Vui lòng kiểm tra và hoàn thiện các trường thông tin hợp lệ trước khi gửi."
+        "emailInvalid": "Bạn kiểm tra lại địa chỉ email nhé.",
+        "messageMin": "Tin nhắn cần có ít nhất 10 ký tự.",
+        "fixBeforeSubmit": "Bạn kiểm tra lại các mục được đánh dấu trước khi gửi nhé."
       }
     },
     "info": {
@@ -157,31 +157,31 @@
     }
   },
   "resume": {
-    "title": "Hồ sơ CV",
-    "description": "Xem hoặc tải CV để tìm hiểu kinh nghiệm của mình với ứng dụng di động, SDK và thiết bị kết nối.",
-    "downloadCV": "Tải xuống CV",
+    "title": "CV",
+    "description": "Xem CV của mình để biết thêm về kinh nghiệm làm ứng dụng mobile, SDK và phần mềm cho thiết bị.",
+    "downloadCV": "Tải CV",
     "fullscreenView": "Xem toàn màn hình",
-    "clickToExpand": "Nhấp để xem toàn màn hình",
+    "clickToExpand": "Xem trang lớn hơn",
     "closeModal": "Đóng",
-    "pageCount": "Trang {{current}} / {{total}}",
+    "pageCount": "Trang {{current}}/{{total}}",
     "zoomIn": "Phóng to",
     "zoomOut": "Thu nhỏ",
     "resetZoom": "Đặt lại",
-    "fallbackMessage": "Nếu trình duyệt không thể hiển thị PDF, bấm vào đây để",
-    "openInNewTab": "mở trong tab mới",
-    "lastUpdated": "Cập nhật gần nhất",
-    "outdatedPreviewTitle": "Bản CV đang chờ làm mới",
-    "outdatedPreviewDescription": "Bản xem trước trực tuyến tạm thời được ẩn để cập nhật các thông tin và kinh nghiệm mới nhất. Nếu bạn quan tâm và muốn nhận bản CV mới, vui lòng liên hệ trực tiếp với mình.",
+    "fallbackMessage": "Nếu CV chưa hiện, bạn có thể",
+    "openInNewTab": "mở ở tab mới",
+    "lastUpdated": "Cập nhật lần cuối",
+    "outdatedPreviewTitle": "Mình đang cập nhật CV",
+    "outdatedPreviewDescription": "Bản xem trước sẽ có lại khi mình cập nhật xong. Nếu cần CV ngay, bạn có thể nhắn mình.",
     "previewStatusLabel": "Đang cập nhật",
-    "contactForLatestCv": "Liên hệ nhận bản CV mới nhất",
-    "outdatedDownloadHint": "Hồ sơ CV đang trong quá trình cập nhật lại nên tính năng tải xuống tạm thời bị vô hiệu hóa. Vui lòng liên hệ trực tiếp để nhận bản mới nhất.",
-    "pdfTitle": "Bản xem trước CV (PDF)"
+    "contactForLatestCv": "Nhắn mình để xin CV",
+    "outdatedDownloadHint": "Chưa tải được CV trong lúc mình cập nhật. Bạn có thể nhắn mình để xin bản mới nhất.",
+    "pdfTitle": "Xem trước CV (PDF)"
   },
   "footer": {
     "copyright": "© 2026"
   },
   "meta": {
-    "title": "Nguyễn Phúc Thành | Lập trình viên di động",
-    "description": "Nguyễn Phúc Thành, lập trình viên tại Hà Nội, phát triển ứng dụng di động, SDK, tích hợp thiết bị và công cụ web hỗ trợ."
+    "title": "Nguyễn Phúc Thành | Lập trình viên mobile",
+    "description": "Nguyễn Phúc Thành, lập trình viên mobile ở Hà Nội. Mình làm ứng dụng đa nền tảng, SDK, phần mềm cho thiết bị và công cụ web để quản lý thiết bị từ xa."
   }
 }
