@@ -29,7 +29,7 @@ export const About = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{t('about.title')} | {t('meta.title')}</title>
+          <title>{`${t('about.title')} | ${t('meta.title')}`}</title>
           <meta name="description" content={t('meta.description')} />
           
           {/* Open Graph Meta Tags */}
@@ -66,7 +66,9 @@ export const About = () => {
           </Col>
           <Col lg="9" className="d-flex align-items-center">
             <div>
-              <p>{t('about.personalDescription')}</p>
+              {t('about.personalDescription').split("\n\n").map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
             </div>
           </Col>
         </Row>
@@ -139,22 +141,16 @@ export const About = () => {
             <h2 className="color_sec py-4">{t('about.sections.skills')}</h2>
           </Col>
           <Col lg="9">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            <table className="table skills-table">
+              <tbody>
+                {skills.map(({ name, description }) => (
+                  <tr key={name}>
+                    <th scope="row">{name}</th>
+                    <td>{description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </Col>
         </Row>
 

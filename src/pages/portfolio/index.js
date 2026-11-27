@@ -8,15 +8,14 @@ import { dataportfolio } from "../../content_option";
 
 export const Portfolio = () => {
   const { t } = useTranslation();
-  const rawProjects = t('portfolio.projects', { returnObjects: true });
-  const projects = Array.isArray(rawProjects) ? rawProjects : [];
+  const projects = t('portfolio.projects', { returnObjects: true });
 
   return (
     <HelmetProvider>
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{t('portfolio.title')} | {t('meta.title')}</title>
+          <title>{`${t('portfolio.title')} | ${t('meta.title')}`}</title>
           <meta name="description" content={t('meta.description')} />
           
           {/* Open Graph Meta Tags */}
@@ -44,27 +43,32 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
+          {dataportfolio.map((data) => {
+            const project = projects[data.id];
+            const description = project?.description || data.description;
             return (
-              <div key={i} className="po_item">
-                <img
-                  src={data.img}
-                  alt={projects[i]?.description || data.description}
-                  width={data.width}
-                  height={data.height}
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div key={data.id} className={data.img ? "po_item" : "po_item po_item--text"}>
+                {data.img && (
+                  <img
+                    src={data.img}
+                    alt={description}
+                    width={data.width}
+                    height={data.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
                 <div className="content">
-                  <p>{projects[i]?.description || data.description}</p>
+                  {data.title && <h2>{data.title}</h2>}
+                  <p>{description}</p>
                   <div className="project-buttons">
                     {data.isPrivate ? (
                       <Link to="/contact" className="project-btn private-btn">
-                        {t('portfolio.contactForCode')}
+                        {project?.ctaLabel || t('portfolio.contactForCode')}
                       </Link>
                     ) : (
                       <a href={data.link} target="_blank" rel="noopener noreferrer" className="project-btn">
-                        {projects[i]?.ctaLabel || data.ctaLabel || t('portfolio.viewProject')}
+                        {project?.ctaLabel || data.ctaLabel || t('portfolio.viewProject')}
                       </a>
                     )}
                   </div>

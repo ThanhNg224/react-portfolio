@@ -100,7 +100,7 @@ export const Resume = () => {
       <Container className="About-header resume-container-main">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{t('resume.title')} | {t('meta.title')}</title>
+          <title>{`${t('resume.title')} | ${t('meta.title')}`}</title>
           <meta name="description" content={t('resume.description')} />
           
           {/* Open Graph meta tags */}

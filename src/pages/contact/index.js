@@ -166,7 +166,7 @@ export const ContactUs = () => {
       <Container>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{t('contact.title')} | {t('meta.title')}</title>
+          <title>{`${t('contact.title')} | ${t('meta.title')}`}</title>
           <meta name="description" content={t('meta.description')} />
           
           {/* Open Graph Meta Tags */}

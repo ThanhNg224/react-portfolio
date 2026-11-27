@@ -12,11 +12,11 @@
   "home": {
     "title": "Mình là Phúc Thành",
     "animated": {
-      "first": "Đam mê kiến tạo phần mềm chất lượng",
-      "second": "Chuyên sâu phát triển ứng dụng di động",
-      "third": "Xây dựng các sản phẩm web thực tế"
+      "first": "Lập trình viên di động",
+      "second": "Mình phát triển ứng dụng và SDK",
+      "third": "Mình kết nối ứng dụng, thiết bị và dịch vụ"
     },
-    "description": "Mình là Nguyễn Phúc Thành, tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách Khoa Hà Nội. Với định hướng Kỹ sư Mobile toàn diện, mình chuyên sâu phát triển và làm chủ các ứng dụng thực chiến mượt mà trên cả Flutter, Android và iOS, đồng thời linh hoạt đảm nhiệm các tác vụ full-stack khi dự án yêu cầu. Mình luôn hướng tới việc tạo ra những sản phẩm vận hành ổn định, kiến trúc sạch và mang lại giá trị thiết thực cho người dùng.",
+    "description": "Mình là lập trình viên di động tại Hà Nội. Mình phát triển ứng dụng đa nền tảng, SDK tái sử dụng và các hệ thống hỗ trợ, từ tích hợp thiết bị đến công cụ web để giám sát và cập nhật từ xa.",
     "cvOutdatedHint": "Hồ sơ CV đang trong quá trình cập nhật. Nếu bạn cần bản mới nhất, đừng ngần ngại liên hệ trực tiếp với mình nhé.",
     "buttons": {
       "portfolio": "Xem dự án",
@@ -29,7 +29,7 @@
   "about": {
     "title": "Giới thiệu",
     "personalTitle": "Đôi nét về bản thân",
-    "personalDescription": "Mình là Nguyễn Phúc Thành, kỹ sư phát triển ứng dụng di động (Mobile Developer) làm việc tại Hà Nội.\n\nHiện tại, mình đang công tác tại Kalapa JSC, phụ trách phát triển các bộ SDK fintech và giải pháp mobile chất lượng cao kết nối với các đối tác ngân hàng lớn. Trọng tâm thực chiến hàng ngày của mình là làm chủ và triển khai trơn tru các ứng dụng trên cả Flutter, Android và iOS — từ xây dựng kiến trúc giao diện mượt mà, quản lý luồng dữ liệu & trạng thái phức tạp cho đến viết native module kết nối phần cứng và bảo mật SDK.\n\nTrước đó, mình công tác tại eUp JSC và tham gia phát triển mảng Android cho HeyJapan — ứng dụng học tiếng Nhật đã phục vụ hơn 7 triệu người dùng trên toàn thế giới.\n\nKhông dừng lại ở một nền tảng đơn lẻ, mình làm chủ cả giải pháp Cross-platform (Flutter) lẫn Native (Android, iOS), kết hợp năng lực full-stack web & backend khi cần thiết. Mình đặc biệt quan tâm đến kiến trúc sạch (clean architecture), khả năng mở rộng bền vững và trải nghiệm người dùng tinh tế trong từng dòng code.",
+    "personalDescription": "Mình là Nguyễn Phúc Thành, lập trình viên di động tại Hà Nội và tốt nghiệp ngành Kỹ thuật Đa phương tiện tại Đại học Bách khoa Hà Nội. Mình làm việc với Flutter, React Native và Android native, đồng thời từng viết module native cho Expo bằng Kotlin và Swift.\n\nTại Kalapa JSC, mình phát triển SDK eKYC cho ứng dụng ngân hàng, trong đó có các dự án tích hợp cho Shinhan Bank và VPBank. Mình xây dựng ứng dụng mẫu để hỗ trợ đối tác tích hợp và kiểm thử nội bộ, đồng thời phối hợp với đội kỹ thuật của ngân hàng để xử lý các vấn đề về tương thích thiết bị và hiệu năng.\n\nTrước đó tại eUp Group, mình phát triển các tính năng trên phiên bản Android của HeyJapan, ứng dụng học tiếng Nhật có hơn 10 triệu người học trên toàn thế giới. Công việc của mình bao gồm luồng học, quảng cáo, mua hàng trong ứng dụng, phân tích và triển khai tính năng.\n\nNgoài ứng dụng điện thoại, mình từng xây dựng phần mềm cho kiosk và thiết bị nhận diện khuôn mặt dùng để xác minh danh tính, chấm công và kiểm soát ra vào. Mình cũng tham gia xây dựng bảng điều khiển web để giám sát và cập nhật các thiết bị này từ xa.",
     "sections": {
       "education": "Học vấn & Đào tạo",
       "certifications": "Chứng chỉ chuyên môn",
@@ -47,19 +47,19 @@
     "certifications": [
       {
         "name": "IELTS Academic – 7.5",
-        "issuer": "IDP Education",
+        "issuer": "IDP Education Co., Ltd",
         "date": "09/2024"
       }
     ],
     "workTimeline": [
       {
-        "jobtitle": "Kỹ sư phát triển Mobile – SDK Fintech (eKYC) & Giải pháp Đa nền tảng",
+        "jobtitle": "Lập trình viên di động – SDK Fintech (eKYC)",
         "where": "Kalapa JSC (Hà Nội)",
         "date": "06/2026 – Hiện tại"
       },
       {
-        "jobtitle": "Lập trình viên Android (Phát triển ứng dụng quy mô lớn & Tối ưu sản phẩm)",
-        "where": "eUp JSC (Hà Nội)",
+        "jobtitle": "Lập trình viên di động – Ứng dụng học tiếng Nhật HeyJapan",
+        "where": "Công ty Cổ phần Công nghệ eUp (eUp Group), Hà Nội",
         "date": "04/2025 – 05/2026"
       },
       {
@@ -68,38 +68,30 @@
         "date": "03/2024 – 04/2025"
       },
       {
-        "jobtitle": "Chương trình đào tạo C++",
-        "where": "FPT Software (Thực tập sinh đào tạo) (Hà Nội)",
+        "jobtitle": "Thực tập đào tạo C++",
+        "where": "FPT Software (Hà Nội)",
         "date": "10/2023 – 03/2024"
       }
     ],
     "skills": [
-      { "name": "Flutter & Dart", "value": 85 },
-      { "name": "Kotlin & Android", "value": 85 },
-      { "name": "Swift & iOS", "value": 75 },
-      { "name": "React Native", "value": 65 },
-      { "name": "JavaScript (ReactJS / NextJS)", "value": 75 },
-      { "name": "NodeJS & Express", "value": 70 },
-      { "name": "Python (Flask, scikit-learn, OpenCV)", "value": 65 },
-      { "name": "SQL & MySQL", "value": 50 },
-      { "name": "Unity & C#", "value": 50 }
+      { "name": "Phát triển ứng dụng di động", "description": "Flutter (Dart, BLoC), React Native (Expo), Android native (Kotlin, Java) và module native cho Expo (Kotlin, Swift)" },
+      { "name": "Kiến trúc và thư viện", "description": "MVVM, Clean Architecture, Kotlin Coroutines và Flow, Hilt, Jetpack Compose, Material 3, ViewModel, Navigation, Room, DataStore, WorkManager" },
+      { "name": "Mạng và dữ liệu", "description": "Retrofit, OkHttp, REST API, JSON" },
+      { "name": "Web và backend", "description": "React, Next.js, Node.js, Flask" },
+      { "name": "Công cụ", "description": "Git, Firebase (Analytics, Crashlytics, Remote Config), Gradle, Android Studio" }
     ],
     "services": [
       {
-        "title": "Phát triển ứng dụng di động (Mobile)",
-        "description": "Xây dựng và tối ưu các ứng dụng thực chiến mượt mà trên cả Flutter, Android (Kotlin) và iOS (Swift). Thành thạo quản lý trạng thái, animation, viết native platform channels, tích hợp Firebase, ML Kit và các SDK fintech/ngân hàng đòi hỏi tính bảo mật cao."
+        "title": "Ứng dụng đa nền tảng và native",
+        "description": "Phát triển ứng dụng với Flutter, React Native và Android native. Mình từng làm luồng học, mua hàng trong ứng dụng, quảng cáo, phân tích và triển khai tính năng."
       },
       {
-        "title": "Phát triển web Full-stack",
-        "description": "Phát triển các ứng dụng web hiện đại với React hoặc Next.js cùng hệ thống backend vững chắc trên Node.js hoặc Flask; chú trọng tính ổn định, khả năng mở rộng và dễ dàng bảo trì."
+        "title": "SDK di động và tích hợp native",
+        "description": "Phát triển SDK cho eKYC ngân hàng, chấm điểm tín dụng và quảng cáo di động. Mình xây dựng ứng dụng mẫu để hỗ trợ tích hợp và viết module native cho Expo bằng Kotlin và Swift."
       },
       {
-        "title": "Tích hợp Trí tuệ nhân tạo (AI / ML)",
-        "description": "Tích hợp các mô hình Machine Learning và thuật toán thị giác máy tính như OCR, nhận diện khuôn mặt cùng các tính năng phân tích dữ liệu thông minh vào sản phẩm di động và web."
-      },
-      {
-        "title": "Thiết kế UI/UX & Làm mẫu thử (Prototyping)",
-        "description": "Thiết kế giao diện trực quan, tối ưu trải nghiệm người dùng và xây dựng bản mẫu thử nghiệm (prototype) nhanh chóng nhằm kiểm chứng ý tưởng trước khi triển khai thực tế."
+        "title": "Thiết bị kết nối và công cụ web",
+        "description": "Tích hợp camera, đầu đọc NFC và SDK sinh trắc học cho kiosk và thiết bị nhận diện khuôn mặt. Xây dựng bảng điều khiển web và dịch vụ backend để giám sát và cập nhật thiết bị từ xa."
       }
     ]
   },
@@ -107,27 +99,37 @@
     "title": "Dự án",
     "viewProject": "Xem dự án",
     "contactForCode": "Liên hệ nhận mã nguồn",
-    "projects": [
-      {
-        "description": "Giải pháp Kiosk xác thực EID/Hộ chiếu Viettel trên Android – tích hợp nhận diện thực thể sống (liveness detection), quét thẻ NFC, OCR (MRZ) và cổng thanh toán tự động."
+    "projects": {
+      "mobileStarterKits": {
+        "description": "Bốn bộ khung ứng dụng và ba bộ khung SDK cho Android, Flutter và React Native. Bộ khung ứng dụng Android có hai lựa chọn Jetpack Compose và XML/ViewBinding. Các SDK có kiểu lỗi rõ ràng và ứng dụng mẫu để thử tích hợp."
       },
-      {
-        "description": "Nền tảng Full-stack quản lý thiết bị điểm danh Face Terminal (Android) – giám sát trạng thái thời gian thực, quản lý nhật ký ra vào và cập nhật gói cài đặt APK từ xa."
+      "deskBridge": {
+        "description": "Chia sẻ chuột và bàn phím từ Mac sang Android bằng cách di chuột qua mép màn hình. DeskBridge truyền thao tác qua USB hoặc Wi-Fi, đồng bộ văn bản trong bộ nhớ tạm hai chiều và phát hành qua GitHub, Homebrew."
       },
-      {
+      "viettel": {
+        "description": "Kiosk Android cho Viettel, xác minh giấy tờ tùy thân và hộ chiếu bằng OCR vùng MRZ, đọc chip NFC và đối chiếu khuôn mặt. Tích hợp ký số và thanh toán QR qua môi trường thử nghiệm VNPAY."
+      },
+      "fileRecovery": {
+        "description": "Ứng dụng Android native để quét, xem trước và khôi phục tệp đa phương tiện đã xóa mà không cần root. Xây dựng bằng Kotlin, Hilt, Coroutines và Scoped Storage, có tích hợp SDK quảng cáo trong ứng dụng.",
+        "ctaLabel": "Liên hệ về dự án"
+      },
+      "deviceManagement": {
+        "description": "Agent cập nhật OTA và bảng điều khiển giám sát thiết bị nhận diện khuôn mặt Android cho SunWorld của SunGroup. Hệ thống thu thập số liệu thiết bị, theo dõi trạng thái theo thời gian thực và cập nhật APK từ xa."
+      },
+      "coffeeShop": {
         "description": "Hệ thống Website & Ứng dụng di động quản lý quán cà phê – giải pháp full-stack (React / Node.js / MySQL + React Native) với tính năng phân quyền, danh mục sản phẩm và phản hồi khách hàng."
       },
-      {
+      "raincaster": {
         "description": "Raincaster – nền tảng dự báo thời tiết thời gian thực ứng dụng mô hình học máy SVM, kết hợp backend Flask và frontend React, tập trung dự đoán lượng mưa."
       },
-      {
+      "dsoft": {
         "description": "DSoft – ứng dụng quản lý spa & chăm sóc sức khỏe phát triển bằng Flutter: hỗ trợ đặt lịch hẹn, phân ca nhân sự, quản trị kho hàng, thanh toán và báo cáo doanh thu."
       },
-      {
+      "github": {
         "description": "Khám phá thêm nhiều dự án mã nguồn mở và sản phẩm thú vị khác trên trang GitHub cá nhân của mình.",
         "ctaLabel": "Xem GitHub"
       }
-    ]
+    }
   },
   "contact": {
     "title": "Liên hệ",
@@ -156,7 +158,7 @@
   },
   "resume": {
     "title": "Hồ sơ CV",
-    "description": "Xem trực tuyến hoặc tải về hồ sơ CV chi tiết, tóm lược quá trình học vấn, kỹ năng chuyên môn và kinh nghiệm thực chiến trong phát triển mobile (Flutter, Android, iOS) & full-stack.",
+    "description": "Xem hoặc tải CV để tìm hiểu kinh nghiệm của mình với ứng dụng di động, SDK và thiết bị kết nối.",
     "downloadCV": "Tải xuống CV",
     "fullscreenView": "Xem toàn màn hình",
     "clickToExpand": "Nhấp để xem toàn màn hình",
@@ -179,7 +181,7 @@
     "copyright": "© 2026"
   },
   "meta": {
-    "title": "Nguyễn Phúc Thành - Kỹ sư phát triển Mobile & Full-stack",
-    "description": "Portfolio cá nhân của Nguyễn Phúc Thành — kỹ sư Mobile (Flutter, Android, iOS) và Full-stack tại Hà Nội, chuyên sâu về kiến trúc sạch, độ ổn định của sản phẩm và trải nghiệm người dùng thực tế."
+    "title": "Nguyễn Phúc Thành | Lập trình viên di động",
+    "description": "Nguyễn Phúc Thành, lập trình viên tại Hà Nội, phát triển ứng dụng di động, SDK, tích hợp thiết bị và công cụ web hỗ trợ."
   }
 }

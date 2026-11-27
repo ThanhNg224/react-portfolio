@@ -1,126 +1,49 @@
 // src/content_option.js
 
 const logotext = "ThanhNg224";
-const meta = {
-  title: "Nguyen Phuc Thanh - Mobile & Full Stack Developer",
-  description:
-    "I’m Nguyen Phuc Thanh, a Mobile Developer (Flutter, Android, iOS) and full-stack engineer from Hanoi. I build high-performance mobile apps and digital solutions.",
-};
 
 const introdata = {
-  title: "I'm Thanh Nguyen",
-  animated: {
-    first: "I enjoy building software",
-    second: "I develop mobile apps",
-    third: "I build real-world web products",
-  },
-  description:
-    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST. As a versatile Mobile Developer, I specialize in crafting polished, production-ready applications across Flutter, Android, and iOS, alongside full-stack capabilities when needed.",
   your_img_url: "https://avatars.githubusercontent.com/ThanhNg224",
 };
 
-const dataabout = {
-  title: "A bit about myself",
-  aboutme:
-    "I'm Nguyen Phuc Thanh, a B.Sc. graduate in Multimedia Engineering from HUST and a passionate Mobile Developer. Experienced in shipping production-grade Flutter, Android, and iOS applications as well as crafting full-stack web solutions (React/Node.js/Python). I thrive on turning ideas into polished, high-performance products with clean architecture and intuitive UX. Always eager for fresh challenges and driving impact through solid engineering.",
-};
-
-// Education entries pulled from CV
-const education = [
-  {
-    institution: "Hanoi University of Science and Technology – HUST",
-    degree: "B.Sc. in Multimedia Engineering (Advanced Program)",
-    period: "2021 – 2025",
-  },
-];
-
-// Certifications entries pulled from CV
-const certifications = [
-  {
-    name: "IELTS Academic - 7.5",
-    issuer: "IDP Education Co., Ltd",
-    date: "Sep 2024",
-  },
-];
-
-const worktimeline = [
-  {
-    jobtitle: "Mobile Developer – Fintech SDK (eKYC) & Cross-Platform Solutions",
-    where: "Kalapa JSC (Hanoi, Vietnam)",
-    date: "June 2026 – Present",
-  },
-  {
-    jobtitle: "Android Developer (High-Scale App Development & Product Optimization)",
-    where: "eUp JSC (Hanoi, Vietnam)",
-    date: "April 2025 – May 2026",
-  },
-  {
-    jobtitle: "Fullstack Developer (Mobile Focus)",
-    where: "ATIN – Advanced Technology Innovations (Hanoi, Vietnam)",
-    date: "March 2024 – April 2025",
-  },
-  {
-    jobtitle: "C++ Training Program",
-    where: "FPT Software (Training Internship) (Hanoi, Vietnam)",
-    date: "October 2023 – March 2024",
-  },
-];
-
-const skills = [
-    { name: "Flutter & Dart", value: 85 },
-    { name: "Kotlin & Android", value: 85 },
-    { name: "Swift & iOS", value: 75 },
-    { name: "React Native", value: 65 },
-    { name: "JavaScript (ReactJS/NextJS)", value: 75 },
-    { name: "NodeJS & Express", value: 70 },
-    { name: "Python (Flask, scikit‐learn, OpenCV)", value: 65 },
-    { name: "SQL & MySQL", value: 50 },
-    { name: "Unity & C#", value: 50 },
-];
-
-const services = [
-  {
-    title: "Mobile App Development",
-    description:
-      "Building and optimizing production-ready mobile apps across Flutter, Android (Kotlin), and iOS (Swift) with integrations like native platform channels, Firebase, ML Kit, and secure fintech SDKs.",
-  },
-  {
-    title: "Full‐Stack Web Development",
-    description:
-      "Creating responsive web apps with ReactJS/NextJS, Tailwind CSS, and NodeJS/Express backends (or Flask) with MySQL.",
-  },
-  {
-    title: "Machine Learning Integration",
-    description:
-      "Embedding ML models (e.g., scikit‐learn SVM, OpenCV image processing) into apps for features like face detection, OCR, and data‐driven insights.",
-  },
-  {
-    title: "UI/UX & Prototyping",
-    description:
-      "Designing clean, user‐centric interfaces, wireframes, and prototypes to ensure high engagement and usability.",
-  },
-];
-
 const dataportfolio = [
   {
+    id: "mobileStarterKits",
+    title: "Mobile App & SDK Starter Suite",
+    link: "https://github.com/ThanhNg224/mobile-starter-kits",
+  },
+  {
+    id: "deskBridge",
+    title: "DeskBridge",
+    link: "https://github.com/ThanhNg224/DeskBridge",
+  },
+  {
+    id: "viettel",
     img: `${process.env.PUBLIC_URL}/images/Viettel.jpg`,
     width: 1551,
     height: 964,
     description:
-      "Viettel EID/Passport Verification App – Android kiosk solution with liveness detection, NFC reading, OCR (MRZ), and payment integration.",
+      "Android kiosk for Viettel that verifies IDs and passports using MRZ OCR, NFC chip reading, and face matching. It integrates digital signing and VNPAY sandbox QR payments.",
     link: "https://github.com/ThanhNg224/Viettel",
     isPrivate: true,
   },
   {
+    id: "fileRecovery",
+    title: "File Recovery",
+    isPrivate: true,
+  },
+  {
+    id: "deviceManagement",
     img: `${process.env.PUBLIC_URL}/images/device_management.png`,
     width: 2462,
     height: 1340,
     description:
-      "A full-stack platform designed to manage and update Android-based Face Terminal machines. The system enables real-time device monitoring, access log viewing, and remote APK updates.",
+      "Android OTA agent and monitoring dashboard for SunGroup’s SunWorld face terminals, with device telemetry, real-time status, and remote APK updates.",
     link: "https://github.com/ThanhNg224/device_management_full",
     isPrivate: true,
   },
   {
+    id: "coffeeShop",
     img: `${process.env.PUBLIC_URL}/images/cofffeeshop.jpg`,
     width: 800,
     height: 450,
@@ -130,6 +53,7 @@ const dataportfolio = [
     isPrivate: true,
   },
   {
+    id: "raincaster",
     img: `${process.env.PUBLIC_URL}/images/rain_caster.jpg`,
     width: 2492,
     height: 1350,
@@ -139,6 +63,7 @@ const dataportfolio = [
     isPrivate: true,
   },
   {
+    id: "dsoft",
     img: `${process.env.PUBLIC_URL}/images/DSoft.jpg`,
     width: 1800,
     height: 2880,
@@ -148,6 +73,7 @@ const dataportfolio = [
     isPrivate: true,
   },
   {
+    id: "github",
     img: `${process.env.PUBLIC_URL}/images/my_image_low_res.jpg`,
     width: 1024,
     height: 1536,
@@ -178,14 +104,7 @@ const socialprofils = {
 };
 
 export {
-  meta,
   introdata,
-  dataabout,
-  education,
-  certifications,
-  worktimeline,
-  skills,
-  services,
   dataportfolio,
   contactConfig,
   socialprofils,
